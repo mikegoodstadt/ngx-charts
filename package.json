@@ -56,7 +56,6 @@
     "ngx-moment": "^5.0.0",
     "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
@@ -85,6 +84,7 @@
     "prettier": "^2.0.4",
     "protractor": "~7.0.0",
     "ts-node": "^8.8.2",
+    "tslib": "^2.0.1",
     "tslint": "~6.1.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-config-security": "^1.16.0",

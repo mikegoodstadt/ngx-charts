@@ -159,6 +159,113 @@ export const multi: MultiSeries = [
   }
 ];
 
+export const multitime: MultiSeries = [
+  {
+    name: '"ip1-ip2"',
+    series: [
+      {
+        name: 1597658200000,
+        value: 200,
+        extra: {
+          type: 'Priority'
+        }
+      },
+      {
+        name: 1597658300000,
+        value: 1000,
+        extra: {
+          type: 'Priority'
+        }
+      },
+      {
+        name: 1597658500000,
+        value: 800,
+        extra: {
+          type: 'Hangup'
+        }
+      }
+    ]
+  },
+  {
+    name: '5902B390B72614A7@37.201.195.39',
+    series: [
+      {
+        name: 1597657200000,
+        value: 800,
+        extra: {
+          type: 'Priority'
+        }
+      },
+      {
+        name: 1597657500000,
+        value: 600,
+        extra: {
+          type: 'Priority'
+        }
+      },
+      {
+        name: 1597658500000,
+        value: 800,
+        extra: {
+          type: 'Priority'
+        }
+      }
+    ]
+  },
+  {
+    name: 'another',
+    series: [
+      {
+        name: 1597656600000,
+        value: 360,
+        extra: {
+          type: 'Priority',
+        }
+      },
+      {
+        name: 1597657200000,
+        value: 240,
+        extra: {
+          type: 'Hangup',
+        }
+      },
+      {
+        name: 1597659000000,
+        value: 480,
+        extra: {
+          type: 'Final',
+        }
+      }
+    ]
+  },
+  {
+    name: 'another2',
+    series: [
+      {
+        name: 1597656900000,
+        value: 200,
+        extra: {
+          type: 'Priority',
+        }
+      },
+      {
+        name: 1597658100000,
+        value: 500,
+        extra: {
+          type: 'Priority',
+        }
+      },
+      {
+        name: 1597659300000,
+        value: 100,
+        extra: {
+          type: 'Priority',
+        }
+      }
+    ]
+  }
+];
+
 export const fiscalYearReport: MultiSeries = [
   {
     name: 'Q1',
