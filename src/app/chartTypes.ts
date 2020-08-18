@@ -3,6 +3,43 @@ const chartGroups = [
     name: 'Bar Charts',
     charts: [
       {
+        name: 'Timeline Horizontal Bar Chart',
+        selector: 'bar-horizontal-timeline',
+        inputFormat: 'timelineSeries',
+        options: [
+          'animations',
+          'colorScheme',
+          'schemeType',
+          'showXAxis',
+          'showYAxis',
+          'gradient',
+          'barPadding',
+          'noBarWhenZero',
+          'showLegend',
+          'legendTitle',
+          'legendPosition',
+          'showXAxisLabel',
+          'xAxisLabel',
+          'showYAxisLabel',
+          'yAxisLabel',
+          'showGridLines',
+          'roundDomains',
+          'tooltipDisabled',
+          'xScaleMin',
+          'xScaleMax',
+          'showDataLabel',
+          'trimXAxisTicks',
+          'trimYAxisTicks',
+          'rotateXAxisTicks',
+          'maxXAxisTickLength',
+          'maxYAxisTickLength'
+        ],
+        defaults: {
+          yAxisLabel: 'Call Sessions',
+          xAxisLabel: ''
+        }
+      },
+      {
         name: 'Vertical Bar Chart',
         selector: 'bar-vertical',
         inputFormat: 'singleSeries',

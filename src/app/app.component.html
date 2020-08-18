@@ -1,6 +1,42 @@
 <main [class]="theme">
   <div class="chart-col">
     <div style="position: absolute; top: 50px; left: 50px; right: 50px; bottom: 50px;">
+      <ngx-charts-bar-horizontal-timeline
+        *ngIf="chartType === 'bar-horizontal-timeline'"
+        class="chart-container"
+        [view]="view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [results]="multitime"
+        [animations]="animations"
+        [gradient]="gradient"
+        [tooltipDisabled]="tooltipDisabled"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [legendTitle]="legendTitle"
+        [legendPosition]="legendPosition"
+        [showXAxisLabel]="showXAxisLabel"
+        (legendLabelClick)="onLegendLabelClick($event)"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [showGridLines]="showGridLines"
+        [barPadding]="barPadding"
+        [roundDomains]="roundDomains"
+        [showDataLabel]="showDataLabel"
+        [xScaleMax]="xScaleMax"
+        [noBarWhenZero]="noBarWhenZero"
+        [trimXAxisTicks]="trimXAxisTicks"
+        [trimYAxisTicks]="trimYAxisTicks"
+        [rotateXAxisTicks]="rotateXAxisTicks"
+        [maxXAxisTickLength]="maxXAxisTickLength"
+        [maxYAxisTickLength]="maxYAxisTickLength"
+        (select)="select($event)"
+        (activate)="activate($event)"
+        (deactivate)="deactivate($event)"
+      >
+      </ngx-charts-bar-horizontal-timeline>
       <ngx-charts-bar-vertical
         *ngIf="chartType === 'bar-vertical'"
         class="chart-container"
@@ -230,7 +266,7 @@
         [view]="view"
         [scheme]="colorScheme"
         [schemeType]="schemeType"
-        [results]="multi"
+        [results]="multitime"
         [animations]="animations"
         [gradient]="gradient"
         [tooltipDisabled]="tooltipDisabled"
@@ -1124,6 +1160,7 @@
         <strong>Data</strong>
       </h3>
       <div [hidden]="!dataVisible" style="margin-left: 10px;">
+        <pre *ngIf="chart.inputFormat === 'timelineSeries'">{{ multitime | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'singleSeries'">{{ single | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'multiSeries' && !linearScale">{{ multi | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'multiSeriesNegative' && !linearScale">{{ fiscalYearReport | json }}</pre>

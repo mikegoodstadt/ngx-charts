@@ -8,6 +8,7 @@ import { formatLabel, escapeLabel } from '@swimlane/ngx-charts/common/label.help
 import {
   single,
   multi,
+  multitime,
   bubble,
   generateData,
   generateGraph,
@@ -53,6 +54,7 @@ export class AppComponent implements OnInit {
   countries: any[];
   single: any[];
   multi: any[];
+  multitime: any[];
   fiscalYearReport: any[];
   dateData: any[];
   dateDataWithRange: any[];
@@ -92,7 +94,7 @@ export class AppComponent implements OnInit {
   minRadius = 3;
   showSeriesOnHover = true;
   roundEdges: boolean = true;
-  animations: boolean = true;
+  animations: boolean = false;
   xScaleMin: any;
   xScaleMax: any;
   yScaleMin: number;
@@ -255,6 +257,7 @@ export class AppComponent implements OnInit {
     Object.assign(this, {
       single,
       multi,
+      multitime,
       countries,
       chartGroups,
       colorSets,
@@ -323,6 +326,12 @@ export class AppComponent implements OnInit {
         this.multi = [...this.multi];
       }
 
+      if (this.multitime.length > 1) {
+        const index = Math.floor(Math.random() * this.multitime.length);
+        this.multitime.splice(index, 1);
+        this.multitime = [...this.multitime];
+      }
+
       if (this.bubble.length > 1) {
         const index = Math.floor(Math.random() * this.bubble.length);
         this.bubble.splice(index, 1);
@@ -372,6 +381,7 @@ export class AppComponent implements OnInit {
       };
 
       this.multi = [...this.multi, multiEntry];
+      this.multitime = [...this.multi, multiEntry];
 
       // graph
       const node = { value: country.name };
