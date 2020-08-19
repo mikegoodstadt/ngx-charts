@@ -123,7 +123,7 @@ export class SeriesHorizontal implements OnChanges {
 
     this.bars = this.series.map((d, index, array) => {
       let value = d.value;
-      const label = this.getLabel(d);
+      let label = this.getLabel(d);
       const formattedLabel = formatLabel(label);
       const roundEdges = this.roundEdges;
       d0Type = value > 0 ? D0Types.positive : D0Types.negative;
@@ -157,13 +157,11 @@ export class SeriesHorizontal implements OnChanges {
         bar.offset0 = offset0;
         bar.offset1 = offset1;
       }  else if (this.type === 'timeline') {
-
+        label = d.extra.type;
         const duration = value * 1000; // (ms)
         const nextValue = array[index+1] ? array[index+1].name : 0;
         const offset0 = array[index].name;
         const offset1 = new Date(new Date(offset0).getTime() + duration);
-        console.log(offset0);
-        console.log(offset1);
         d0[d0Type] += nextValue;
 
         bar.width = this.xScale(offset1) - this.xScale(offset0);;

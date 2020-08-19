@@ -16,6 +16,7 @@ export * from './lib/bar-chart/bar-horizontal.component';
 export * from './lib/bar-chart/bar-horizontal-2d.component';
 export * from './lib/bar-chart/bar-horizontal-normalized.component';
 export * from './lib/bar-chart/bar-horizontal-stacked.component';
+export * from './lib/bar-chart/bar-horizontal-timeline.component';
 export * from './lib/bar-chart/series-horizontal.component';
 export * from './lib/bar-chart/bar-label.component';
 export * from './lib/bar-chart/bar-vertical.component';
