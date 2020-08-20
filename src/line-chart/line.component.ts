@@ -61,6 +61,7 @@ export class LineComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (!this.initialized) {
+      console.log("MIKE: INITIALIZING CHARTS");
       this.initialized = true;
       this.initialPath = this.path;
     } else {

@@ -2088,29 +2088,6 @@ var AreaSeriesComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/area-chart/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__area_chart_module__ = __webpack_require__("./src/area-chart/area-chart.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__area_chart_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__area_chart_component__ = __webpack_require__("./src/area-chart/area-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__area_chart_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__area_chart_normalized_component__ = __webpack_require__("./src/area-chart/area-chart-normalized.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart_normalized_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_chart_stacked_component__ = __webpack_require__("./src/area-chart/area-chart-stacked.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__area_chart_stacked_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__area_series_component__ = __webpack_require__("./src/area-chart/area-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__area_series_component__["a"]; });
-
-
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/bar-chart/bar-chart.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5768,54 +5745,6 @@ var BarComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/bar-chart/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bar_chart_module__ = __webpack_require__("./src/bar-chart/bar-chart.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__bar_chart_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bar_component__ = __webpack_require__("./src/bar-chart/bar.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__bar_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bar_horizontal_component__ = __webpack_require__("./src/bar-chart/bar-horizontal.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__bar_horizontal_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bar_horizontal_2d_component__ = __webpack_require__("./src/bar-chart/bar-horizontal-2d.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_horizontal_2d_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bar_horizontal_normalized_component__ = __webpack_require__("./src/bar-chart/bar-horizontal-normalized.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__bar_horizontal_normalized_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bar_horizontal_stacked_component__ = __webpack_require__("./src/bar-chart/bar-horizontal-stacked.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__bar_horizontal_stacked_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__series_horizontal_component__ = __webpack_require__("./src/bar-chart/series-horizontal.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_6__series_horizontal_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bar_label_component__ = __webpack_require__("./src/bar-chart/bar-label.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_7__bar_label_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bar_vertical_component__ = __webpack_require__("./src/bar-chart/bar-vertical.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_8__bar_vertical_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bar_vertical_2d_component__ = __webpack_require__("./src/bar-chart/bar-vertical-2d.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_9__bar_vertical_2d_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bar_vertical_normalized_component__ = __webpack_require__("./src/bar-chart/bar-vertical-normalized.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_10__bar_vertical_normalized_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bar_vertical_stacked_component__ = __webpack_require__("./src/bar-chart/bar-vertical-stacked.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_11__bar_vertical_stacked_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__series_vertical_component__ = __webpack_require__("./src/bar-chart/series-vertical.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_12__series_vertical_component__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_12__series_vertical_component__["b"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/bar-chart/series-horizontal.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7165,27 +7094,6 @@ var BubbleSeriesComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/bubble-chart/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bubble_chart_module__ = __webpack_require__("./src/bubble-chart/bubble-chart.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__bubble_chart_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bubble_chart_component__ = __webpack_require__("./src/bubble-chart/bubble-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__bubble_chart_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bubble_chart_utils__ = __webpack_require__("./src/bubble-chart/bubble-chart.utils.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__bubble_chart_utils__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_2__bubble_chart_utils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bubble_series_component__ = __webpack_require__("./src/bubble-chart/bubble-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__bubble_series_component__["a"]; });
-
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/common/area.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7461,35 +7369,6 @@ var AxisLabelComponent = /** @class */ (function () {
     ], AxisLabelComponent);
     return AxisLabelComponent;
 }());
-
-
-
-/***/ }),
-
-/***/ "./src/common/axes/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__axes_module__ = __webpack_require__("./src/common/axes/axes.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__axes_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__axis_label_component__ = __webpack_require__("./src/common/axes/axis-label.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__axis_label_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__x_axis_component__ = __webpack_require__("./src/common/axes/x-axis.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__x_axis_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__x_axis_ticks_component__ = __webpack_require__("./src/common/axes/x-axis-ticks.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__x_axis_ticks_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__y_axis_component__ = __webpack_require__("./src/common/axes/y-axis.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__y_axis_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__y_axis_ticks_component__ = __webpack_require__("./src/common/axes/y-axis-ticks.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__y_axis_ticks_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ticks_helper__ = __webpack_require__("./src/common/axes/ticks.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__ticks_helper__["a"]; });
-
-
-
-
-
-
 
 
 
@@ -8324,6 +8203,7 @@ var BaseChartComponent = /** @class */ (function () {
         }
     };
     BaseChartComponent.prototype.ngOnChanges = function (changes) {
+        console.log('base-chart results: ', this.results);
         this.update();
     };
     BaseChartComponent.prototype.update = function () {
@@ -8559,13 +8439,13 @@ var ChartCommonModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
                 __WEBPACK_IMPORTED_MODULE_5__axes_axes_module__["a" /* AxesModule */],
-                __WEBPACK_IMPORTED_MODULE_6__tooltip__["f" /* TooltipModule */]
+                __WEBPACK_IMPORTED_MODULE_6__tooltip__["a" /* TooltipModule */]
             ],
             declarations: COMPONENTS.slice(),
             exports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
                 __WEBPACK_IMPORTED_MODULE_5__axes_axes_module__["a" /* AxesModule */],
-                __WEBPACK_IMPORTED_MODULE_6__tooltip__["f" /* TooltipModule */]
+                __WEBPACK_IMPORTED_MODULE_6__tooltip__["a" /* TooltipModule */]
             ].concat(COMPONENTS)
         })
     ], ChartCommonModule);
@@ -8689,7 +8569,7 @@ var ChartComponent = /** @class */ (function () {
     ], ChartComponent.prototype, "legendLabelDeactivate", void 0);
     ChartComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            providers: [__WEBPACK_IMPORTED_MODULE_2__tooltip__["g" /* TooltipService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_2__tooltip__["b" /* TooltipService */]],
             selector: 'ngx-charts-chart',
             template: "\n    <div\n      class=\"ngx-charts-outer\"\n      [style.width.px]=\"view[0]\"\n      [@animationState]=\"'active'\"\n      [@.disabled]=\"!animations\">\n      <svg\n        class=\"ngx-charts\"\n        [attr.width]=\"chartWidth\"\n        [attr.height]=\"view[1]\">\n        <ng-content></ng-content>\n      </svg>\n      <ngx-charts-scale-legend\n        *ngIf=\"showLegend && legendType === 'scaleLegend'\"\n        class=\"chart-legend\"\n        [horizontal]=\"legendOptions && legendOptions.position === 'below'\"\n        [valueRange]=\"legendOptions.domain\"\n        [colors]=\"legendOptions.colors\"\n        [height]=\"view[1]\"\n        [width]=\"legendWidth\">\n      </ngx-charts-scale-legend>\n      <ngx-charts-legend\n        *ngIf=\"showLegend && legendType === 'legend'\"\n        class=\"chart-legend\"\n        [horizontal]=\"legendOptions && legendOptions.position === 'below'\"\n        [data]=\"legendOptions.domain\"\n        [title]=\"legendOptions.title\"\n        [colors]=\"legendOptions.colors\"\n        [height]=\"view[1]\"\n        [width]=\"legendWidth\"\n        [activeEntries]=\"activeEntries\"\n        (labelClick)=\"legendLabelClick.emit($event)\"\n        (labelActivate)=\"legendLabelActivate.emit($event)\"\n        (labelDeactivate)=\"legendLabelDeactivate.emit($event)\">\n      </ngx-charts-legend>\n    </div>\n  ",
             changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
@@ -8703,21 +8583,10 @@ var ChartComponent = /** @class */ (function () {
             ]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"],
-            __WEBPACK_IMPORTED_MODULE_2__tooltip__["g" /* TooltipService */]])
+            __WEBPACK_IMPORTED_MODULE_2__tooltip__["b" /* TooltipService */]])
     ], ChartComponent);
     return ChartComponent;
 }());
-
-
-
-/***/ }),
-
-/***/ "./src/common/charts/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__chart_component__ = __webpack_require__("./src/common/charts/chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__chart_component__["a"]; });
 
 
 
@@ -9756,103 +9625,6 @@ var GridPanelComponent = /** @class */ (function () {
     ], GridPanelComponent);
     return GridPanelComponent;
 }());
-
-
-
-/***/ }),
-
-/***/ "./src/common/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__chart_common_module__ = __webpack_require__("./src/common/chart-common.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_0__chart_common_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__legend__ = __webpack_require__("./src/common/legend/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__legend__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "o", function() { return __WEBPACK_IMPORTED_MODULE_1__legend__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "p", function() { return __WEBPACK_IMPORTED_MODULE_1__legend__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_1__legend__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tooltip__ = __webpack_require__("./src/common/tooltip/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "x", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "y", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "z", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "A", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip__["g"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__axes__ = __webpack_require__("./src/common/axes/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "B", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "C", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "D", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "E", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "O", function() { return __WEBPACK_IMPORTED_MODULE_3__axes__["g"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__count__ = __webpack_require__("./src/common/count/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_4__count__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "G", function() { return __WEBPACK_IMPORTED_MODULE_4__count__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "H", function() { return __WEBPACK_IMPORTED_MODULE_4__count__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__timeline__ = __webpack_require__("./src/common/timeline/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "v", function() { return __WEBPACK_IMPORTED_MODULE_5__timeline__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__color_helper__ = __webpack_require__("./src/common/color.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_6__color_helper__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__charts__ = __webpack_require__("./src/common/charts/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_7__charts__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__area_component__ = __webpack_require__("./src/common/area.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_8__area_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__base_chart_component__ = __webpack_require__("./src/common/base-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_9__base_chart_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__circle_component__ = __webpack_require__("./src/common/circle.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_10__circle_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__circle_series_component__ = __webpack_require__("./src/common/circle-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_11__circle_series_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__grid_layout_helper__ = __webpack_require__("./src/common/grid-layout.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "M", function() { return __WEBPACK_IMPORTED_MODULE_12__grid_layout_helper__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "N", function() { return __WEBPACK_IMPORTED_MODULE_12__grid_layout_helper__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__grid_panel_component__ = __webpack_require__("./src/common/grid-panel.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_13__grid_panel_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__grid_panel_series_component__ = __webpack_require__("./src/common/grid-panel-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_14__grid_panel_series_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__svg_linear_gradient_component__ = __webpack_require__("./src/common/svg-linear-gradient.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_15__svg_linear_gradient_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__svg_radial_gradient_component__ = __webpack_require__("./src/common/svg-radial-gradient.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "u", function() { return __WEBPACK_IMPORTED_MODULE_16__svg_radial_gradient_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__tooltip_area_component__ = __webpack_require__("./src/common/tooltip-area.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "w", function() { return __WEBPACK_IMPORTED_MODULE_17__tooltip_area_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__tick_format_helper__ = __webpack_require__("./src/common/tick-format.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "P", function() { return __WEBPACK_IMPORTED_MODULE_18__tick_format_helper__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__trim_label_helper__ = __webpack_require__("./src/common/trim-label.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return __WEBPACK_IMPORTED_MODULE_19__trim_label_helper__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__view_dimensions_helper__ = __webpack_require__("./src/common/view-dimensions.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "F", function() { return __WEBPACK_IMPORTED_MODULE_20__view_dimensions_helper__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__label_helper__ = __webpack_require__("./src/common/label.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "I", function() { return __WEBPACK_IMPORTED_MODULE_21__label_helper__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "J", function() { return __WEBPACK_IMPORTED_MODULE_21__label_helper__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__domain_helper__ = __webpack_require__("./src/common/domain.helper.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "K", function() { return __WEBPACK_IMPORTED_MODULE_22__domain_helper__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "L", function() { return __WEBPACK_IMPORTED_MODULE_22__domain_helper__["b"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -11127,19 +10899,19 @@ var AlignmentTypes;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip_module__ = __webpack_require__("./src/common/tooltip/tooltip.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__tooltip_module__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__tooltip_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tooltip_service__ = __webpack_require__("./src/common/tooltip/tooltip.service.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_1__tooltip_service__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__tooltip_service__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tooltip_component__ = __webpack_require__("./src/common/tooltip/tooltip.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__tooltip_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip_directive__ = __webpack_require__("./src/common/tooltip/tooltip.directive.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_3__tooltip_directive__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_type__ = __webpack_require__("./src/common/tooltip/style.type.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_4__style_type__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__alignment_type__ = __webpack_require__("./src/common/tooltip/alignment.type.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_5__alignment_type__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__show_type__ = __webpack_require__("./src/common/tooltip/show.type.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_6__show_type__["a"]; });
+/* unused harmony namespace reexport */
 
 
 
@@ -11875,7 +11647,7 @@ var TooltipContentComponent = /** @class */ (function () {
     ], TooltipContentComponent.prototype, "cssClasses", null);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('window:resize'),
-        Object(__WEBPACK_IMPORTED_MODULE_1__utils_throttle__["a" /* throttleable */])(100),
+        Object(__WEBPACK_IMPORTED_MODULE_1__utils_throttle__["b" /* throttleable */])(100),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
@@ -12716,20 +12488,6 @@ var ForceDirectedGraphModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/force-directed-graph/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__force_directed_graph_module__ = __webpack_require__("./src/force-directed-graph/force-directed-graph.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__force_directed_graph_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__force_directed_graph_component__ = __webpack_require__("./src/force-directed-graph/force-directed-graph.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__force_directed_graph_component__["a"]; });
-
-
-
-
-/***/ }),
-
 /***/ "./src/gauge/gauge-arc.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13406,29 +13164,6 @@ var GaugeModule = /** @class */ (function () {
     ], GaugeModule);
     return GaugeModule;
 }());
-
-
-
-/***/ }),
-
-/***/ "./src/gauge/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__gauge_module__ = __webpack_require__("./src/gauge/gauge.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__gauge_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__gauge_arc_component__ = __webpack_require__("./src/gauge/gauge-arc.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__gauge_arc_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gauge_axis_component__ = __webpack_require__("./src/gauge/gauge-axis.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__gauge_axis_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gauge_component__ = __webpack_require__("./src/gauge/gauge.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__gauge_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__linear_gauge_component__ = __webpack_require__("./src/gauge/linear-gauge.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__linear_gauge_component__["a"]; });
-
-
-
-
 
 
 
@@ -14375,26 +14110,6 @@ var HeatMapModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/heat-map/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__heat_map_module__ = __webpack_require__("./src/heat-map/heat-map.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__heat_map_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__heat_map_component__ = __webpack_require__("./src/heat-map/heat-map.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__heat_map_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__heat_map_cell_component__ = __webpack_require__("./src/heat-map/heat-map-cell.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__heat_map_cell_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__heat_map_cell_series_component__ = __webpack_require__("./src/heat-map/heat-map-cell-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__heat_map_cell_series_component__["a"]; });
-
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -14402,119 +14117,322 @@ var HeatMapModule = /** @class */ (function () {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngx_charts_module__ = __webpack_require__("./src/ngx-charts.module.ts");
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "NgxChartsModule", function() { return __WEBPACK_IMPORTED_MODULE_0__ngx_charts_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common__ = __webpack_require__("./src/common/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ChartCommonModule", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["g"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AxesModule", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AxisLabelComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "XAxisComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["B"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "XAxisTicksComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["C"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "YAxisComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["D"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "YAxisTicksComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["E"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "reduceTicks", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["O"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ColorHelper", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["k"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["h"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BaseChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CircleComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["i"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CircleSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["j"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "gridSize", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["N"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "gridLayout", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["M"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GridPanelComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["m"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GridPanelSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["n"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SvgLinearGradientComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["t"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SvgRadialGradientComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["u"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipArea", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["w"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "tickFormat", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["P"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "trimLabel", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["Q"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "calculateViewDimensions", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["F"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatLabel", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["J"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "escapeLabel", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["I"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getUniqueXDomainValues", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["L"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getScaleType", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["K"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LegendComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["o"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ScaleLegendComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["q"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LegendEntryComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["p"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AdvancedLegendComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipModule", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["z"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipService", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["A"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipContentComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["x"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipDirective", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["y"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "StyleTypes", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["s"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AlignmentTypes", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ShowTypes", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["r"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CountUpDirective", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["l"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "count", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["G"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "decimalChecker", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["H"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Timeline", function() { return __WEBPACK_IMPORTED_MODULE_1__common__["v"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__area_chart__ = __webpack_require__("./src/area-chart/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartModule", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartNormalizedComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartStackedComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart__["e"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bar_chart__ = __webpack_require__("./src/bar-chart/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarChartModule", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontalComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontal2DComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontalNormalizedComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontalStackedComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SeriesHorizontal", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["m"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarLabelComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["g"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVerticalComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["i"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVertical2DComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["h"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVerticalNormalizedComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["j"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVerticalStackedComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["k"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "D0Types", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["l"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SeriesVerticalComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__bar_chart__["n"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bubble_chart__ = __webpack_require__("./src/bubble-chart/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BubbleChartModule", function() { return __WEBPACK_IMPORTED_MODULE_4__bubble_chart__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BubbleChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_4__bubble_chart__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getDomain", function() { return __WEBPACK_IMPORTED_MODULE_4__bubble_chart__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getScale", function() { return __WEBPACK_IMPORTED_MODULE_4__bubble_chart__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BubbleSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_4__bubble_chart__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__force_directed_graph__ = __webpack_require__("./src/force-directed-graph/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ForceDirectedGraphModule", function() { return __WEBPACK_IMPORTED_MODULE_5__force_directed_graph__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ForceDirectedGraphComponent", function() { return __WEBPACK_IMPORTED_MODULE_5__force_directed_graph__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__heat_map__ = __webpack_require__("./src/heat-map/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatMapModule", function() { return __WEBPACK_IMPORTED_MODULE_6__heat_map__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatMapComponent", function() { return __WEBPACK_IMPORTED_MODULE_6__heat_map__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatMapCellComponent", function() { return __WEBPACK_IMPORTED_MODULE_6__heat_map__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatCellSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_6__heat_map__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__line_chart__ = __webpack_require__("./src/line-chart/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineChartModule", function() { return __WEBPACK_IMPORTED_MODULE_7__line_chart__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_7__line_chart__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineComponent", function() { return __WEBPACK_IMPORTED_MODULE_7__line_chart__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_7__line_chart__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__polar_chart__ = __webpack_require__("./src/polar-chart/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PolarChartModule", function() { return __WEBPACK_IMPORTED_MODULE_8__polar_chart__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PolarChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_8__polar_chart__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PolarSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_8__polar_chart__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__number_card__ = __webpack_require__("./src/number-card/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "NumberCardModule", function() { return __WEBPACK_IMPORTED_MODULE_9__number_card__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "NumberCardComponent", function() { return __WEBPACK_IMPORTED_MODULE_9__number_card__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CardComponent", function() { return __WEBPACK_IMPORTED_MODULE_9__number_card__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CardSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_9__number_card__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pie_chart__ = __webpack_require__("./src/pie-chart/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieChartModule", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AdvancedPieChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieArcComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieGridComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieGridSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["h"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieLabelComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__pie_chart__["g"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__tree_map__ = __webpack_require__("./src/tree-map/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapModule", function() { return __WEBPACK_IMPORTED_MODULE_11__tree_map__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapComponent", function() { return __WEBPACK_IMPORTED_MODULE_11__tree_map__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapCellComponent", function() { return __WEBPACK_IMPORTED_MODULE_11__tree_map__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapCellSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_11__tree_map__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gauge__ = __webpack_require__("./src/gauge/index.ts");
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeModule", function() { return __WEBPACK_IMPORTED_MODULE_12__gauge__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeArcComponent", function() { return __WEBPACK_IMPORTED_MODULE_12__gauge__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeAxisComponent", function() { return __WEBPACK_IMPORTED_MODULE_12__gauge__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeComponent", function() { return __WEBPACK_IMPORTED_MODULE_12__gauge__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LinearGaugeComponent", function() { return __WEBPACK_IMPORTED_MODULE_12__gauge__["e"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__area_chart_area_chart_module__ = __webpack_require__("./src/area-chart/area-chart.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartModule", function() { return __WEBPACK_IMPORTED_MODULE_1__area_chart_area_chart_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__area_chart_area_chart_component__ = __webpack_require__("./src/area-chart/area-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__area_chart_area_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__area_chart_area_chart_normalized_component__ = __webpack_require__("./src/area-chart/area-chart-normalized.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartNormalizedComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__area_chart_area_chart_normalized_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__area_chart_area_chart_stacked_component__ = __webpack_require__("./src/area-chart/area-chart-stacked.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaChartStackedComponent", function() { return __WEBPACK_IMPORTED_MODULE_4__area_chart_area_chart_stacked_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__area_chart_area_series_component__ = __webpack_require__("./src/area-chart/area-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_5__area_chart_area_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bar_chart_bar_chart_module__ = __webpack_require__("./src/bar-chart/bar-chart.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarChartModule", function() { return __WEBPACK_IMPORTED_MODULE_6__bar_chart_bar_chart_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bar_chart_bar_component__ = __webpack_require__("./src/bar-chart/bar.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarComponent", function() { return __WEBPACK_IMPORTED_MODULE_7__bar_chart_bar_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bar_chart_bar_horizontal_component__ = __webpack_require__("./src/bar-chart/bar-horizontal.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontalComponent", function() { return __WEBPACK_IMPORTED_MODULE_8__bar_chart_bar_horizontal_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bar_chart_bar_horizontal_2d_component__ = __webpack_require__("./src/bar-chart/bar-horizontal-2d.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontal2DComponent", function() { return __WEBPACK_IMPORTED_MODULE_9__bar_chart_bar_horizontal_2d_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bar_chart_bar_horizontal_normalized_component__ = __webpack_require__("./src/bar-chart/bar-horizontal-normalized.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontalNormalizedComponent", function() { return __WEBPACK_IMPORTED_MODULE_10__bar_chart_bar_horizontal_normalized_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bar_chart_bar_horizontal_stacked_component__ = __webpack_require__("./src/bar-chart/bar-horizontal-stacked.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarHorizontalStackedComponent", function() { return __WEBPACK_IMPORTED_MODULE_11__bar_chart_bar_horizontal_stacked_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bar_chart_series_horizontal_component__ = __webpack_require__("./src/bar-chart/series-horizontal.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SeriesHorizontal", function() { return __WEBPACK_IMPORTED_MODULE_12__bar_chart_series_horizontal_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bar_chart_bar_label_component__ = __webpack_require__("./src/bar-chart/bar-label.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarLabelComponent", function() { return __WEBPACK_IMPORTED_MODULE_13__bar_chart_bar_label_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bar_chart_bar_vertical_component__ = __webpack_require__("./src/bar-chart/bar-vertical.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVerticalComponent", function() { return __WEBPACK_IMPORTED_MODULE_14__bar_chart_bar_vertical_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__bar_chart_bar_vertical_2d_component__ = __webpack_require__("./src/bar-chart/bar-vertical-2d.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVertical2DComponent", function() { return __WEBPACK_IMPORTED_MODULE_15__bar_chart_bar_vertical_2d_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__bar_chart_bar_vertical_normalized_component__ = __webpack_require__("./src/bar-chart/bar-vertical-normalized.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVerticalNormalizedComponent", function() { return __WEBPACK_IMPORTED_MODULE_16__bar_chart_bar_vertical_normalized_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__bar_chart_bar_vertical_stacked_component__ = __webpack_require__("./src/bar-chart/bar-vertical-stacked.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BarVerticalStackedComponent", function() { return __WEBPACK_IMPORTED_MODULE_17__bar_chart_bar_vertical_stacked_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__bar_chart_series_vertical_component__ = __webpack_require__("./src/bar-chart/series-vertical.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "D0Types", function() { return __WEBPACK_IMPORTED_MODULE_18__bar_chart_series_vertical_component__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SeriesVerticalComponent", function() { return __WEBPACK_IMPORTED_MODULE_18__bar_chart_series_vertical_component__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bubble_chart_bubble_chart_module__ = __webpack_require__("./src/bubble-chart/bubble-chart.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BubbleChartModule", function() { return __WEBPACK_IMPORTED_MODULE_19__bubble_chart_bubble_chart_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bubble_chart_bubble_chart_component__ = __webpack_require__("./src/bubble-chart/bubble-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BubbleChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_20__bubble_chart_bubble_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bubble_chart_bubble_chart_utils__ = __webpack_require__("./src/bubble-chart/bubble-chart.utils.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getDomain", function() { return __WEBPACK_IMPORTED_MODULE_21__bubble_chart_bubble_chart_utils__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getScale", function() { return __WEBPACK_IMPORTED_MODULE_21__bubble_chart_bubble_chart_utils__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bubble_chart_bubble_series_component__ = __webpack_require__("./src/bubble-chart/bubble-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BubbleSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_22__bubble_chart_bubble_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_chart_common_module__ = __webpack_require__("./src/common/chart-common.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ChartCommonModule", function() { return __WEBPACK_IMPORTED_MODULE_23__common_chart_common_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__common_legend_legend_component__ = __webpack_require__("./src/common/legend/legend.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LegendComponent", function() { return __WEBPACK_IMPORTED_MODULE_24__common_legend_legend_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__common_legend_scale_legend_component__ = __webpack_require__("./src/common/legend/scale-legend.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ScaleLegendComponent", function() { return __WEBPACK_IMPORTED_MODULE_25__common_legend_scale_legend_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__common_legend_legend_entry_component__ = __webpack_require__("./src/common/legend/legend-entry.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LegendEntryComponent", function() { return __WEBPACK_IMPORTED_MODULE_26__common_legend_legend_entry_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__common_legend_advanced_legend_component__ = __webpack_require__("./src/common/legend/advanced-legend.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AdvancedLegendComponent", function() { return __WEBPACK_IMPORTED_MODULE_27__common_legend_advanced_legend_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__common_tooltip_tooltip_module__ = __webpack_require__("./src/common/tooltip/tooltip.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipModule", function() { return __WEBPACK_IMPORTED_MODULE_28__common_tooltip_tooltip_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__common_tooltip_tooltip_service__ = __webpack_require__("./src/common/tooltip/tooltip.service.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipService", function() { return __WEBPACK_IMPORTED_MODULE_29__common_tooltip_tooltip_service__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__common_tooltip_tooltip_component__ = __webpack_require__("./src/common/tooltip/tooltip.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipContentComponent", function() { return __WEBPACK_IMPORTED_MODULE_30__common_tooltip_tooltip_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__common_tooltip_tooltip_directive__ = __webpack_require__("./src/common/tooltip/tooltip.directive.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipDirective", function() { return __WEBPACK_IMPORTED_MODULE_31__common_tooltip_tooltip_directive__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__common_tooltip_style_type__ = __webpack_require__("./src/common/tooltip/style.type.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "StyleTypes", function() { return __WEBPACK_IMPORTED_MODULE_32__common_tooltip_style_type__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__common_tooltip_alignment_type__ = __webpack_require__("./src/common/tooltip/alignment.type.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AlignmentTypes", function() { return __WEBPACK_IMPORTED_MODULE_33__common_tooltip_alignment_type__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__common_tooltip_show_type__ = __webpack_require__("./src/common/tooltip/show.type.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ShowTypes", function() { return __WEBPACK_IMPORTED_MODULE_34__common_tooltip_show_type__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__common_axes_axes_module__ = __webpack_require__("./src/common/axes/axes.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AxesModule", function() { return __WEBPACK_IMPORTED_MODULE_35__common_axes_axes_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__common_axes_axis_label_component__ = __webpack_require__("./src/common/axes/axis-label.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AxisLabelComponent", function() { return __WEBPACK_IMPORTED_MODULE_36__common_axes_axis_label_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__common_axes_x_axis_component__ = __webpack_require__("./src/common/axes/x-axis.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "XAxisComponent", function() { return __WEBPACK_IMPORTED_MODULE_37__common_axes_x_axis_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__common_axes_x_axis_ticks_component__ = __webpack_require__("./src/common/axes/x-axis-ticks.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "XAxisTicksComponent", function() { return __WEBPACK_IMPORTED_MODULE_38__common_axes_x_axis_ticks_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__common_axes_y_axis_component__ = __webpack_require__("./src/common/axes/y-axis.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "YAxisComponent", function() { return __WEBPACK_IMPORTED_MODULE_39__common_axes_y_axis_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__common_axes_y_axis_ticks_component__ = __webpack_require__("./src/common/axes/y-axis-ticks.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "YAxisTicksComponent", function() { return __WEBPACK_IMPORTED_MODULE_40__common_axes_y_axis_ticks_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__common_axes_ticks_helper__ = __webpack_require__("./src/common/axes/ticks.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "reduceTicks", function() { return __WEBPACK_IMPORTED_MODULE_41__common_axes_ticks_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__common_count_count_directive__ = __webpack_require__("./src/common/count/count.directive.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CountUpDirective", function() { return __WEBPACK_IMPORTED_MODULE_42__common_count_count_directive__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__common_count_count_helper__ = __webpack_require__("./src/common/count/count.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "count", function() { return __WEBPACK_IMPORTED_MODULE_43__common_count_count_helper__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "decimalChecker", function() { return __WEBPACK_IMPORTED_MODULE_43__common_count_count_helper__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__common_timeline_timeline_component__ = __webpack_require__("./src/common/timeline/timeline.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Timeline", function() { return __WEBPACK_IMPORTED_MODULE_44__common_timeline_timeline_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__common_color_helper__ = __webpack_require__("./src/common/color.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ColorHelper", function() { return __WEBPACK_IMPORTED_MODULE_45__common_color_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__common_charts_chart_component__ = __webpack_require__("./src/common/charts/chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_46__common_charts_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__common_area_component__ = __webpack_require__("./src/common/area.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AreaComponent", function() { return __WEBPACK_IMPORTED_MODULE_47__common_area_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__common_base_chart_component__ = __webpack_require__("./src/common/base-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "BaseChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_48__common_base_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__common_circle_component__ = __webpack_require__("./src/common/circle.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CircleComponent", function() { return __WEBPACK_IMPORTED_MODULE_49__common_circle_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__common_circle_series_component__ = __webpack_require__("./src/common/circle-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CircleSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_50__common_circle_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__common_grid_layout_helper__ = __webpack_require__("./src/common/grid-layout.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "gridSize", function() { return __WEBPACK_IMPORTED_MODULE_51__common_grid_layout_helper__["b"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "gridLayout", function() { return __WEBPACK_IMPORTED_MODULE_51__common_grid_layout_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__common_grid_panel_component__ = __webpack_require__("./src/common/grid-panel.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GridPanelComponent", function() { return __WEBPACK_IMPORTED_MODULE_52__common_grid_panel_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__common_grid_panel_series_component__ = __webpack_require__("./src/common/grid-panel-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GridPanelSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_53__common_grid_panel_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__common_svg_linear_gradient_component__ = __webpack_require__("./src/common/svg-linear-gradient.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SvgLinearGradientComponent", function() { return __WEBPACK_IMPORTED_MODULE_54__common_svg_linear_gradient_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__common_svg_radial_gradient_component__ = __webpack_require__("./src/common/svg-radial-gradient.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "SvgRadialGradientComponent", function() { return __WEBPACK_IMPORTED_MODULE_55__common_svg_radial_gradient_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__common_tooltip_area_component__ = __webpack_require__("./src/common/tooltip-area.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TooltipArea", function() { return __WEBPACK_IMPORTED_MODULE_56__common_tooltip_area_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__common_tick_format_helper__ = __webpack_require__("./src/common/tick-format.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "tickFormat", function() { return __WEBPACK_IMPORTED_MODULE_57__common_tick_format_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__common_trim_label_helper__ = __webpack_require__("./src/common/trim-label.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "trimLabel", function() { return __WEBPACK_IMPORTED_MODULE_58__common_trim_label_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__common_view_dimensions_helper__ = __webpack_require__("./src/common/view-dimensions.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "calculateViewDimensions", function() { return __WEBPACK_IMPORTED_MODULE_59__common_view_dimensions_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__common_label_helper__ = __webpack_require__("./src/common/label.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatLabel", function() { return __WEBPACK_IMPORTED_MODULE_60__common_label_helper__["b"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "escapeLabel", function() { return __WEBPACK_IMPORTED_MODULE_60__common_label_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__common_domain_helper__ = __webpack_require__("./src/common/domain.helper.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getUniqueXDomainValues", function() { return __WEBPACK_IMPORTED_MODULE_61__common_domain_helper__["b"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getScaleType", function() { return __WEBPACK_IMPORTED_MODULE_61__common_domain_helper__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__gauge_gauge_module__ = __webpack_require__("./src/gauge/gauge.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeModule", function() { return __WEBPACK_IMPORTED_MODULE_62__gauge_gauge_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__gauge_gauge_arc_component__ = __webpack_require__("./src/gauge/gauge-arc.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeArcComponent", function() { return __WEBPACK_IMPORTED_MODULE_63__gauge_gauge_arc_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__gauge_gauge_axis_component__ = __webpack_require__("./src/gauge/gauge-axis.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeAxisComponent", function() { return __WEBPACK_IMPORTED_MODULE_64__gauge_gauge_axis_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__gauge_gauge_component__ = __webpack_require__("./src/gauge/gauge.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "GaugeComponent", function() { return __WEBPACK_IMPORTED_MODULE_65__gauge_gauge_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__gauge_linear_gauge_component__ = __webpack_require__("./src/gauge/linear-gauge.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LinearGaugeComponent", function() { return __WEBPACK_IMPORTED_MODULE_66__gauge_linear_gauge_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__heat_map_heat_map_module__ = __webpack_require__("./src/heat-map/heat-map.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatMapModule", function() { return __WEBPACK_IMPORTED_MODULE_67__heat_map_heat_map_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__heat_map_heat_map_component__ = __webpack_require__("./src/heat-map/heat-map.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatMapComponent", function() { return __WEBPACK_IMPORTED_MODULE_68__heat_map_heat_map_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__heat_map_heat_map_cell_component__ = __webpack_require__("./src/heat-map/heat-map-cell.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatMapCellComponent", function() { return __WEBPACK_IMPORTED_MODULE_69__heat_map_heat_map_cell_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__heat_map_heat_map_cell_series_component__ = __webpack_require__("./src/heat-map/heat-map-cell-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HeatCellSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_70__heat_map_heat_map_cell_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__line_chart_line_chart_module__ = __webpack_require__("./src/line-chart/line-chart.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineChartModule", function() { return __WEBPACK_IMPORTED_MODULE_71__line_chart_line_chart_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__line_chart_line_chart_component__ = __webpack_require__("./src/line-chart/line-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_72__line_chart_line_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__line_chart_line_component__ = __webpack_require__("./src/line-chart/line.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineComponent", function() { return __WEBPACK_IMPORTED_MODULE_73__line_chart_line_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__line_chart_line_series_component__ = __webpack_require__("./src/line-chart/line-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "LineSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_74__line_chart_line_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__force_directed_graph_force_directed_graph_module__ = __webpack_require__("./src/force-directed-graph/force-directed-graph.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ForceDirectedGraphModule", function() { return __WEBPACK_IMPORTED_MODULE_75__force_directed_graph_force_directed_graph_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__force_directed_graph_force_directed_graph_component__ = __webpack_require__("./src/force-directed-graph/force-directed-graph.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ForceDirectedGraphComponent", function() { return __WEBPACK_IMPORTED_MODULE_76__force_directed_graph_force_directed_graph_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__number_card_number_card_module__ = __webpack_require__("./src/number-card/number-card.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "NumberCardModule", function() { return __WEBPACK_IMPORTED_MODULE_77__number_card_number_card_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__number_card_number_card_component__ = __webpack_require__("./src/number-card/number-card.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "NumberCardComponent", function() { return __WEBPACK_IMPORTED_MODULE_78__number_card_number_card_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__number_card_card_component__ = __webpack_require__("./src/number-card/card.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CardComponent", function() { return __WEBPACK_IMPORTED_MODULE_79__number_card_card_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__number_card_card_series_component__ = __webpack_require__("./src/number-card/card-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "CardSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_80__number_card_card_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__pie_chart_pie_chart_module__ = __webpack_require__("./src/pie-chart/pie-chart.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieChartModule", function() { return __WEBPACK_IMPORTED_MODULE_81__pie_chart_pie_chart_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__pie_chart_advanced_pie_chart_component__ = __webpack_require__("./src/pie-chart/advanced-pie-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "AdvancedPieChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_82__pie_chart_advanced_pie_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__pie_chart_pie_chart_component__ = __webpack_require__("./src/pie-chart/pie-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_83__pie_chart_pie_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__pie_chart_pie_arc_component__ = __webpack_require__("./src/pie-chart/pie-arc.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieArcComponent", function() { return __WEBPACK_IMPORTED_MODULE_84__pie_chart_pie_arc_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__pie_chart_pie_grid_component__ = __webpack_require__("./src/pie-chart/pie-grid.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieGridComponent", function() { return __WEBPACK_IMPORTED_MODULE_85__pie_chart_pie_grid_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__pie_chart_pie_grid_series_component__ = __webpack_require__("./src/pie-chart/pie-grid-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieGridSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_86__pie_chart_pie_grid_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__pie_chart_pie_series_component__ = __webpack_require__("./src/pie-chart/pie-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_87__pie_chart_pie_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__pie_chart_pie_label_component__ = __webpack_require__("./src/pie-chart/pie-label.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PieLabelComponent", function() { return __WEBPACK_IMPORTED_MODULE_88__pie_chart_pie_label_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__polar_chart_polar_chart_module__ = __webpack_require__("./src/polar-chart/polar-chart.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PolarChartModule", function() { return __WEBPACK_IMPORTED_MODULE_89__polar_chart_polar_chart_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__polar_chart_polar_chart_component__ = __webpack_require__("./src/polar-chart/polar-chart.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PolarChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_90__polar_chart_polar_chart_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__polar_chart_polar_series_component__ = __webpack_require__("./src/polar-chart/polar-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PolarSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_91__polar_chart_polar_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__tree_map_tree_map_module__ = __webpack_require__("./src/tree-map/tree-map.module.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapModule", function() { return __WEBPACK_IMPORTED_MODULE_92__tree_map_tree_map_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__tree_map_tree_map_component__ = __webpack_require__("./src/tree-map/tree-map.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapComponent", function() { return __WEBPACK_IMPORTED_MODULE_93__tree_map_tree_map_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__tree_map_tree_map_cell_component__ = __webpack_require__("./src/tree-map/tree-map-cell.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapCellComponent", function() { return __WEBPACK_IMPORTED_MODULE_94__tree_map_tree_map_cell_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__tree_map_tree_map_cell_series_component__ = __webpack_require__("./src/tree-map/tree-map-cell-series.component.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TreeMapCellSeriesComponent", function() { return __WEBPACK_IMPORTED_MODULE_95__tree_map_tree_map_cell_series_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__utils_id__ = __webpack_require__("./src/utils/id.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "id", function() { return __WEBPACK_IMPORTED_MODULE_96__utils_id__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__utils_color_sets__ = __webpack_require__("./src/utils/color-sets.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "colorSets", function() { return __WEBPACK_IMPORTED_MODULE_97__utils_color_sets__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__utils_sort__ = __webpack_require__("./src/utils/sort.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sortLinear", function() { return __WEBPACK_IMPORTED_MODULE_98__utils_sort__["c"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sortByDomain", function() { return __WEBPACK_IMPORTED_MODULE_98__utils_sort__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sortByTime", function() { return __WEBPACK_IMPORTED_MODULE_98__utils_sort__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__utils_throttle__ = __webpack_require__("./src/utils/throttle.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "throttle", function() { return __WEBPACK_IMPORTED_MODULE_99__utils_throttle__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "throttleable", function() { return __WEBPACK_IMPORTED_MODULE_99__utils_throttle__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__utils_color_utils__ = __webpack_require__("./src/utils/color-utils.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hexToRgb", function() { return __WEBPACK_IMPORTED_MODULE_100__utils_color_utils__["a"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "invertColor", function() { return __WEBPACK_IMPORTED_MODULE_100__utils_color_utils__["b"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "shadeRGBColor", function() { return __WEBPACK_IMPORTED_MODULE_100__utils_color_utils__["c"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__utils_visibility_observer__ = __webpack_require__("./src/utils/visibility-observer.ts");
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "VisibilityObserver", function() { return __WEBPACK_IMPORTED_MODULE_101__utils_visibility_observer__["a"]; });
+// export * from './ngx-charts.module';
+// export * from './common';
+// export * from './area-chart';
+// export * from './bar-chart';
+// export * from './bubble-chart';
+// export * from './force-directed-graph';
+// export * from './heat-map';
+// export * from './line-chart';
+// export * from './polar-chart';
+// export * from './number-card';
+// export * from './pie-chart';
+// export * from './tree-map';
+// export * from './gauge';
+// export * from './models/chart-data.model';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -14537,13 +14455,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__line_chart_module__ = __webpack_require__("./src/line-chart/line-chart.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__line_chart_module__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__line_chart_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__line_chart_component__ = __webpack_require__("./src/line-chart/line-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__line_chart_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__line_component__ = __webpack_require__("./src/line-chart/line.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__line_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__line_series_component__ = __webpack_require__("./src/line-chart/line-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__line_series_component__["a"]; });
+/* unused harmony namespace reexport */
 
 
 
@@ -15335,6 +15253,7 @@ var LineComponent = /** @class */ (function () {
     }
     LineComponent.prototype.ngOnChanges = function (changes) {
         if (!this.initialized) {
+            console.log("MIKE: INITIALIZING CHARTS");
             this.initialized = true;
             this.initialPath = this.path;
         }
@@ -15546,7 +15465,7 @@ var CardSeriesComponent = /** @class */ (function () {
                 height: d.height - yPadding,
                 color: color,
                 bandColor: _this.bandColor || valueColor,
-                textColor: _this.textColor || Object(__WEBPACK_IMPORTED_MODULE_1__utils_color_utils__["a" /* invertColor */])(color),
+                textColor: _this.textColor || Object(__WEBPACK_IMPORTED_MODULE_1__utils_color_utils__["b" /* invertColor */])(color),
                 label: label,
                 data: d.data,
                 tooltipText: label + ": " + value
@@ -15841,26 +15760,6 @@ var CardComponent = /** @class */ (function () {
     ], CardComponent);
     return CardComponent;
 }());
-
-
-
-/***/ }),
-
-/***/ "./src/number-card/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__number_card_module__ = __webpack_require__("./src/number-card/number-card.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__number_card_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__number_card_component__ = __webpack_require__("./src/number-card/number-card.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__number_card_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_component__ = __webpack_require__("./src/number-card/card.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__card_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__card_series_component__ = __webpack_require__("./src/number-card/card-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__card_series_component__["a"]; });
-
-
-
 
 
 
@@ -16233,21 +16132,21 @@ var AdvancedPieChartComponent = /** @class */ (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pie_chart_module__ = __webpack_require__("./src/pie-chart/pie-chart.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__pie_chart_module__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__pie_chart_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__advanced_pie_chart_component__ = __webpack_require__("./src/pie-chart/advanced-pie-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__advanced_pie_chart_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pie_chart_component__ = __webpack_require__("./src/pie-chart/pie-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__pie_chart_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pie_arc_component__ = __webpack_require__("./src/pie-chart/pie-arc.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__pie_arc_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pie_grid_component__ = __webpack_require__("./src/pie-chart/pie-grid.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__pie_grid_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pie_grid_series_component__ = __webpack_require__("./src/pie-chart/pie-grid-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__pie_grid_series_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pie_series_component__ = __webpack_require__("./src/pie-chart/pie-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_6__pie_series_component__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pie_label_component__ = __webpack_require__("./src/pie-chart/pie-label.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_7__pie_label_component__["a"]; });
+/* unused harmony namespace reexport */
 
 
 
@@ -17549,23 +17448,6 @@ var PieSeriesComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/polar-chart/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polar_chart_module__ = __webpack_require__("./src/polar-chart/polar-chart.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__polar_chart_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__polar_chart_component__ = __webpack_require__("./src/polar-chart/polar-chart.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__polar_chart_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__polar_series_component__ = __webpack_require__("./src/polar-chart/polar-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__polar_series_component__["a"]; });
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/polar-chart/polar-chart.component.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18098,7 +17980,7 @@ var PolarChartModule = /** @class */ (function () {
     }
     PolarChartModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__common_chart_common_module__["a" /* ChartCommonModule */], __WEBPACK_IMPORTED_MODULE_4__pie_chart___["d" /* PieChartModule */], __WEBPACK_IMPORTED_MODULE_5__line_chart___["b" /* LineChartModule */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__common_chart_common_module__["a" /* ChartCommonModule */], __WEBPACK_IMPORTED_MODULE_4__pie_chart___["a" /* PieChartModule */], __WEBPACK_IMPORTED_MODULE_5__line_chart___["a" /* LineChartModule */]],
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__polar_chart_component__["a" /* PolarChartComponent */],
                 __WEBPACK_IMPORTED_MODULE_3__polar_series_component__["a" /* PolarSeriesComponent */]
@@ -18354,26 +18236,6 @@ ngxChartsPolyfills();
 
 /***/ }),
 
-/***/ "./src/tree-map/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tree_map_module__ = __webpack_require__("./src/tree-map/tree-map.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__tree_map_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tree_map_component__ = __webpack_require__("./src/tree-map/tree-map.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__tree_map_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tree_map_cell_component__ = __webpack_require__("./src/tree-map/tree-map-cell.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__tree_map_cell_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tree_map_cell_series_component__ = __webpack_require__("./src/tree-map/tree-map-cell-series.component.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__tree_map_cell_series_component__["a"]; });
-
-
-
-
-
-
-/***/ }),
-
 /***/ "./src/tree-map/tree-map-cell-series.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -18559,7 +18421,7 @@ var TreeMapCellComponent = /** @class */ (function () {
         this.animateToCurrentForm();
     };
     TreeMapCellComponent.prototype.getTextColor = function () {
-        return Object(__WEBPACK_IMPORTED_MODULE_2__utils_color_utils__["a" /* invertColor */])(this.fill);
+        return Object(__WEBPACK_IMPORTED_MODULE_2__utils_color_utils__["b" /* invertColor */])(this.fill);
     };
     TreeMapCellComponent.prototype.animateToCurrentForm = function () {
         var node = Object(__WEBPACK_IMPORTED_MODULE_1_d3_selection__["select"])(this.element).select('.cell');
@@ -19002,9 +18864,9 @@ var colorSets = [
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export hexToRgb */
-/* harmony export (immutable) */ __webpack_exports__["a"] = invertColor;
-/* unused harmony export shadeRGBColor */
+/* harmony export (immutable) */ __webpack_exports__["a"] = hexToRgb;
+/* harmony export (immutable) */ __webpack_exports__["b"] = invertColor;
+/* harmony export (immutable) */ __webpack_exports__["c"] = shadeRGBColor;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_color__ = __webpack_require__("d3-color");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_color___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_d3_color__);
 
@@ -19181,8 +19043,8 @@ function sortByTime(data, property, direction) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export throttle */
-/* harmony export (immutable) */ __webpack_exports__["a"] = throttleable;
+/* harmony export (immutable) */ __webpack_exports__["a"] = throttle;
+/* harmony export (immutable) */ __webpack_exports__["b"] = throttleable;
 /**
  * Throttle a function
  *

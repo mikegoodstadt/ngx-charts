@@ -20,6 +20,7 @@ var LineComponent = /** @class */ (function () {
     }
     LineComponent.prototype.ngOnChanges = function (changes) {
         if (!this.initialized) {
+            console.log("MIKE: INITIALIZING CHARTS");
             this.initialized = true;
             this.initialPath = this.path;
         }
