@@ -35,7 +35,7 @@ var BaseChartComponent = /** @class */ (function () {
         }
     };
     BaseChartComponent.prototype.ngOnChanges = function (changes) {
-        console.log('base-chart results: ', this.results);
+        console.log('MIKE base-chart results: ', this.results);
         this.update();
     };
     BaseChartComponent.prototype.update = function () {

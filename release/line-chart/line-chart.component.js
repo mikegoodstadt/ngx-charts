@@ -57,7 +57,7 @@ var LineChartComponent = /** @class */ (function (_super) {
         return _this;
     }
     LineChartComponent.prototype.update = function () {
-        console.log('In line chart: ', this.results);
+        console.log('MIKE line_chart component update: ', this.results);
         _super.prototype.update.call(this);
         this.dims = calculateViewDimensions({
             width: this.width,

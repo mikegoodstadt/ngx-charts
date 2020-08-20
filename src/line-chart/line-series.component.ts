@@ -90,7 +90,7 @@ export class LineSeriesComponent implements OnChanges {
     this.updateGradients();
 
     const data = this.sortData(this.data.series);
-    console.log('MIKE data', data);
+    console.log('MIKE line-series data', data);
 
     const lineGen = this.getLineGenerator();
     this.path = lineGen(data) || '';

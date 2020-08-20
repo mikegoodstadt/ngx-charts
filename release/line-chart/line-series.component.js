@@ -22,7 +22,7 @@ var LineSeriesComponent = /** @class */ (function () {
     LineSeriesComponent.prototype.update = function () {
         this.updateGradients();
         var data = this.sortData(this.data.series);
-        console.log('MIKE data', data);
+        console.log('MIKE line-series data', data);
         var lineGen = this.getLineGenerator();
         this.path = lineGen(data) || '';
         var areaGen = this.getAreaGenerator();

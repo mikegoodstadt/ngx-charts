@@ -57,7 +57,7 @@ export class BaseChartComponent implements OnChanges, AfterViewInit, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('base-chart results: ', this.results);
+    console.log('MIKE base-chart results: ', this.results);
     this.update();
   }
 

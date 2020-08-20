@@ -8203,7 +8203,7 @@ var BaseChartComponent = /** @class */ (function () {
         }
     };
     BaseChartComponent.prototype.ngOnChanges = function (changes) {
-        console.log('base-chart results: ', this.results);
+        console.log('MIKE base-chart results: ', this.results);
         this.update();
     };
     BaseChartComponent.prototype.update = function () {
@@ -14547,7 +14547,7 @@ var LineChartComponent = /** @class */ (function (_super) {
         return _this;
     }
     LineChartComponent.prototype.update = function () {
-        console.log('In line chart: ', this.results);
+        console.log('MIKE line_chart component update: ', this.results);
         _super.prototype.update.call(this);
         this.dims = Object(__WEBPACK_IMPORTED_MODULE_4__common_view_dimensions_helper__["a" /* calculateViewDimensions */])({
             width: this.width,
@@ -15046,7 +15046,7 @@ var LineSeriesComponent = /** @class */ (function () {
     LineSeriesComponent.prototype.update = function () {
         this.updateGradients();
         var data = this.sortData(this.data.series);
-        console.log('MIKE data', data);
+        console.log('MIKE line-series data', data);
         var lineGen = this.getLineGenerator();
         this.path = lineGen(data) || '';
         var areaGen = this.getAreaGenerator();
@@ -15253,7 +15253,7 @@ var LineComponent = /** @class */ (function () {
     }
     LineComponent.prototype.ngOnChanges = function (changes) {
         if (!this.initialized) {
-            console.log("MIKE: INITIALIZING CHARTS");
+            console.log('MIKE line-comopnent data', this.data);
             this.initialized = true;
             this.initialPath = this.path;
         }
