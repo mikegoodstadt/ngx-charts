@@ -69,7 +69,7 @@ export class LineSeriesComponent implements OnChanges {
   @Input() activeEntries: any[];
   @Input() rangeFillOpacity: number;
   @Input() hasRange: boolean;
-  @Input() animations: boolean = true;
+  @Input() animations: boolean = false;
 
   path: string;
   outerPath: string;
@@ -90,6 +90,7 @@ export class LineSeriesComponent implements OnChanges {
     this.updateGradients();
 
     const data = this.sortData(this.data.series);
+    console.log('MIKE data', data);
 
     const lineGen = this.getLineGenerator();
     this.path = lineGen(data) || '';

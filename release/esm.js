@@ -11123,6 +11123,7 @@ var LineChartComponent = /** @class */ (function (_super) {
         return _this;
     }
     LineChartComponent.prototype.update = function () {
+        console.log('In line chart: ', this.results);
         _super.prototype.update.call(this);
         this.dims = calculateViewDimensions({
             width: this.width,
@@ -11537,14 +11538,16 @@ var LineChartComponent = /** @class */ (function (_super) {
 
 var LineSeriesComponent = /** @class */ (function () {
     function LineSeriesComponent() {
-        this.animations = true;
+        this.animations = false;
     }
     LineSeriesComponent.prototype.ngOnChanges = function (changes) {
+        console.log(this.data);
         this.update();
     };
     LineSeriesComponent.prototype.update = function () {
         this.updateGradients();
         var data = this.sortData(this.data.series);
+        console.log('MIKE data', data);
         var lineGen = this.getLineGenerator();
         this.path = lineGen(data) || '';
         var areaGen = this.getAreaGenerator();
