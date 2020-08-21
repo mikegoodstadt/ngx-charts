@@ -84,6 +84,7 @@ export class LineSeriesComponent implements OnChanges {
   }
 
   update(): void {
+    console.log('LineSeries Results', this.data);
     this.updateGradients();
 
     const data = this.sortData(this.data.series);
