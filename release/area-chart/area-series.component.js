@@ -158,7 +158,7 @@ var AreaSeriesComponent = /** @class */ (function () {
     AreaSeriesComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-area-series]',
-            template: "\n    <svg:g ngx-charts-area\n      class=\"area-series\"\n      ng-attr-[data]=\"{{data}}\"\n      ng-attr-[path]=\"{{path}}\"\n      ng-attr-[fill]=\"{{colors.getColor(data.name)}}\"\n      ng-attr-[stops]=\"{{gradientStops}}\"\n      ng-attr-[startingPath]=\"{{startingPath}}\"\n      ng-attr-[opacity]=\"{{opacity}}\"\n      ng-attr-[gradient]=\"{{gradient || hasGradient}}\"\n      ng-attr-[animations]=\"{{animations}}\"\n      ng-attr-[class.active]=\"{{isActive(data)}}\"\n      ng-attr-[class.inactive]=\"{{isInactive(data)}}\"\n    />\n  ",
+            template: "\n    <svg:g ngx-charts-area\n      class=\"area-series\"\n      ng-attr-[data]=\"{{data}}\"\n      ng-attr-[path]=\"{{path}}\"\n      ng-attr-[fill]=\"colors.getColor(data.name)\"\n      ng-attr-[stops]=\"{{gradientStops}}\"\n      ng-attr-[startingPath]=\"{{startingPath}}\"\n      ng-attr-[opacity]=\"{{opacity}}\"\n      ng-attr-[gradient]=\"{{gradient || hasGradient}}\"\n      ng-attr-[animations]=\"{{animations}}\"\n      ng-attr-[class.active]=\"isActive(data)\"\n      ng-attr-[class.inactive]=\"isInactive(data)\"\n    />\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         })
     ], AreaSeriesComponent);
