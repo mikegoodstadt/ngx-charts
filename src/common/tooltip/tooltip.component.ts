@@ -20,12 +20,12 @@ import { AlignmentTypes } from './alignment.type';
   selector: 'ngx-tooltip-content',
   template: `
     <div>
-      <span #caretElm [hidden]="!showCaret" class="tooltip-caret position-{{ this.placement }}"> </span>
+      <span #caretElm ng-attr-[hidden]="{{!showCaret}}" class="tooltip-caret position-{{ this.placement }}"> </span>
       <div class="tooltip-content">
         <span *ngIf="!title">
-          <ng-template [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ model: context }"> </ng-template>
+          <ng-template ng-attr-[ngTemplateOutlet]="{{template}}" ng-attr-[ngTemplateOutletContext]="{{{ model: context }}}"> </ng-template>
         </span>
-        <span *ngIf="title" [innerHTML]="title"> </span>
+        <span *ngIf="title" ng-attr-[innerHTML]="{{title}}"> </span>
       </div>
     </div>
   `,

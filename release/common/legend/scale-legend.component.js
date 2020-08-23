@@ -57,7 +57,7 @@ var ScaleLegendComponent = /** @class */ (function () {
     ScaleLegendComponent = __decorate([
         Component({
             selector: 'ngx-charts-scale-legend',
-            template: "\n    <div\n      class=\"scale-legend\"\n      [class.horizontal-legend]=\"horizontal\"\n      [style.height.px]=\"horizontal ? undefined : height\"\n      [style.width.px]=\"width\">\n      <div class=\"scale-legend-label\">\n        <span>{{ valueRange[1].toLocaleString() }}</span>\n      </div>\n      <div\n        class=\"scale-legend-wrap\"\n        [style.background]=\"gradient\">\n      </div>\n      <div class=\"scale-legend-label\">\n        <span>{{ valueRange[0].toLocaleString() }}</span>\n      </div>\n    </div>\n  ",
+            template: "\n    <div\n      class=\"scale-legend\"\n      ng-attr-[class.horizontal-legend]=\"{{horizontal}}\"\n      ng-attr-[style.height.px]=\"{{horizontal ? undefined : height}}\"\n      ng-attr-[style.width.px]=\"{{width}}\">\n      <div class=\"scale-legend-label\">\n        <span>{{ valueRange[1].toLocaleString() }}</span>\n      </div>\n      <div\n        class=\"scale-legend-wrap\"\n        ng-attr-[style.background]=\"{{gradient}}\">\n      </div>\n      <div class=\"scale-legend-label\">\n        <span>{{ valueRange[0].toLocaleString() }}</span>\n      </div>\n    </div>\n  ",
             styleUrls: ['./scale-legend.component.css'],
             encapsulation: ViewEncapsulation.None,
             changeDetection: ChangeDetectionStrategy.OnPush

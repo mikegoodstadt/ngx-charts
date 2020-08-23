@@ -20,43 +20,43 @@ import { escapeLabel } from '../common/label.helper';
 @Component({
   selector: 'g[ngx-charts-card]',
   template: `
-    <svg:g [attr.transform]="transform" class="cell" (click)="onClick()">
-      <svg:rect class="card" [style.fill]="color" [attr.width]="cardWidth" [attr.height]="cardHeight" rx="3" ry="3" />
+    <svg:g ng-attr-[attr.transform]="{{transform}}" class="cell" (click)="onClick()">
+      <svg:rect class="card" ng-attr-[style.fill]="{{color}}" ng-attr-[attr.width]="{{cardWidth}}" ng-attr-[attr.height]="{{cardHeight}}" rx="3" ry="3" />
       <svg:path
         *ngIf="bandColor && bandColor !== color"
         class="card-band"
-        [attr.fill]="bandColor"
-        [attr.transform]="transformBand"
+        ng-attr-[attr.fill]="{{bandColor}}"
+        ng-attr-[attr.transform]="{{transformBand}}"
         stroke="none"
-        [attr.d]="bandPath"
+        ng-attr-[attr.d]="{{bandPath}}"
       />
       <title>{{ label }}</title>
       <svg:foreignObject
         class="trimmed-label"
         x="5"
-        [attr.x]="textPadding[3]"
-        [attr.y]="cardHeight - textPadding[2]"
-        [attr.width]="textWidth"
-        [attr.height]="labelFontSize + textPadding[2]"
+        ng-attr-[attr.x]="{{textPadding[3]}}"
+        ng-attr-[attr.y]="{{cardHeight - textPadding[2]}}"
+        ng-attr-[attr.width]="{{textWidth}}"
+        ng-attr-[attr.height]="{{labelFontSize + textPadding[2]}}"
         alignment-baseline="hanging"
       >
         <xhtml:p
-          [style.color]="textColor"
-          [style.fontSize.px]="labelFontSize"
-          [style.lineHeight.px]="labelFontSize"
-          [innerHTML]="formattedLabel"
+          ng-attr-[style.color]="{{textColor}}"
+          ng-attr-[style.fontSize.px]="{{labelFontSize}}"
+          ng-attr-[style.lineHeight.px]="{{labelFontSize}}"
+          ng-attr-[innerHTML]="{{formattedLabel}}"
         >
         </xhtml:p>
       </svg:foreignObject>
       <svg:text
         #textEl
         class="value-text"
-        [attr.x]="textPadding[3]"
-        [attr.y]="textPadding[0]"
-        [style.fill]="textColor"
+        ng-attr-[attr.x]="{{textPadding[3]}}"
+        ng-attr-[attr.y]="{{textPadding[0]}}"
+        ng-attr-[style.fill]="{{textColor}}"
         text-anchor="start"
         alignment-baseline="hanging"
-        [style.font-size.pt]="textFontSize"
+        ng-attr-[style.font-size.pt]="{{textFontSize}}"
       >
         {{ value }}
       </svg:text>

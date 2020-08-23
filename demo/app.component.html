@@ -1,38 +1,38 @@
-<main [class]="theme">
+<main ng-attr-[class]="{{theme}}">
   <div class="chart-col">
     <div style="position: absolute; top: 50px; left: 50px; right: 50px; bottom: 50px;">
       <ngx-charts-bar-vertical
         *ngIf="chartType === 'bar-vertical'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [customColors]="customColors"
-        [results]="single"
-        [animations]="animations"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [roundEdges]="roundEdges"
-        [yScaleMax]="yScaleMax"
-        [noBarWhenZero]="noBarWhenZero"
-        [showDataLabel]="showDataLabel"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[customColors]="{{customColors}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[roundEdges]="{{roundEdges}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[showDataLabel]="{{showDataLabel}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (legendLabelClick)="onLegendLabelClick($event)"
         (activate)="activate($event)"
@@ -42,34 +42,34 @@
       <ngx-charts-bar-horizontal
         *ngIf="chartType === 'bar-horizontal'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="single"
-        [animations]="animations"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [roundEdges]="roundEdges"
-        [xScaleMax]="xScaleMax"
-        [noBarWhenZero]="noBarWhenZero"
-        [showDataLabel]="showDataLabel"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[roundEdges]="{{roundEdges}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[showDataLabel]="{{showDataLabel}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (legendLabelClick)="onLegendLabelClick($event)"
         (select)="select($event)"
         (activate)="activate($event)"
@@ -79,36 +79,36 @@
       <ngx-charts-bar-vertical-2d
         *ngIf="chartType === 'bar-vertical-2d'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [groupPadding]="groupPadding"
-        [roundDomains]="roundDomains"
-        [roundEdges]="roundEdges"
-        [yScaleMax]="yScaleMax"
-        [noBarWhenZero]="noBarWhenZero"
-        [showDataLabel]="showDataLabel"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[groupPadding]="{{groupPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[roundEdges]="{{roundEdges}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[showDataLabel]="{{showDataLabel}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -117,36 +117,36 @@
       <ngx-charts-bar-horizontal-2d
         *ngIf="chartType === 'bar-horizontal-2d'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [groupPadding]="groupPadding"
-        [roundDomains]="roundDomains"
-        [roundEdges]="roundEdges"
-        [xScaleMax]="xScaleMax"
-        [noBarWhenZero]="noBarWhenZero"
-        [showDataLabel]="showDataLabel"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[groupPadding]="{{groupPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[roundEdges]="{{roundEdges}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[showDataLabel]="{{showDataLabel}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -155,34 +155,34 @@
       <ngx-charts-bar-vertical-stacked
         *ngIf="chartType === 'bar-vertical-stacked'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [yScaleMax]="yScaleMax"
-        [noBarWhenZero]="noBarWhenZero"
-        [showDataLabel]="showDataLabel"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[showDataLabel]="{{showDataLabel}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -191,34 +191,34 @@
       <ngx-charts-bar-horizontal-stacked
         *ngIf="chartType === 'bar-horizontal-stacked'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [showDataLabel]="showDataLabel"
-        [xScaleMax]="xScaleMax"
-        [noBarWhenZero]="noBarWhenZero"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[showDataLabel]="{{showDataLabel}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -227,32 +227,32 @@
       <ngx-charts-bar-vertical-normalized
         *ngIf="chartType === 'bar-vertical-normalized'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [noBarWhenZero]="noBarWhenZero"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -261,32 +261,32 @@
       <ngx-charts-bar-horizontal-normalized
         *ngIf="chartType === 'bar-horizontal-normalized'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [noBarWhenZero]="noBarWhenZero"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -295,21 +295,21 @@
       <ngx-charts-pie-chart
         *ngIf="chartType === 'pie-chart'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [results]="single"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [explodeSlices]="explodeSlices"
-        [labels]="showLabels"
-        [doughnut]="doughnut"
-        [arcWidth]="arcWidth"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[explodeSlices]="{{explodeSlices}}"
+        ng-attr-[labels]="{{showLabels}}"
+        ng-attr-[doughnut]="{{doughnut}}"
+        ng-attr-[arcWidth]="{{arcWidth}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [tooltipText]="pieTooltipText"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[tooltipText]="{{pieTooltipText}}"
         (dblclick)="dblclick($event)"
         (select)="select($event)"
         (activate)="activate($event)"
@@ -319,15 +319,15 @@
       <ngx-charts-advanced-pie-chart
         *ngIf="chartType === 'advanced-pie-chart'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [results]="single"
-        [valueFormatting]="valueFormatting"
-        [animations]="animations"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[valueFormatting]="{{valueFormatting}}"
+        ng-attr-[animations]="{{animations}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [gradient]="gradient"
-        [tooltipDisabled]="tooltipDisabled"
-        [tooltipText]="pieTooltipText"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[tooltipText]="{{pieTooltipText}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -336,13 +336,13 @@
       <ngx-charts-pie-grid
         *ngIf="chartType === 'pie-grid'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [results]="single"
-        [animations]="animations"
-        [tooltipDisabled]="tooltipDisabled"
-        [tooltipText]="pieTooltipText"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[tooltipText]="{{pieTooltipText}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -350,39 +350,39 @@
       </ngx-charts-pie-grid>
       <ngx-charts-line-chart
         *ngIf="chartType === 'line-chart'"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         class="chart-container"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="dateDataWithOrWithoutRange"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{dateDataWithOrWithoutRange}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [autoScale]="autoScale"
-        [xScaleMin]="xScaleMin"
-        [xScaleMax]="xScaleMax"
-        [yScaleMin]="yScaleMin"
-        [yScaleMax]="yScaleMax"
-        [timeline]="timeline"
-        [showGridLines]="showGridLines"
-        [curve]="curve"
-        [rangeFillOpacity]="rangeFillOpacity"
-        [roundDomains]="roundDomains"
-        [tooltipDisabled]="tooltipDisabled"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[autoScale]="{{autoScale}}"
+        ng-attr-[xScaleMin]="{{xScaleMin}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[yScaleMin]="{{yScaleMin}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[timeline]="{{timeline}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[curve]="{{curve}}"
+        ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -390,32 +390,32 @@
       </ngx-charts-line-chart>
       <ngx-charts-polar-chart
         *ngIf="chartType === 'polar-chart'"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         class="chart-container"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [autoScale]="autoScale"
-        [showGridLines]="showGridLines"
-        [rangeFillOpacity]="rangeFillOpacity"
-        [roundDomains]="roundDomains"
-        [tooltipDisabled]="tooltipDisabled"
-        [showSeriesOnHover]="showSeriesOnHover"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [maxYAxisTickLength]="maxYAxisTickLength"
-        [curve]="closedCurve"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[autoScale]="{{autoScale}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[showSeriesOnHover]="{{showSeriesOnHover}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
+        ng-attr-[curve]="{{closedCurve}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -423,36 +423,36 @@
       </ngx-charts-polar-chart>
       <ngx-charts-bubble-chart
         *ngIf="chartType === 'bubble-chart'"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         class="chart-container"
-        [results]="bubble"
-        [animations]="animations"
-        [showGridLines]="showGridLines"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [autoScale]="autoScale"
-        [xScaleMin]="xScaleMin"
-        [xScaleMax]="xScaleMax"
-        [yScaleMin]="yScaleMin"
-        [yScaleMax]="yScaleMax"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [roundDomains]="roundDomains"
-        [tooltipDisabled]="tooltipDisabled"
-        [minRadius]="minRadius"
-        [maxRadius]="maxRadius"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[results]="{{bubble}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[autoScale]="{{autoScale}}"
+        ng-attr-[xScaleMin]="{{xScaleMin}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[yScaleMin]="{{yScaleMin}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[minRadius]="{{minRadius}}"
+        ng-attr-[maxRadius]="{{maxRadius}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
         (select)="select($event)"
@@ -461,16 +461,16 @@
       <div style="width: 100%; height: 100%" *ngIf="chartType === 'force-directed-graph'">
         <ngx-charts-force-directed-graph
           class="chart-container"
-          [legend]="showLegend"
-          [legendTitle]="legendTitle"
-          [legendPosition]="legendPosition"
-          [links]="graph.links"
-          [animations]="animations"
+          ng-attr-[legend]="{{showLegend}}"
+          ng-attr-[legendTitle]="{{legendTitle}}"
+          ng-attr-[legendPosition]="{{legendPosition}}"
+          ng-attr-[links]="{{graph.links}}"
+          ng-attr-[animations]="{{animations}}"
           (legendLabelClick)="onLegendLabelClick($event)"
-          [nodes]="graph.nodes"
-          [scheme]="colorScheme"
-          [view]="view"
-          [tooltipDisabled]="tooltipDisabled"
+          ng-attr-[nodes]="{{graph.nodes}}"
+          ng-attr-[scheme]="{{colorScheme}}"
+          ng-attr-[view]="{{view}}"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
           (select)="select($event)"
         >
         </ngx-charts-force-directed-graph>
@@ -483,37 +483,37 @@
       <ngx-charts-area-chart
         *ngIf="chartType === 'area-chart'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="dateData"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{dateData}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [autoScale]="autoScale"
-        [xScaleMin]="xScaleMin"
-        [xScaleMax]="xScaleMax"
-        [yScaleMin]="yScaleMin"
-        [yScaleMax]="yScaleMax"
-        [timeline]="timeline"
-        [showGridLines]="showGridLines"
-        [roundDomains]="roundDomains"
-        [curve]="curve"
-        [tooltipDisabled]="tooltipDisabled"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[autoScale]="{{autoScale}}"
+        ng-attr-[xScaleMin]="{{xScaleMin}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[yScaleMin]="{{yScaleMin}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[timeline]="{{timeline}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[curve]="{{curve}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -522,36 +522,36 @@
       <ngx-charts-area-chart-stacked
         *ngIf="chartType === 'area-chart-stacked'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="dateData"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{dateData}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [timeline]="timeline"
-        [xScaleMin]="xScaleMin"
-        [xScaleMax]="xScaleMax"
-        [yScaleMin]="yScaleMin"
-        [yScaleMax]="yScaleMax"
-        [showGridLines]="showGridLines"
-        [roundDomains]="roundDomains"
-        [tooltipDisabled]="tooltipDisabled"
-        [curve]="curve"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[timeline]="{{timeline}}"
+        ng-attr-[xScaleMin]="{{xScaleMin}}"
+        ng-attr-[xScaleMax]="{{xScaleMax}}"
+        ng-attr-[yScaleMin]="{{yScaleMin}}"
+        ng-attr-[yScaleMax]="{{yScaleMax}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[curve]="{{curve}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -560,32 +560,32 @@
       <ngx-charts-area-chart-normalized
         *ngIf="chartType === 'area-chart-normalized'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="dateData"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{dateData}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [timeline]="timeline"
-        [showGridLines]="showGridLines"
-        [roundDomains]="roundDomains"
-        [tooltipDisabled]="tooltipDisabled"
-        [curve]="curve"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[timeline]="{{timeline}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[curve]="{{curve}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -594,59 +594,59 @@
       <combo-chart-component
         *ngIf="chartType === 'combo-chart'"
         class="chart-container"
-        [view]="view"
-        [scheme]="comboBarScheme"
-        [colorSchemeLine]="lineChartScheme"
-        [results]="barChart"
-        [animations]="animations"
-        [lineChart]="lineChartSeries"
-        [tooltipDisabled]="tooltipDisabled"
-        [yAxisTickFormatting]="yLeftTickFormat"
-        [yLeftAxisScaleFactor]="yLeftAxisScale"
-        [yRightAxisScaleFactor]="yRightAxisScale"
-        [yRightAxisTickFormatting]="yRightTickFormat"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showGridLines]="showGridLines"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [showRightYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [yAxisLabelRight]="yAxisLabelRight"
-        [noBarWhenZero]="noBarWhenZero"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{comboBarScheme}}"
+        ng-attr-[colorSchemeLine]="{{lineChartScheme}}"
+        ng-attr-[results]="{{barChart}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[lineChart]="{{lineChartSeries}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[yAxisTickFormatting]="{{yLeftTickFormat}}"
+        ng-attr-[yLeftAxisScaleFactor]="{{yLeftAxisScale}}"
+        ng-attr-[yRightAxisScaleFactor]="{{yRightAxisScale}}"
+        ng-attr-[yRightAxisTickFormatting]="{{yRightTickFormat}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[showRightYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[yAxisLabelRight]="{{yAxisLabelRight}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
         (select)="onSelect($event)"
       >
       </combo-chart-component>
       <ngx-charts-heat-map
         *ngIf="chartType === 'heat-map'"
         class="chart-container"
-        [min]="heatmapMin"
-        [max]="heatmapMax"
-        [view]="view"
-        [scheme]="colorScheme"
-        [results]="multi"
-        [animations]="animations"
-        [legend]="showLegend"
-        [gradient]="gradient"
+        ng-attr-[min]="{{heatmapMin}}"
+        ng-attr-[max]="{{heatmapMax}}"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[gradient]="{{gradient}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [innerPadding]="innerPadding"
-        [tooltipDisabled]="tooltipDisabled"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[innerPadding]="{{innerPadding}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -655,26 +655,26 @@
       <ngx-charts-heat-map
         *ngIf="chartType === 'calendar'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [results]="calendarData"
-        [animations]="animations"
-        [legend]="showLegend"
-        [gradient]="gradient"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[results]="{{calendarData}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[gradient]="{{gradient}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="false"
-        [showYAxisLabel]="false"
-        [xAxisTickFormatting]="calendarAxisTickFormatting"
-        [tooltipText]="calendarTooltipText"
-        [innerPadding]="innerPadding"
-        [tooltipDisabled]="tooltipDisabled"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [rotateXAxisTicks]="rotateXAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{false}}"
+        ng-attr-[showYAxisLabel]="{{false}}"
+        ng-attr-[xAxisTickFormatting]="{{calendarAxisTickFormatting}}"
+        ng-attr-[tooltipText]="{{calendarTooltipText}}"
+        ng-attr-[innerPadding]="{{innerPadding}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[rotateXAxisTicks]="{{rotateXAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -683,15 +683,15 @@
       <ngx-charts-tree-map
         *ngIf="chartType === 'tree-map'"
         class="chart-container"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [scheme]="colorScheme"
-        [results]="single"
-        [animations]="animations"
-        [tooltipDisabled]="tooltipDisabled"
-        [labelFormatting]="gdpLabelFormatting"
-        [valueFormatting]="currencyFormatting"
-        [gradient]="gradient"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[labelFormatting]="{{gdpLabelFormatting}}"
+        ng-attr-[valueFormatting]="{{currencyFormatting}}"
+        ng-attr-[gradient]="{{gradient}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -700,13 +700,13 @@
       <ngx-charts-number-card
         *ngIf="chartType === 'number-card'"
         class="chart-container"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [scheme]="colorScheme"
+        ng-attr-[scheme]="{{colorScheme}}"
         cardColor="#232837"
         emptyColor="#1e222e"
-        [results]="single"
-        [animations]="animations"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -714,62 +714,62 @@
       </ngx-charts-number-card>
       <div *ngIf="chartType === 'status-demo'">
         <ngx-slider
-          [(ngModel)]="salePrice"
-          [step]="100"
-          [filled]="true"
-          [min]="0"
-          [max]="10000"
+          ng-attr-[(ngModel)]="{{salePrice}}"
+          ng-attr-[step]="{{100}}"
+          ng-attr-[filled]="{{true}}"
+          ng-attr-[min]="{{0}}"
+          ng-attr-[max]="{{10000}}"
           (change)="statusData = calcStatusData()"
         >
         </ngx-slider>
         Price: ${{ salePrice }}
         <br />
         <ngx-slider
-          [(ngModel)]="personnelCost"
-          [step]="100"
-          [filled]="true"
-          [min]="0"
-          [max]="10000"
+          ng-attr-[(ngModel)]="{{personnelCost}}"
+          ng-attr-[step]="{{100}}"
+          ng-attr-[filled]="{{true}}"
+          ng-attr-[min]="{{0}}"
+          ng-attr-[max]="{{10000}}"
           (change)="statusData = calcStatusData()"
         >
         </ngx-slider>
         Cost: ${{ personnelCost }} / hr
         <ngx-charts-number-card
           class="chart-container"
-          [view]="view"
+          ng-attr-[view]="{{view}}"
           (legendLabelClick)="onLegendLabelClick($event)"
-          [scheme]="colorScheme"
+          ng-attr-[scheme]="{{colorScheme}}"
           cardColor="#232837"
           emptyColor="#1e222e"
-          [results]="statusData"
-          [animations]="animations"
-          [valueFormatting]="statusValueFormat"
-          [labelFormatting]="statusLabelFormat"
+          ng-attr-[results]="{{statusData}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[valueFormatting]="{{statusValueFormat}}"
+          ng-attr-[labelFormatting]="{{statusLabelFormat}}"
         >
         </ngx-charts-number-card>
       </div>
       <ngx-charts-gauge
         *ngIf="chartType === 'gauge'"
         class="chart-container"
-        [view]="view"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [results]="single"
-        [animations]="animations"
-        [textValue]="gaugeTextValue"
-        [scheme]="colorScheme"
-        [min]="gaugeMin"
-        [max]="gaugeMax"
-        [units]="gaugeUnits"
-        [angleSpan]="gaugeAngleSpan"
-        [startAngle]="gaugeStartAngle"
-        [showAxis]="gaugeShowAxis"
-        [bigSegments]="gaugeLargeSegments"
-        [smallSegments]="gaugeSmallSegments"
-        [margin]="margin ? [marginTop, marginRight, marginBottom, marginLeft] : null"
-        [tooltipDisabled]="tooltipDisabled"
-        [showText]="showText"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[textValue]="{{gaugeTextValue}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[min]="{{gaugeMin}}"
+        ng-attr-[max]="{{gaugeMax}}"
+        ng-attr-[units]="{{gaugeUnits}}"
+        ng-attr-[angleSpan]="{{gaugeAngleSpan}}"
+        ng-attr-[startAngle]="{{gaugeStartAngle}}"
+        ng-attr-[showAxis]="{{gaugeShowAxis}}"
+        ng-attr-[bigSegments]="{{gaugeLargeSegments}}"
+        ng-attr-[smallSegments]="{{gaugeSmallSegments}}"
+        ng-attr-[margin]="{{margin ? [marginTop, marginRight, marginBottom, marginLeft] : null}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[showText]="{{showText}}"
         (select)="select($event)"
         (legendLabelClick)="onLegendLabelClick($event)"
         (activate)="activate($event)"
@@ -779,87 +779,87 @@
       <ngx-charts-linear-gauge
         *ngIf="chartType === 'linear-gauge'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [animations]="animations"
-        [min]="gaugeMin"
-        [max]="gaugeMax"
-        [value]="gaugeValue"
-        [previousValue]="gaugePreviousValue"
-        [units]="gaugeUnits"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[min]="{{gaugeMin}}"
+        ng-attr-[max]="{{gaugeMax}}"
+        ng-attr-[value]="{{gaugeValue}}"
+        ng-attr-[previousValue]="{{gaugePreviousValue}}"
+        ng-attr-[units]="{{gaugeUnits}}"
         (select)="select($event)"
       >
       </ngx-charts-linear-gauge>
       <div *ngIf="chartType === 'plot-demo'">
         <ngx-input
           type="text"
-          [required]="true"
-          [(ngModel)]="mathText"
+          ng-attr-[required]="{{true}}"
+          ng-attr-[(ngModel)]="{{mathText}}"
           (change)="mathFunction = getFunction(mathText); plotData = generatePlotData()"
         >
         </ngx-input>
         <ngx-charts-line-chart
           style="position: static; display: inline-block; transform: none;"
-          [view]="view"
+          ng-attr-[view]="{{view}}"
           class="chart-container"
-          [scheme]="colorScheme"
-          [schemeType]="schemeType"
-          [results]="plotData"
-          [animations]="animations"
-          [legend]="false"
-          [legendTitle]="legendTitle"
-          [legendPosition]="legendPosition"
+          ng-attr-[scheme]="{{colorScheme}}"
+          ng-attr-[schemeType]="{{schemeType}}"
+          ng-attr-[results]="{{plotData}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[legend]="{{false}}"
+          ng-attr-[legendTitle]="{{legendTitle}}"
+          ng-attr-[legendPosition]="{{legendPosition}}"
           (legendLabelClick)="onLegendLabelClick($event)"
-          [gradient]="gradient"
-          [xAxis]="showXAxis"
-          [yAxis]="showYAxis"
-          [showXAxisLabel]="false"
-          [showYAxisLabel]="false"
-          [xAxisLabel]="'angle'"
-          [yAxisLabel]="'radius'"
-          [autoScale]="autoScale"
-          [timeline]="timeline"
-          [showGridLines]="showGridLines"
-          [curve]="curves['Cardinal']"
-          [rangeFillOpacity]="rangeFillOpacity"
-          [roundDomains]="roundDomains"
-          [tooltipDisabled]="tooltipDisabled"
-          [trimXAxisTicks]="trimXAxisTicks"
-          [trimYAxisTicks]="trimYAxisTicks"
-          [maxXAxisTickLength]="maxXAxisTickLength"
-          [maxYAxisTickLength]="maxYAxisTickLength"
+          ng-attr-[gradient]="{{gradient}}"
+          ng-attr-[xAxis]="{{showXAxis}}"
+          ng-attr-[yAxis]="{{showYAxis}}"
+          ng-attr-[showXAxisLabel]="{{false}}"
+          ng-attr-[showYAxisLabel]="{{false}}"
+          ng-attr-[xAxisLabel]="{{'angle'}}"
+          ng-attr-[yAxisLabel]="{{'radius'}}"
+          ng-attr-[autoScale]="{{autoScale}}"
+          ng-attr-[timeline]="{{timeline}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[curve]="{{curves['Cardinal']}}"
+          ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+          ng-attr-[roundDomains]="{{roundDomains}}"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+          ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+          ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+          ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+          ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
           (select)="select($event)"
         >
         </ngx-charts-line-chart>
         <p></p>
         <ngx-charts-polar-chart
           style="position: static; display: inline-block; transform: none;"
-          [view]="view"
+          ng-attr-[view]="{{view}}"
           class="chart-container"
-          [scheme]="colorScheme"
-          [schemeType]="schemeType"
-          [results]="plotData"
-          [animations]="animations"
-          [legend]="false"
-          [legendTitle]="legendTitle"
-          [legendPosition]="legendPosition"
+          ng-attr-[scheme]="{{colorScheme}}"
+          ng-attr-[schemeType]="{{schemeType}}"
+          ng-attr-[results]="{{plotData}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[legend]="{{false}}"
+          ng-attr-[legendTitle]="{{legendTitle}}"
+          ng-attr-[legendPosition]="{{legendPosition}}"
           (legendLabelClick)="onLegendLabelClick($event)"
-          [gradient]="gradient"
-          [xAxis]="false"
-          [yAxis]="true"
-          [showXAxisLabel]="false"
-          [showYAxisLabel]="false"
-          [xAxisLabel]="'angle'"
-          [yAxisLabel]="'radius'"
-          [autoScale]="autoScale"
-          [showGridLines]="showGridLines"
-          [rangeFillOpacity]="rangeFillOpacity"
-          [roundDomains]="roundDomains"
-          [tooltipDisabled]="tooltipDisabled"
-          [showSeriesOnHover]="showSeriesOnHover"
-          [curve]="curves['Cardinal Closed']"
-          [trimYAxisTicks]="trimYAxisTicks"
-          [maxYAxisTickLength]="maxYAxisTickLength"
+          ng-attr-[gradient]="{{gradient}}"
+          ng-attr-[xAxis]="{{false}}"
+          ng-attr-[yAxis]="{{true}}"
+          ng-attr-[showXAxisLabel]="{{false}}"
+          ng-attr-[showYAxisLabel]="{{false}}"
+          ng-attr-[xAxisLabel]="{{'angle'}}"
+          ng-attr-[yAxisLabel]="{{'radius'}}"
+          ng-attr-[autoScale]="{{autoScale}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+          ng-attr-[roundDomains]="{{roundDomains}}"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+          ng-attr-[showSeriesOnHover]="{{showSeriesOnHover}}"
+          ng-attr-[curve]="{{curves['Cardinal Closed']}}"
+          ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+          ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
           (select)="select($event)"
           (activate)="activate($event)"
           (deactivate)="deactivate($event)"
@@ -872,29 +872,29 @@
         style="padding: 10px; border: 1px solid white;"
       >
         <h4 style="text-align: center;">
-          <button class="btn btn-link" [class.active]="sumBy === 'Size'" (click)="treemapProcess('Size')">
+          <button class="btn btn-link" ng-attr-[class.active]="{{sumBy === 'Size'}}" (click)="treemapProcess('Size')">
             By Size
           </button>
-          <button class="btn btn-link" [class.active]="sumBy === 'Count'" (click)="treemapProcess('Count')">
+          <button class="btn btn-link" ng-attr-[class.active]="{{sumBy === 'Count'}}" (click)="treemapProcess('Count')">
             By Count
           </button>
         </h4>
         <div style="height: 17px; font-size: 12px;">
           <ng-container *ngFor="let item of treemapPath; let last = last">
-            <button class="btn btn-link" [class.active]="last" [disabled]="last" (click)="treemapSelect(item)">
+            <button class="btn btn-link" ng-attr-[class.active]="{{last}}" ng-attr-[disabled]="{{last}}" (click)="treemapSelect(item)">
               {{ item.name }} ({{ item.value }})
             </button>
             <span *ngIf="!last"> / </span>
           </ng-container>
         </div>
         <ngx-charts-tree-map
-          [view]="view"
+          ng-attr-[view]="{{view}}"
           (legendLabelClick)="onLegendLabelClick($event)"
-          [scheme]="colorScheme"
-          [results]="treemap"
-          [animations]="animations"
-          [tooltipDisabled]="tooltipDisabled"
-          [gradient]="gradient"
+          ng-attr-[scheme]="{{colorScheme}}"
+          ng-attr-[results]="{{treemap}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+          ng-attr-[gradient]="{{gradient}}"
           (select)="treemapSelect($event)"
           (activate)="activate($event)"
           (deactivate)="deactivate($event)"
@@ -918,62 +918,62 @@
           </button>
         </div>
         <ngx-charts-bubble-chart-interactive
-          [view]="view"
-          [results]="bubbleDemoTempData"
-          [animations]="animations"
-          [showGridLines]="showGridLines"
-          [legend]="showLegend"
-          [legendTitle]="legendTitle"
-          [xAxis]="showXAxis"
-          [yAxis]="showYAxis"
-          [showXAxisLabel]="showXAxisLabel"
-          [showYAxisLabel]="showYAxisLabel"
-          [xAxisLabel]="xAxisLabel"
-          [yAxisLabel]="yAxisLabel"
-          [autoScale]="autoScale"
-          [scheme]="colorScheme"
-          [schemeType]="schemeType"
-          [roundDomains]="roundDomains"
-          [tooltipDisabled]="tooltipDisabled"
-          [minRadius]="minRadius"
-          [maxRadius]="maxRadius"
+          ng-attr-[view]="{{view}}"
+          ng-attr-[results]="{{bubbleDemoTempData}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[legend]="{{showLegend}}"
+          ng-attr-[legendTitle]="{{legendTitle}}"
+          ng-attr-[xAxis]="{{showXAxis}}"
+          ng-attr-[yAxis]="{{showYAxis}}"
+          ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+          ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+          ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+          ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+          ng-attr-[autoScale]="{{autoScale}}"
+          ng-attr-[scheme]="{{colorScheme}}"
+          ng-attr-[schemeType]="{{schemeType}}"
+          ng-attr-[roundDomains]="{{roundDomains}}"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+          ng-attr-[minRadius]="{{minRadius}}"
+          ng-attr-[maxRadius]="{{maxRadius}}"
           (select)="onSelectBubbleInteractivePoint($event)"
         >
         </ngx-charts-bubble-chart-interactive>
       </div>
       <ngx-charts-line-chart
         *ngIf="chartType === 'line-reference-lines'"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         class="chart-container"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="multi"
-        [animations]="animations"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{multi}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
         (legendLabelClick)="onLegendLabelClick($event)"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [autoScale]="autoScale"
-        [timeline]="timeline"
-        [showGridLines]="showGridLines"
-        [curve]="curve"
-        [rangeFillOpacity]="rangeFillOpacity"
-        [roundDomains]="roundDomains"
-        [tooltipDisabled]="tooltipDisabled"
-        [showRefLines]="showRefLines"
-        [showRefLabels]="showRefLabels"
-        [referenceLines]="refLines"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[autoScale]="{{autoScale}}"
+        ng-attr-[timeline]="{{timeline}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[curve]="{{curve}}"
+        ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[showRefLines]="{{showRefLines}}"
+        ng-attr-[showRefLabels]="{{showRefLabels}}"
+        ng-attr-[referenceLines]="{{refLines}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (activate)="activate($event)"
         (deactivate)="deactivate($event)"
@@ -982,30 +982,30 @@
       <ngx-charts-bar-vertical
         *ngIf="chartType === 'tooltip-templates'"
         class="chart-container"
-        [view]="view"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [customColors]="customColors"
-        [results]="single"
-        [animations]="animations"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [legend]="showLegend"
-        [legendTitle]="legendTitle"
-        [legendPosition]="legendPosition"
-        [showXAxisLabel]="showXAxisLabel"
-        [showYAxisLabel]="showYAxisLabel"
-        [tooltipDisabled]="tooltipDisabled"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="yAxisLabel"
-        [showGridLines]="showGridLines"
-        [barPadding]="barPadding"
-        [roundDomains]="roundDomains"
-        [trimXAxisTicks]="trimXAxisTicks"
-        [trimYAxisTicks]="trimYAxisTicks"
-        [maxXAxisTickLength]="maxXAxisTickLength"
-        [maxYAxisTickLength]="maxYAxisTickLength"
+        ng-attr-[view]="{{view}}"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[customColors]="{{customColors}}"
+        ng-attr-[results]="{{single}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[legend]="{{showLegend}}"
+        ng-attr-[legendTitle]="{{legendTitle}}"
+        ng-attr-[legendPosition]="{{legendPosition}}"
+        ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[barPadding]="{{barPadding}}"
+        ng-attr-[roundDomains]="{{roundDomains}}"
+        ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+        ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+        ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+        ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
         (select)="select($event)"
         (legendLabelClick)="onLegendLabelClick($event)"
         (activate)="activate($event)"
@@ -1020,31 +1020,31 @@
       </ngx-charts-bar-vertical>
       <ngx-charts-sparkline
         *ngIf="chartType === 'sparkline'"
-        [view]="[100, 50]"
+        ng-attr-[view]="{{[100, 50]}}"
         class="chart-container"
-        [scheme]="'flame'"
-        [results]="sparklineData"
-        [animations]="animations"
-        [curve]="curve"
+        ng-attr-[scheme]="{{'flame'}}"
+        ng-attr-[results]="{{sparklineData}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[curve]="{{curve}}"
       >
       </ngx-charts-sparkline>
       <ngx-charts-timeline-filter-bar-chart
         *ngIf="chartType === 'timeline-filter-bar-chart-demo'"
-        [view]="view"
+        ng-attr-[view]="{{view}}"
         class="chart-container"
-        [scheme]="colorScheme"
-        [schemeType]="schemeType"
-        [results]="timelineFilterBarData"
-        [animations]="animations"
-        [gradient]="gradient"
-        [xAxis]="showXAxis"
-        [yAxis]="showYAxis"
-        [showXAxisLabel]="false"
-        [showYAxisLabel]="showYAxisLabel"
-        [xAxisLabel]="xAxisLabel"
-        [yAxisLabel]="'Executions'"
-        [showGridLines]="showGridLines"
-        [noBarWhenZero]="noBarWhenZero"
+        ng-attr-[scheme]="{{colorScheme}}"
+        ng-attr-[schemeType]="{{schemeType}}"
+        ng-attr-[results]="{{timelineFilterBarData}}"
+        ng-attr-[animations]="{{animations}}"
+        ng-attr-[gradient]="{{gradient}}"
+        ng-attr-[xAxis]="{{showXAxis}}"
+        ng-attr-[yAxis]="{{showYAxis}}"
+        ng-attr-[showXAxisLabel]="{{false}}"
+        ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+        ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+        ng-attr-[yAxisLabel]="{{'Executions'}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
         (onFilter)="onFilter($event)"
       >
       </ngx-charts-timeline-filter-bar-chart>
@@ -1052,33 +1052,33 @@
     <ngx-charts-bar-vertical-stacked
       *ngIf="chartType === 'bar-vertical-stacked-negative'"
       class="chart-container"
-      [view]="view"
-      [scheme]="colorScheme"
-      [schemeType]="schemeType"
-      [results]="fiscalYearReport"
-      [animations]="animations"
-      [gradient]="gradient"
-      [tooltipDisabled]="tooltipDisabled"
-      [xAxis]="showXAxis"
-      [yAxis]="showYAxis"
-      [legend]="showLegend"
-      [legendTitle]="legendTitle"
-      [legendPosition]="legendPosition"
+      ng-attr-[view]="{{view}}"
+      ng-attr-[scheme]="{{colorScheme}}"
+      ng-attr-[schemeType]="{{schemeType}}"
+      ng-attr-[results]="{{fiscalYearReport}}"
+      ng-attr-[animations]="{{animations}}"
+      ng-attr-[gradient]="{{gradient}}"
+      ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+      ng-attr-[xAxis]="{{showXAxis}}"
+      ng-attr-[yAxis]="{{showYAxis}}"
+      ng-attr-[legend]="{{showLegend}}"
+      ng-attr-[legendTitle]="{{legendTitle}}"
+      ng-attr-[legendPosition]="{{legendPosition}}"
       (legendLabelClick)="onLegendLabelClick($event)"
-      [showXAxisLabel]="showXAxisLabel"
-      [showYAxisLabel]="showYAxisLabel"
-      [xAxisLabel]="xAxisLabel"
-      [yAxisLabel]="'Fiscal Year Report'"
-      [showGridLines]="showGridLines"
-      [barPadding]="barPadding"
-      [roundDomains]="roundDomains"
-      [noBarWhenZero]="noBarWhenZero"
-      [yScaleMax]="yScaleMax"
-      [showDataLabel]="showDataLabel"
-      [trimXAxisTicks]="trimXAxisTicks"
-      [trimYAxisTicks]="trimYAxisTicks"
-      [maxXAxisTickLength]="maxXAxisTickLength"
-      [maxYAxisTickLength]="maxYAxisTickLength"
+      ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+      ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+      ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+      ng-attr-[yAxisLabel]="{{'Fiscal Year Report'}}"
+      ng-attr-[showGridLines]="{{showGridLines}}"
+      ng-attr-[barPadding]="{{barPadding}}"
+      ng-attr-[roundDomains]="{{roundDomains}}"
+      ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+      ng-attr-[yScaleMax]="{{yScaleMax}}"
+      ng-attr-[showDataLabel]="{{showDataLabel}}"
+      ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+      ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+      ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+      ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
       (select)="select($event)"
       (activate)="activate($event)"
       (deactivate)="deactivate($event)"
@@ -1087,32 +1087,32 @@
     <ngx-charts-bar-horizontal-stacked
       *ngIf="chartType === 'bar-horizontal-stacked-negative'"
       class="chart-container"
-      [view]="view"
-      [scheme]="colorScheme"
-      [schemeType]="schemeType"
-      [results]="fiscalYearReport"
-      [animations]="animations"
-      [gradient]="gradient"
-      [tooltipDisabled]="tooltipDisabled"
-      [xAxis]="showXAxis"
-      [yAxis]="showYAxis"
-      [legend]="showLegend"
-      [legendTitle]="legendTitle"
-      [legendPosition]="legendPosition"
+      ng-attr-[view]="{{view}}"
+      ng-attr-[scheme]="{{colorScheme}}"
+      ng-attr-[schemeType]="{{schemeType}}"
+      ng-attr-[results]="{{fiscalYearReport}}"
+      ng-attr-[animations]="{{animations}}"
+      ng-attr-[gradient]="{{gradient}}"
+      ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+      ng-attr-[xAxis]="{{showXAxis}}"
+      ng-attr-[yAxis]="{{showYAxis}}"
+      ng-attr-[legend]="{{showLegend}}"
+      ng-attr-[legendTitle]="{{legendTitle}}"
+      ng-attr-[legendPosition]="{{legendPosition}}"
       (legendLabelClick)="onLegendLabelClick($event)"
-      [showXAxisLabel]="showXAxisLabel"
-      [showYAxisLabel]="showYAxisLabel"
-      [xAxisLabel]="xAxisLabel"
-      [yAxisLabel]="'Fiscal Year Report'"
-      [showGridLines]="showGridLines"
-      [barPadding]="barPadding"
-      [roundDomains]="roundDomains"
-      [noBarWhenZero]="noBarWhenZero"
-      [showDataLabel]="showDataLabel"
-      [trimXAxisTicks]="trimXAxisTicks"
-      [trimYAxisTicks]="trimYAxisTicks"
-      [maxXAxisTickLength]="maxXAxisTickLength"
-      [maxYAxisTickLength]="maxYAxisTickLength"
+      ng-attr-[showXAxisLabel]="{{showXAxisLabel}}"
+      ng-attr-[showYAxisLabel]="{{showYAxisLabel}}"
+      ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+      ng-attr-[yAxisLabel]="{{'Fiscal Year Report'}}"
+      ng-attr-[showGridLines]="{{showGridLines}}"
+      ng-attr-[barPadding]="{{barPadding}}"
+      ng-attr-[roundDomains]="{{roundDomains}}"
+      ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
+      ng-attr-[showDataLabel]="{{showDataLabel}}"
+      ng-attr-[trimXAxisTicks]="{{trimXAxisTicks}}"
+      ng-attr-[trimYAxisTicks]="{{trimYAxisTicks}}"
+      ng-attr-[maxXAxisTickLength]="{{maxXAxisTickLength}}"
+      ng-attr-[maxYAxisTickLength]="{{maxYAxisTickLength}}"
       (select)="select($event)"
       (activate)="activate($event)"
       (deactivate)="deactivate($event)"
@@ -1127,26 +1127,26 @@
     </h1>
     <div style="margin:20px">
       <h3>Chart Type</h3>
-      <select [ngModel]="chartType" (ngModelChange)="selectChart($event)">
-        <ng-template ngFor let-group [ngForOf]="chartGroups">
-          <optgroup [label]="group.name">
-            <option *ngFor="let chart of group.charts" [value]="chart.selector">{{ chart.name }}</option>
+      <select ng-attr-[ngModel]="{{chartType}}" (ngModelChange)="selectChart($event)">
+        <ng-template ngFor let-group ng-attr-[ngForOf]="{{chartGroups}}">
+          <optgroup ng-attr-[label]="{{group.name}}">
+            <option *ngFor="let chart of group.charts" ng-attr-[value]="{{chart.selector}}">{{ chart.name }}</option>
           </optgroup>
         </ng-template>
       </select>
 
       <h3>Theme</h3>
-      <select [ngModel]="theme" (ngModelChange)="theme = $event"
+      <select ng-attr-[ngModel]="{{theme}}" (ngModelChange)="theme = $event"
         >>
-        <option [value]="'dark'">Dark</option>
-        <option [value]="'light'">Light</option>
+        <option ng-attr-[value]="{{'dark'}}">Dark</option>
+        <option ng-attr-[value]="{{'light'}}">Light</option>
       </select>
 
       <h3 (click)="dataVisable = !dataVisable" style="cursor: pointer">
-        <span [class.arrow-down]="dataVisable" [class.arrow-right]="!dataVisable"> </span>
+        <span ng-attr-[class.arrow-down]="{{dataVisable}}" ng-attr-[class.arrow-right]="{{!dataVisable}}"> </span>
         <strong>Data</strong>
       </h3>
-      <div [hidden]="!dataVisable" style="margin-left: 10px;">
+      <div ng-attr-[hidden]="{{!dataVisable}}" style="margin-left: 10px;">
         <pre *ngIf="chart.inputFormat === 'singleSeries'">{{ single | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'multiSeries' && !linearScale">{{ multi | json }}</pre>
         <pre *ngIf="chart.inputFormat === 'multiSeriesNegative' && !linearScale">{{ fiscalYearReport | json }}</pre>
@@ -1159,374 +1159,374 @@
         <pre *ngIf="chart.inputFormat === 'timelineFilter'">{{timelineFilterBarData | json}}</pre>
         <div>
           <label>
-            <input type="checkbox" [checked]="realTimeData" (change)="realTimeData = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{realTimeData}}" (change)="realTimeData = $event.target.checked" />
             Real-time
           </label>
 
           <label *ngIf="chartType === 'line-chart'">
             <br />
-            <input type="checkbox" [checked]="range" (change)="range = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{range}}" (change)="range = $event.target.checked" />
             Show min and max values
           </label>
         </div>
       </div>
       <div>
         <h3 (click)="dimVisiable = !dimVisiable" style="cursor: pointer">
-          <span [class.arrow-down]="dimVisiable" [class.arrow-right]="!dimVisiable"> </span>
+          <span ng-attr-[class.arrow-down]="{{dimVisiable}}" ng-attr-[class.arrow-right]="{{!dimVisiable}}"> </span>
           <strong>Dimensions</strong>
         </h3>
-        <div [hidden]="!dimVisiable" style="margin-left: 10px;">
+        <div ng-attr-[hidden]="{{!dimVisiable}}" style="margin-left: 10px;">
           <label>
-            <input type="checkbox" [checked]="fitContainer" (change)="toggleFitContainer($event.target.checked)" />
+            <input type="checkbox" ng-attr-[checked]="{{fitContainer}}" (change)="toggleFitContainer($event.target.checked)" />
             Fit Container
           </label>
           <br />
           <div *ngIf="!fitContainer">
             <label>Width:</label><br />
-            <input type="number" [(ngModel)]="width" /><br />
+            <input type="number" ng-attr-[(ngModel)]="{{width}}" /><br />
             <label>Height:</label><br />
-            <input type="number" [(ngModel)]="height" /><br /><br />
+            <input type="number" ng-attr-[(ngModel)]="{{height}}" /><br /><br />
             <button class="btn btn-primary" (click)="applyDimensions()">Apply dimensions</button>
           </div>
         </div>
       </div>
       <h3 (click)="colorVisible = !colorVisible" style="cursor: pointer">
-        <span [class.arrow-down]="colorVisible" [class.arrow-right]="!colorVisible"> </span>
+        <span ng-attr-[class.arrow-down]="{{colorVisible}}" ng-attr-[class.arrow-right]="{{!colorVisible}}"> </span>
         <strong>Color Scheme</strong>
       </h3>
       <select
-        [hidden]="!colorVisible"
+        ng-attr-[hidden]="{{!colorVisible}}"
         style="margin-left: 10px;"
-        [ngModel]="selectedColorScheme"
+        ng-attr-[ngModel]="{{selectedColorScheme}}"
         (ngModelChange)="setColorScheme($event)"
       >
-        <option *ngFor="let scheme of colorSets" [value]="scheme.name">{{ scheme.name }}</option>
+        <option *ngFor="let scheme of colorSets" ng-attr-[value]="{{scheme.name}}">{{ scheme.name }}</option>
       </select>
 
       <select
         *ngIf="chart.options.includes('schemeType')"
-        [hidden]="!colorVisible"
+        ng-attr-[hidden]="{{!colorVisible}}"
         style="margin-left: 10px;"
-        [ngModel]="schemeType"
+        ng-attr-[ngModel]="{{schemeType}}"
         (ngModelChange)="schemeType = $event"
       >
         <option value="ordinal">Ordinal</option>
         <option value="linear">Linear</option>
       </select>
 
-      <div [hidden]="!colorVisible || !range" style="margin-left: 10px;">
+      <div ng-attr-[hidden]="{{!colorVisible || !range}}" style="margin-left: 10px;">
         <div>
           <label>Range fill color opacity (0.0 - 1.0):</label><br />
-          <input type="number" [(ngModel)]="rangeFillOpacity" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{rangeFillOpacity}}" /><br />
         </div>
       </div>
 
       <h3 (click)="optsVisible = !optsVisible" style="cursor: pointer">
-        <span [class.arrow-down]="optsVisible" [class.arrow-right]="!optsVisible"> </span>
+        <span ng-attr-[class.arrow-down]="{{optsVisible}}" ng-attr-[class.arrow-right]="{{!optsVisible}}"> </span>
         <strong>Options</strong>
       </h3>
-      <div [hidden]="!optsVisible" style="margin-left: 10px;">
+      <div ng-attr-[hidden]="{{!optsVisible}}" style="margin-left: 10px;">
         <div *ngIf="chart.options.includes('animations')">
           <label>
-            <input type="checkbox" [checked]="animations" (change)="animations = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{animations}}" (change)="animations = $event.target.checked" />
             Animations
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showXAxis')">
           <label>
-            <input type="checkbox" [checked]="showXAxis" (change)="showXAxis = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showXAxis}}" (change)="showXAxis = $event.target.checked" />
             Show X Axis
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showRefLabels')">
           <label>
-            <input type="checkbox" [checked]="showRefLabels" (change)="showRefLabels = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showRefLabels}}" (change)="showRefLabels = $event.target.checked" />
             Show Reference Labels
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showRefLines')">
           <label>
-            <input type="checkbox" [checked]="showRefLines" (change)="showRefLines = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showRefLines}}" (change)="showRefLines = $event.target.checked" />
             Show Reference Lines
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showYAxis')">
           <label>
-            <input type="checkbox" [checked]="showYAxis" (change)="showYAxis = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showYAxis}}" (change)="showYAxis = $event.target.checked" />
             Show Y Axis
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showGridLines')">
           <label>
-            <input type="checkbox" [checked]="showGridLines" (change)="showGridLines = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showGridLines}}" (change)="showGridLines = $event.target.checked" />
             Show Grid Lines
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('roundDomains')">
           <label>
-            <input type="checkbox" [checked]="roundDomains" (change)="roundDomains = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{roundDomains}}" (change)="roundDomains = $event.target.checked" />
             Round Domains
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('rotateXAxisTicks')">
           <label>
-            <input type="checkbox" [checked]="rotateXAxisTicks" (change)="rotateXAxisTicks = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{rotateXAxisTicks}}" (change)="rotateXAxisTicks = $event.target.checked" />
             Rotate X Axis Ticks
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('gradient')">
           <label>
-            <input type="checkbox" [checked]="gradient" (change)="gradient = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{gradient}}" (change)="gradient = $event.target.checked" />
             Use Gradients
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('noBarWhenZero')">
           <label>
-            <input type="checkbox" [checked]="noBarWhenZero" (change)="noBarWhenZero = $event.target.checked">
+            <input type="checkbox" ng-attr-[checked]="{{noBarWhenZero}}" (change)="noBarWhenZero = $event.target.checked">
             Hide bar if value is 0
           </label> <br/>
         </div>        
         <div *ngIf="chart.options.includes('showLegend')">
           <label>
-            <input type="checkbox" [checked]="showLegend" (change)="showLegend = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showLegend}}" (change)="showLegend = $event.target.checked" />
             Show Legend
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showDataLabel')">
           <label>
-            <input type="checkbox" [checked]="showDataLabel" (change)="showDataLabel = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showDataLabel}}" (change)="showDataLabel = $event.target.checked" />
             Show Data Label
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('roundEdges')">
           <label>
-            <input type="checkbox" [checked]="roundEdges" (change)="roundEdges = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{roundEdges}}" (change)="roundEdges = $event.target.checked" />
             Round Bar Edges
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('legendTitle')">
           <label>Legend Title:</label><br />
-          <input type="text" [(ngModel)]="legendTitle" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{legendTitle}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('legendPosition')">
           <label>Legend Position:</label><br />
-          <select style="margin-left: 10px;" [(ngModel)]="legendPosition">
+          <select style="margin-left: 10px;" ng-attr-[(ngModel)]="{{legendPosition}}">
             <option value="right">Right</option>
             <option value="below">Below</option> </select
           ><br />
         </div>
         <div *ngIf="chart.options.includes('tooltipDisabled')">
           <label>
-            <input type="checkbox" [checked]="tooltipDisabled" (change)="tooltipDisabled = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{tooltipDisabled}}" (change)="tooltipDisabled = $event.target.checked" />
             Disable tooltip
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showText')">
           <label>
-            <input type="checkbox" [checked]="showText" (change)="showText = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showText}}" (change)="showText = $event.target.checked" />
             Show Text
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('showXAxisLabel')">
           <label>
-            <input type="checkbox" [checked]="showXAxisLabel" (change)="showXAxisLabel = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showXAxisLabel}}" (change)="showXAxisLabel = $event.target.checked" />
             Show X Axis Label
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('xAxisLabel')">
           <label>X Axis Label:</label><br />
-          <input type="text" [(ngModel)]="xAxisLabel" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{xAxisLabel}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('showYAxisLabel')">
           <label>
-            <input type="checkbox" [checked]="showYAxisLabel" (change)="showYAxisLabel = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showYAxisLabel}}" (change)="showYAxisLabel = $event.target.checked" />
             Show Y Axis Label
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('yAxisLabel')">
           <label>Y Axis Label:</label><br />
-          <input type="text" [(ngModel)]="yAxisLabel" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{yAxisLabel}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('showLabels')">
           <label>
-            <input type="checkbox" [checked]="showLabels" (change)="showLabels = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{showLabels}}" (change)="showLabels = $event.target.checked" />
             Show Labels
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('trimXAxisTicks')">
           <label>
-            <input type="checkbox" [checked]="trimXAxisTicks" (change)="trimXAxisTicks = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{trimXAxisTicks}}" (change)="trimXAxisTicks = $event.target.checked" />
             Trim X Axis Ticks
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('maxXAxisTickLength')">
           <label>Max X Axis Tick Length:</label><br />
-          <input type="text" [(ngModel)]="maxXAxisTickLength" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{maxXAxisTickLength}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('trimYAxisTicks')">
           <label>
-            <input type="checkbox" [checked]="trimYAxisTicks" (change)="trimYAxisTicks = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{trimYAxisTicks}}" (change)="trimYAxisTicks = $event.target.checked" />
             Trim Y Axis Ticks
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('maxYAxisTickLength')">
           <label>Max Y Axis Tick Length:</label><br />
-          <input type="text" [(ngModel)]="maxYAxisTickLength" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{maxYAxisTickLength}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('doughnut')">
           <label>
-            <input type="checkbox" [checked]="doughnut" (change)="doughnut = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{doughnut}}" (change)="doughnut = $event.target.checked" />
             Doughnut
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('arcWidth') && doughnut">
           <label>Arc width (fraction of radius):</label><br />
-          <input type="number" [disabled]="!doughnut" [(ngModel)]="arcWidth" max="1" min="0" step="0.01" /><br />
+          <input type="number" ng-attr-[disabled]="{{!doughnut}}" ng-attr-[(ngModel)]="{{arcWidth}}" max="1" min="0" step="0.01" /><br />
         </div>
         <div *ngIf="chart.options.includes('explodeSlices') && !doughnut">
           <label>
-            <input type="checkbox" [checked]="explodeSlices" (change)="explodeSlices = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{explodeSlices}}" (change)="explodeSlices = $event.target.checked" />
             Explode Slices
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('autoScale')">
           <label>
-            <input type="checkbox" [checked]="autoScale" (change)="autoScale = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{autoScale}}" (change)="autoScale = $event.target.checked" />
             Auto Scale
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('timeline')">
           <label>
-            <input type="checkbox" [checked]="timeline" (change)="timeline = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{timeline}}" (change)="timeline = $event.target.checked" />
             Timeline
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('curve')">
           <label>Line Interpolation</label>
-          <select [(ngModel)]="curveType" (ngModelChange)="curve = getInterpolationType($event)">
-            <option *ngFor="let interpolationType of interpolationTypes" [value]="interpolationType">
+          <select ng-attr-[(ngModel)]="{{curveType}}" (ngModelChange)="curve = getInterpolationType($event)">
+            <option *ngFor="let interpolationType of interpolationTypes" ng-attr-[value]="{{interpolationType}}">
               {{ interpolationType }}
             </option>
           </select>
         </div>
         <div *ngIf="chart.options.includes('curveClosed')">
           <label>Line Interpolation</label>
-          <select [(ngModel)]="closedCurveType" (ngModelChange)="closedCurve = getInterpolationType($event)">
-            <option *ngFor="let interpolationType of closedInterpolationTypes" [value]="interpolationType">
+          <select ng-attr-[(ngModel)]="{{closedCurveType}}" (ngModelChange)="closedCurve = getInterpolationType($event)">
+            <option *ngFor="let interpolationType of closedInterpolationTypes" ng-attr-[value]="{{interpolationType}}">
               {{ interpolationType }}
             </option>
           </select>
         </div>
         <div *ngIf="chart.options.includes('min')">
           <label>Min value:</label><br />
-          <input type="number" [(ngModel)]="gaugeMin" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeMin}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('max')">
           <label>Max value:</label><br />
-          <input type="number" [(ngModel)]="gaugeMax" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeMax}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('innerPadding')">
           <label>Inner padding value:</label><br />
-          <input type="text" [(ngModel)]="innerPadding" min="0" step="1" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{innerPadding}}" min="0" step="1" /><br />
         </div>
         <div *ngIf="chart.options.includes('barPadding')">
           <label>Padding between bars:</label><br />
-          <input type="number" [(ngModel)]="barPadding" min="0" step="1" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{barPadding}}" min="0" step="1" /><br />
         </div>
         <div *ngIf="chart.options.includes('groupPadding')">
           <label>Padding between groups:</label><br />
-          <input type="number" [(ngModel)]="groupPadding" min="0" step="1" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{groupPadding}}" min="0" step="1" /><br />
         </div>
         <div *ngIf="chart.options.includes('value')">
           <label>Value:</label><br />
-          <input type="number" [(ngModel)]="gaugeValue" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeValue}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('previousValue')">
           <label>Previous value:</label><br />
-          <input type="number" [(ngModel)]="gaugePreviousValue" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugePreviousValue}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('angleSpan')">
           <label>Angle span:</label><br />
-          <input type="number" [(ngModel)]="gaugeAngleSpan" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeAngleSpan}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('startAngle')">
           <label>Start Angle:</label><br />
-          <input type="number" [(ngModel)]="gaugeStartAngle" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeStartAngle}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('showAxis')">
           <label>
-            <input type="checkbox" [checked]="gaugeShowAxis" (change)="gaugeShowAxis = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{gaugeShowAxis}}" (change)="gaugeShowAxis = $event.target.checked" />
             Show Axis
           </label>
           <br />
         </div>
         <div *ngIf="chart.options.includes('largeSegments')">
           <label>Number of large segments:</label><br />
-          <input type="number" [(ngModel)]="gaugeLargeSegments" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeLargeSegments}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('smallSegments')">
           <label>Number of small segments:</label><br />
-          <input type="number" [(ngModel)]="gaugeSmallSegments" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{gaugeSmallSegments}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('units')">
           <label>Units:</label><br />
-          <input type="text" [(ngModel)]="gaugeUnits" /><br />
+          <input type="text" ng-attr-[(ngModel)]="{{gaugeUnits}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('margin')">
           <label>
-            <input type="checkbox" [checked]="margin" (change)="margin = $event.target.checked" />
+            <input type="checkbox" ng-attr-[checked]="{{margin}}" (change)="margin = $event.target.checked" />
             Show Margin
           </label>
           <br />
         </div>
 
         <div *ngIf="chart.options.includes('margin') && margin">
-          <label>Top:</label><input type="number" [(ngModel)]="marginTop" /><br />
-          <label>Right:</label><input type="number" [(ngModel)]="marginRight" /><br />
-          <label>Bottom:</label><input type="number" [(ngModel)]="marginBottom" /><br />
-          <label>Left:</label><input type="number" [(ngModel)]="marginLeft" /><br />
+          <label>Top:</label><input type="number" ng-attr-[(ngModel)]="{{marginTop}}" /><br />
+          <label>Right:</label><input type="number" ng-attr-[(ngModel)]="{{marginRight}}" /><br />
+          <label>Bottom:</label><input type="number" ng-attr-[(ngModel)]="{{marginBottom}}" /><br />
+          <label>Left:</label><input type="number" ng-attr-[(ngModel)]="{{marginLeft}}" /><br />
         </div>
 
         <div *ngIf="chart.options.includes('minRadius')">
-          <label>Minimum Radius:</label><input type="number" [(ngModel)]="minRadius" />
+          <label>Minimum Radius:</label><input type="number" ng-attr-[(ngModel)]="{{minRadius}}" />
         </div>
 
         <div *ngIf="chart.options.includes('maxRadius')">
-          <label>Maximum Radius:</label><input type="number" [(ngModel)]="maxRadius" />
+          <label>Maximum Radius:</label><input type="number" ng-attr-[(ngModel)]="{{maxRadius}}" />
         </div>
 
         <div *ngIf="chart.options.includes('xScaleMin')">
           <div *ngIf="chartType !== 'bubble-chart'">
             <label></label><br />
-            <ngx-date-time [inputType]="'datetime'" label="Minimum X-Scale value" [(ngModel)]="xScaleMin">
+            <ngx-date-time ng-attr-[inputType]="{{'datetime'}}" label="Minimum X-Scale value" ng-attr-[(ngModel)]="{{xScaleMin}}">
             </ngx-date-time>
           </div>
           <div *ngIf="chartType === 'bubble-chart'">
             <label>Minimum X-Scale value</label><br />
-            <input type="number" [(ngModel)]="xScaleMin" /><br />
+            <input type="number" ng-attr-[(ngModel)]="{{xScaleMin}}" /><br />
           </div>
         </div>
 
@@ -1534,25 +1534,25 @@
           <div *ngIf="!chartType.startsWith('bar-horizontal') && chartType !== 'bubble-chart'">
             <ngx-date-time
               *ngIf="!chartType.startsWith('bar-horizontal')"
-              [inputType]="'datetime'"
+              ng-attr-[inputType]="{{'datetime'}}"
               label="Maximum X-Scale value"
-              [(ngModel)]="xScaleMax"
+              ng-attr-[(ngModel)]="{{xScaleMax}}"
             >
             </ngx-date-time>
           </div>
           <div *ngIf="chartType.startsWith('bar-horizontal') || chartType === 'bubble-chart'">
             <label>Maximum X-Scale value</label><br />
-            <input type="number" [(ngModel)]="xScaleMax" /><br />
+            <input type="number" ng-attr-[(ngModel)]="{{xScaleMax}}" /><br />
           </div>
         </div>
 
         <div *ngIf="chart.options.includes('yScaleMin')">
           <label>Minimum Y-Scale value</label><br />
-          <input type="number" [(ngModel)]="yScaleMin" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{yScaleMin}}" /><br />
         </div>
         <div *ngIf="chart.options.includes('yScaleMax')">
           <label>Maximum Y-Scale value</label><br />
-          <input type="number" [(ngModel)]="yScaleMax" /><br />
+          <input type="number" ng-attr-[(ngModel)]="{{yScaleMax}}" /><br />
         </div>
       </div>
       <h3><a href="https://swimlane.gitbooks.io/ngx-charts/content/" target="_blank">Documentation</a></h3>

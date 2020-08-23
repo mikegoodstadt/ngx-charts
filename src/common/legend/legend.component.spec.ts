@@ -38,10 +38,10 @@ describe('<ngx-charts-legend>', () => {
       set: {
         template: `
                 <ngx-charts-legend
-                  [title]="legendTitle"
-                  [colors]="colors"
-                  [data]="seriesData"
-                  [height]="legendHeight">
+                  ng-attr-[title]="{{legendTitle}}"
+                  ng-attr-[colors]="{{colors}}"
+                  ng-attr-[data]="{{seriesData}}"
+                  ng-attr-[height]="{{legendHeight}}">
                 </ngx-charts-legend>
             `
       }

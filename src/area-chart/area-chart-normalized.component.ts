@@ -22,83 +22,83 @@ import { getUniqueXDomainValues, getScaleType } from '../common/domain.helper';
   selector: 'ngx-charts-area-chart-normalized',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="legend"
-      [legendOptions]="legendOptions"
-      [activeEntries]="activeEntries"
-      [animations]="animations"
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{legend}}"
+      ng-attr-[legendOptions]="{{legendOptions}}"
+      ng-attr-[activeEntries]="{{activeEntries}}"
+      ng-attr-[animations]="{{animations}}"
       (legendLabelClick)="onClick($event)"
       (legendLabelActivate)="onActivate($event)"
       (legendLabelDeactivate)="onDeactivate($event)"
     >
       <svg:defs>
-        <svg:clipPath [attr.id]="clipPathId">
+        <svg:clipPath ng-attr-[attr.id]="{{clipPathId}}">
           <svg:rect
-            [attr.width]="dims.width + 10"
-            [attr.height]="dims.height + 10"
-            [attr.transform]="'translate(-5, -5)'"
+            ng-attr-[attr.width]="{{dims.width + 10}}"
+            ng-attr-[attr.height]="{{dims.height + 10}}"
+            ng-attr-[attr.transform]="{{'translate(-5, -5)'}}"
           />
         </svg:clipPath>
       </svg:defs>
-      <svg:g [attr.transform]="transform" class="area-chart chart">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="area-chart chart">
         <svg:g
           ngx-charts-x-axis
           *ngIf="xAxis"
-          [xScale]="xScale"
-          [dims]="dims"
-          [showGridLines]="showGridLines"
-          [showLabel]="showXAxisLabel"
-          [labelText]="xAxisLabel"
-          [trimTicks]="trimXAxisTicks"
-          [rotateTicks]="rotateXAxisTicks"
-          [maxTickLength]="maxXAxisTickLength"
-          [tickFormatting]="xAxisTickFormatting"
-          [ticks]="xAxisTicks"
+          ng-attr-[xScale]="{{xScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[showLabel]="{{showXAxisLabel}}"
+          ng-attr-[labelText]="{{xAxisLabel}}"
+          ng-attr-[trimTicks]="{{trimXAxisTicks}}"
+          ng-attr-[rotateTicks]="{{rotateXAxisTicks}}"
+          ng-attr-[maxTickLength]="{{maxXAxisTickLength}}"
+          ng-attr-[tickFormatting]="{{xAxisTickFormatting}}"
+          ng-attr-[ticks]="{{xAxisTicks}}"
           (dimensionsChanged)="updateXAxisHeight($event)"
         ></svg:g>
         <svg:g
           ngx-charts-y-axis
           *ngIf="yAxis"
-          [yScale]="yScale"
-          [dims]="dims"
-          [showGridLines]="showGridLines"
-          [showLabel]="showYAxisLabel"
-          [labelText]="yAxisLabel"
-          [trimTicks]="trimYAxisTicks"
-          [maxTickLength]="maxYAxisTickLength"
-          [tickFormatting]="yAxisTickFormatting"
-          [ticks]="yAxisTicks"
+          ng-attr-[yScale]="{{yScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[showLabel]="{{showYAxisLabel}}"
+          ng-attr-[labelText]="{{yAxisLabel}}"
+          ng-attr-[trimTicks]="{{trimYAxisTicks}}"
+          ng-attr-[maxTickLength]="{{maxYAxisTickLength}}"
+          ng-attr-[tickFormatting]="{{yAxisTickFormatting}}"
+          ng-attr-[ticks]="{{yAxisTicks}}"
           (dimensionsChanged)="updateYAxisWidth($event)"
         ></svg:g>
-        <svg:g [attr.clip-path]="clipPath">
+        <svg:g ng-attr-[attr.clip-path]="{{clipPath}}">
           <svg:g *ngFor="let series of results; trackBy: trackBy">
             <svg:g
               ngx-charts-area-series
-              [xScale]="xScale"
-              [yScale]="yScale"
-              [colors]="colors"
-              [data]="series"
-              [scaleType]="scaleType"
-              [activeEntries]="activeEntries"
-              [gradient]="gradient"
+              ng-attr-[xScale]="{{xScale}}"
+              ng-attr-[yScale]="{{yScale}}"
+              ng-attr-[colors]="{{colors}}"
+              ng-attr-[data]="{{series}}"
+              ng-attr-[scaleType]="{{scaleType}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[gradient]="{{gradient}}"
               normalized="true"
-              [curve]="curve"
-              [animations]="animations"
+              ng-attr-[curve]="{{curve}}"
+              ng-attr-[animations]="{{animations}}"
             />
           </svg:g>
 
           <svg:g *ngIf="!tooltipDisabled" (mouseleave)="hideCircles()">
             <svg:g
               ngx-charts-tooltip-area
-              [dims]="dims"
-              [xSet]="xSet"
-              [xScale]="xScale"
-              [yScale]="yScale"
-              [results]="results"
-              [colors]="colors"
-              [showPercentage]="true"
-              [tooltipDisabled]="tooltipDisabled"
-              [tooltipTemplate]="seriesTooltipTemplate"
+              ng-attr-[dims]="{{dims}}"
+              ng-attr-[xSet]="{{xSet}}"
+              ng-attr-[xScale]="{{xScale}}"
+              ng-attr-[yScale]="{{yScale}}"
+              ng-attr-[results]="{{results}}"
+              ng-attr-[colors]="{{colors}}"
+              ng-attr-[showPercentage]="{{true}}"
+              ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+              ng-attr-[tooltipTemplate]="{{seriesTooltipTemplate}}"
               (hover)="updateHoveredVertical($event)"
             />
 
@@ -106,15 +106,15 @@ import { getUniqueXDomainValues, getScaleType } from '../common/domain.helper';
               <svg:g
                 ngx-charts-circle-series
                 type="stacked"
-                [xScale]="xScale"
-                [yScale]="yScale"
-                [colors]="colors"
-                [activeEntries]="activeEntries"
-                [data]="series"
-                [scaleType]="scaleType"
-                [visibleValue]="hoveredVertical"
-                [tooltipDisabled]="tooltipDisabled"
-                [tooltipTemplate]="tooltipTemplate"
+                ng-attr-[xScale]="{{xScale}}"
+                ng-attr-[yScale]="{{yScale}}"
+                ng-attr-[colors]="{{colors}}"
+                ng-attr-[activeEntries]="{{activeEntries}}"
+                ng-attr-[data]="{{series}}"
+                ng-attr-[scaleType]="{{scaleType}}"
+                ng-attr-[visibleValue]="{{hoveredVertical}}"
+                ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+                ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
                 (select)="onClick($event, series)"
                 (activate)="onActivate($event)"
                 (deactivate)="onDeactivate($event)"
@@ -126,28 +126,28 @@ import { getUniqueXDomainValues, getScaleType } from '../common/domain.helper';
       <svg:g
         ngx-charts-timeline
         *ngIf="timeline && scaleType != 'ordinal'"
-        [attr.transform]="timelineTransform"
-        [results]="results"
-        [view]="[timelineWidth, height]"
-        [height]="timelineHeight"
-        [scheme]="scheme"
-        [customColors]="customColors"
-        [legend]="legend"
-        [scaleType]="scaleType"
+        ng-attr-[attr.transform]="{{timelineTransform}}"
+        ng-attr-[results]="{{results}}"
+        ng-attr-[view]="{{[timelineWidth, height]}}"
+        ng-attr-[height]="{{timelineHeight}}"
+        ng-attr-[scheme]="{{scheme}}"
+        ng-attr-[customColors]="{{customColors}}"
+        ng-attr-[legend]="{{legend}}"
+        ng-attr-[scaleType]="{{scaleType}}"
         (onDomainChange)="updateDomain($event)"
       >
         <svg:g *ngFor="let series of results; trackBy: trackBy">
           <svg:g
             ngx-charts-area-series
-            [xScale]="timelineXScale"
-            [yScale]="timelineYScale"
-            [colors]="colors"
-            [data]="series"
-            [scaleType]="scaleType"
-            [gradient]="gradient"
+            ng-attr-[xScale]="{{timelineXScale}}"
+            ng-attr-[yScale]="{{timelineYScale}}"
+            ng-attr-[colors]="{{colors}}"
+            ng-attr-[data]="{{series}}"
+            ng-attr-[scaleType]="{{scaleType}}"
+            ng-attr-[gradient]="{{gradient}}"
             normalized="true"
-            [curve]="curve"
-            [animations]="animations"
+            ng-attr-[curve]="{{curve}}"
+            ng-attr-[animations]="{{animations}}"
           />
         </svg:g>
       </svg:g>

@@ -40,10 +40,10 @@ xdescribe('<ngx-charts-pie>', () => {
         set: {
           template: `
             <ngx-charts-pie-chart
-                [results]="single"
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [doughnut]="false">
+                ng-attr-[results]="{{single}}"
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[doughnut]="{{false}}">
             </ngx-charts-pie-chart>`
         }
       }).compileComponents();
@@ -90,10 +90,10 @@ xdescribe('<ngx-charts-pie>', () => {
         set: {
           template: `
             <ngx-charts-pie-chart
-                [results]="single"
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [doughnut]="true">
+                ng-attr-[results]="{{single}}"
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[doughnut]="{{true}}">
             </ngx-charts-pie-chart>`
         }
       });
@@ -120,11 +120,11 @@ xdescribe('<ngx-charts-pie>', () => {
         set: {
           template: `
             <ngx-charts-pie-chart
-                [results]="single"
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [doughnut]="true"
-                [arcWidth]="0.1">
+                ng-attr-[results]="{{single}}"
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[doughnut]="{{true}}"
+                ng-attr-[arcWidth]="{{0.1}}">
             </ngx-charts-pie-chart>`
         }
       });

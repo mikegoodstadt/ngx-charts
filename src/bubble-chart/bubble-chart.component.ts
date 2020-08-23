@@ -23,79 +23,79 @@ import { id } from '../utils/id';
   selector: 'ngx-charts-bubble-chart',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="legend"
-      [activeEntries]="activeEntries"
-      [legendOptions]="legendOptions"
-      [animations]="animations"
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{legend}}"
+      ng-attr-[activeEntries]="{{activeEntries}}"
+      ng-attr-[legendOptions]="{{legendOptions}}"
+      ng-attr-[animations]="{{animations}}"
       (legendLabelClick)="onClick($event)"
       (legendLabelActivate)="onActivate($event)"
       (legendLabelDeactivate)="onDeactivate($event)"
     >
       <svg:defs>
-        <svg:clipPath [attr.id]="clipPathId">
+        <svg:clipPath ng-attr-[attr.id]="{{clipPathId}}">
           <svg:rect
-            [attr.width]="dims.width + 10"
-            [attr.height]="dims.height + 10"
-            [attr.transform]="'translate(-5, -5)'"
+            ng-attr-[attr.width]="{{dims.width + 10}}"
+            ng-attr-[attr.height]="{{dims.height + 10}}"
+            ng-attr-[attr.transform]="{{'translate(-5, -5)'}}"
           />
         </svg:clipPath>
       </svg:defs>
-      <svg:g [attr.transform]="transform" class="bubble-chart chart">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="bubble-chart chart">
         <svg:g
           ngx-charts-x-axis
           *ngIf="xAxis"
-          [showGridLines]="showGridLines"
-          [dims]="dims"
-          [xScale]="xScale"
-          [showLabel]="showXAxisLabel"
-          [labelText]="xAxisLabel"
-          [trimTicks]="trimXAxisTicks"
-          [rotateTicks]="rotateXAxisTicks"
-          [maxTickLength]="maxXAxisTickLength"
-          [tickFormatting]="xAxisTickFormatting"
-          [ticks]="xAxisTicks"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[xScale]="{{xScale}}"
+          ng-attr-[showLabel]="{{showXAxisLabel}}"
+          ng-attr-[labelText]="{{xAxisLabel}}"
+          ng-attr-[trimTicks]="{{trimXAxisTicks}}"
+          ng-attr-[rotateTicks]="{{rotateXAxisTicks}}"
+          ng-attr-[maxTickLength]="{{maxXAxisTickLength}}"
+          ng-attr-[tickFormatting]="{{xAxisTickFormatting}}"
+          ng-attr-[ticks]="{{xAxisTicks}}"
           (dimensionsChanged)="updateXAxisHeight($event)"
         />
         <svg:g
           ngx-charts-y-axis
           *ngIf="yAxis"
-          [showGridLines]="showGridLines"
-          [yScale]="yScale"
-          [dims]="dims"
-          [showLabel]="showYAxisLabel"
-          [labelText]="yAxisLabel"
-          [trimTicks]="trimYAxisTicks"
-          [maxTickLength]="maxYAxisTickLength"
-          [tickFormatting]="yAxisTickFormatting"
-          [ticks]="yAxisTicks"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[yScale]="{{yScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[showLabel]="{{showYAxisLabel}}"
+          ng-attr-[labelText]="{{yAxisLabel}}"
+          ng-attr-[trimTicks]="{{trimYAxisTicks}}"
+          ng-attr-[maxTickLength]="{{maxYAxisTickLength}}"
+          ng-attr-[tickFormatting]="{{yAxisTickFormatting}}"
+          ng-attr-[ticks]="{{yAxisTicks}}"
           (dimensionsChanged)="updateYAxisWidth($event)"
         />
         <svg:rect
           class="bubble-chart-area"
           x="0"
           y="0"
-          [attr.width]="dims.width"
-          [attr.height]="dims.height"
+          ng-attr-[attr.width]="{{dims.width}}"
+          ng-attr-[attr.height]="{{dims.height}}"
           style="fill: rgb(255, 0, 0); opacity: 0; cursor: 'auto';"
           (mouseenter)="deactivateAll()"
         />
-        <svg:g [attr.clip-path]="clipPath">
-          <svg:g *ngFor="let series of data; trackBy: trackBy" [@animationState]="'active'">
+        <svg:g ng-attr-[attr.clip-path]="{{clipPath}}">
+          <svg:g *ngFor="let series of data; trackBy: trackBy" ng-attr-[@animationState]="{{'active'}}">
             <svg:g
               ngx-charts-bubble-series
-              [xScale]="xScale"
-              [yScale]="yScale"
-              [rScale]="rScale"
-              [xScaleType]="xScaleType"
-              [yScaleType]="yScaleType"
-              [xAxisLabel]="xAxisLabel"
-              [yAxisLabel]="yAxisLabel"
-              [colors]="colors"
-              [data]="series"
-              [activeEntries]="activeEntries"
-              [tooltipDisabled]="tooltipDisabled"
-              [tooltipTemplate]="tooltipTemplate"
+              ng-attr-[xScale]="{{xScale}}"
+              ng-attr-[yScale]="{{yScale}}"
+              ng-attr-[rScale]="{{rScale}}"
+              ng-attr-[xScaleType]="{{xScaleType}}"
+              ng-attr-[yScaleType]="{{yScaleType}}"
+              ng-attr-[xAxisLabel]="{{xAxisLabel}}"
+              ng-attr-[yAxisLabel]="{{yAxisLabel}}"
+              ng-attr-[colors]="{{colors}}"
+              ng-attr-[data]="{{series}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+              ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
               (select)="onClick($event, series)"
               (activate)="onActivate($event)"
               (deactivate)="onDeactivate($event)"

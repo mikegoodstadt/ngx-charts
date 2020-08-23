@@ -14,13 +14,13 @@ import { formatLabel } from '../label.helper';
 @Component({
   selector: 'ngx-charts-advanced-legend',
   template: `
-    <div class="advanced-pie-legend" [style.width.px]="width">
+    <div class="advanced-pie-legend" ng-attr-[style.width.px]="{{width}}">
       <div
         *ngIf="animations"
         class="total-value"
         ngx-charts-count-up
-        [countTo]="roundedTotal"
-        [valueFormatting]="valueFormatting"
+        ng-attr-[countTo]="{{roundedTotal}}"
+        ng-attr-[valueFormatting]="{{valueFormatting}}"
       ></div>
       <div class="total-value" *ngIf="!animations">
         {{ valueFormatting ? valueFormatting(roundedTotal) : defaultValueFormatting(roundedTotal) }}
@@ -38,13 +38,13 @@ import { formatLabel } from '../label.helper';
             (mouseleave)="deactivate.emit(legendItem.data)"
             (click)="select.emit(legendItem.data)"
           >
-            <div class="item-color" [style.border-left-color]="legendItem.color"></div>
+            <div class="item-color" ng-attr-[style.border-left-color]="{{legendItem.color}}"></div>
             <div
               *ngIf="animations"
               class="item-value"
               ngx-charts-count-up
-              [countTo]="legendItem._value"
-              [valueFormatting]="valueFormatting"
+              ng-attr-[countTo]="{{legendItem._value}}"
+              ng-attr-[valueFormatting]="{{valueFormatting}}"
             ></div>
             <div *ngIf="!animations" class="item-value">
               {{ valueFormatting ? valueFormatting(legendItem.value) : defaultValueFormatting(legendItem.value) }}
@@ -54,8 +54,8 @@ import { formatLabel } from '../label.helper';
               *ngIf="animations"
               class="item-percent"
               ngx-charts-count-up
-              [countTo]="legendItem.percentage"
-              [countSuffix]="'%'"
+              ng-attr-[countTo]="{{legendItem.percentage}}"
+              ng-attr-[countSuffix]="{{'%'}}"
             ></div>
             <div *ngIf="!animations" class="item-percent">{{ legendItem.percentage.toLocaleString() }}%</div>
           </div>

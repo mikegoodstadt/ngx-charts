@@ -16,72 +16,72 @@ import { ColorHelper } from '../common/color.helper';
 @Component({
   selector: 'ngx-charts-linear-gauge',
   template: `
-    <ngx-charts-chart [view]="[width, height]" [showLegend]="false" [animations]="animations" (click)="onClick()">
+    <ngx-charts-chart ng-attr-[view]="{{[width, height]}}" ng-attr-[showLegend]="{{false}}" ng-attr-[animations]="{{animations}}" (click)="onClick()">
       <svg:g class="linear-gauge chart">
         <svg:g
           ngx-charts-bar
           class="background-bar"
-          [width]="dims.width"
-          [height]="3"
-          [x]="margin[3]"
-          [y]="dims.height / 2 + margin[0] - 2"
-          [data]="{}"
-          [orientation]="'horizontal'"
-          [roundEdges]="true"
-          [animations]="animations"
+          ng-attr-[width]="{{dims.width}}"
+          ng-attr-[height]="{{3}}"
+          ng-attr-[x]="{{margin[3]}}"
+          ng-attr-[y]="{{dims.height / 2 + margin[0] - 2}}"
+          ng-attr-[data]="{{{}}}"
+          ng-attr-[orientation]="{{'horizontal'}}"
+          ng-attr-[roundEdges]="{{true}}"
+          ng-attr-[animations]="{{animations}}"
         ></svg:g>
         <svg:g
           ngx-charts-bar
-          [width]="valueScale(value)"
-          [height]="3"
-          [x]="margin[3]"
-          [y]="dims.height / 2 + margin[0] - 2"
-          [fill]="colors.getColor(units)"
-          [data]="{}"
-          [orientation]="'horizontal'"
-          [roundEdges]="true"
-          [animations]="animations"
+          ng-attr-[width]="{{valueScale(value)}}"
+          ng-attr-[height]="{{3}}"
+          ng-attr-[x]="{{margin[3]}}"
+          ng-attr-[y]="{{dims.height / 2 + margin[0] - 2}}"
+          ng-attr-[fill]="{{colors.getColor(units)}}"
+          ng-attr-[data]="{{{}}}"
+          ng-attr-[orientation]="{{'horizontal'}}"
+          ng-attr-[roundEdges]="{{true}}"
+          ng-attr-[animations]="{{animations}}"
         ></svg:g>
 
         <svg:line
           *ngIf="hasPreviousValue"
-          [attr.transform]="transformLine"
+          ng-attr-[attr.transform]="{{transformLine}}"
           x1="0"
           y1="5"
           x2="0"
           y2="15"
-          [attr.stroke]="colors.getColor(units)"
+          ng-attr-[attr.stroke]="{{colors.getColor(units)}}"
         />
 
         <svg:line
           *ngIf="hasPreviousValue"
-          [attr.transform]="transformLine"
+          ng-attr-[attr.transform]="{{transformLine}}"
           x1="0"
           y1="-5"
           x2="0"
           y2="-15"
-          [attr.stroke]="colors.getColor(units)"
+          ng-attr-[attr.stroke]="{{colors.getColor(units)}}"
         />
 
-        <svg:g [attr.transform]="transform">
-          <svg:g [attr.transform]="valueTranslate">
+        <svg:g ng-attr-[attr.transform]="{{transform}}">
+          <svg:g ng-attr-[attr.transform]="{{valueTranslate}}">
             <svg:text
               #valueTextEl
               class="value"
-              [style.textAnchor]="'middle'"
-              [attr.transform]="valueTextTransform"
+              ng-attr-[style.textAnchor]="{{'middle'}}"
+              ng-attr-[attr.transform]="{{valueTextTransform}}"
               alignment-baseline="after-edge"
             >
               {{ displayValue }}
             </svg:text>
           </svg:g>
 
-          <svg:g [attr.transform]="unitsTranslate">
+          <svg:g ng-attr-[attr.transform]="{{unitsTranslate}}">
             <svg:text
               #unitsTextEl
               class="units"
-              [style.textAnchor]="'middle'"
-              [attr.transform]="unitsTextTransform"
+              ng-attr-[style.textAnchor]="{{'middle'}}"
+              ng-attr-[attr.transform]="{{unitsTextTransform}}"
               alignment-baseline="before-edge"
             >
               {{ units }}

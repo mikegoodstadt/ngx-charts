@@ -45,14 +45,14 @@ describe('<ngx-charts-advanced-legend>', () => {
       set: {
         template: `
                 <ngx-charts-advanced-legend
-                  [label]="legendLabel"
-                  [colors]="colors"
-                  [data]="data"
-                  [width]="legendWidth"
-                  [animations]="false"
-                  [valueFormatting]="valueFormatting"
-                  [labelFormatting]="labelFormatting"
-                  [percentageFormatting]="percentageFormatting">
+                  ng-attr-[label]="{{legendLabel}}"
+                  ng-attr-[colors]="{{colors}}"
+                  ng-attr-[data]="{{data}}"
+                  ng-attr-[width]="{{legendWidth}}"
+                  ng-attr-[animations]="{{false}}"
+                  ng-attr-[valueFormatting]="{{valueFormatting}}"
+                  ng-attr-[labelFormatting]="{{labelFormatting}}"
+                  ng-attr-[percentageFormatting]="{{percentageFormatting}}">
                 </ngx-charts-advanced-legend>
             `
       }

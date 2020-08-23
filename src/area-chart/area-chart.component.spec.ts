@@ -41,9 +41,9 @@ describe('<ngx-charts-area-chart>', () => {
         set: {
           template: `
                <ngx-charts-area-chart
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="data">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{data}}">
               </ngx-charts-area-chart>`
         }
       }).compileComponents();

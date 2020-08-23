@@ -25,53 +25,53 @@ import { MouseEvent } from '../events';
   selector: 'ngx-charts-force-directed-graph',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="legend"
-      [legendOptions]="legendOptions"
-      [animations]="animations"
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{legend}}"
+      ng-attr-[legendOptions]="{{legendOptions}}"
+      ng-attr-[animations]="{{animations}}"
       (legendLabelClick)="onClick($event)"
       (legendLabelActivate)="onActivate($event)"
       (legendLabelDeactivate)="onDeactivate($event)"
     >
-      <svg:g [attr.transform]="transform" class="force-directed-graph chart">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="force-directed-graph chart">
         <svg:g class="links">
           <svg:g *ngFor="let link of links; trackBy: trackLinkBy">
             <ng-template
               *ngIf="linkTemplate"
-              [ngTemplateOutlet]="linkTemplate"
-              [ngTemplateOutletContext]="{ $implicit: link }"
+              ng-attr-[ngTemplateOutlet]="{{linkTemplate}}"
+              ng-attr-[ngTemplateOutletContext]="{{{ $implicit: link }}}"
             ></ng-template>
             <svg:line
               *ngIf="!linkTemplate"
               strokeWidth="1"
               class="edge"
-              [attr.x1]="link.source.x"
-              [attr.y1]="link.source.y"
-              [attr.x2]="link.target.x"
-              [attr.y2]="link.target.y"
+              ng-attr-[attr.x1]="{{link.source.x}}"
+              ng-attr-[attr.y1]="{{link.source.y}}"
+              ng-attr-[attr.x2]="{{link.target.x}}"
+              ng-attr-[attr.y2]="{{link.target.y}}"
             />
           </svg:g>
         </svg:g>
         <svg:g class="nodes">
           <svg:g
             *ngFor="let node of nodes; trackBy: trackNodeBy"
-            [attr.transform]="'translate(' + node.x + ',' + node.y + ')'"
-            [attr.fill]="colors.getColor(groupResultsBy(node))"
-            [attr.stroke]="colors.getColor(groupResultsBy(node))"
+            ng-attr-[attr.transform]="{{'translate(' + node.x + ',' + node.y + ')'}}"
+            ng-attr-[attr.fill]="{{colors.getColor(groupResultsBy(node))}}"
+            ng-attr-[attr.stroke]="{{colors.getColor(groupResultsBy(node))}}"
             (mousedown)="onDragStart(node, $event)"
             (click)="onClick({ name: node.value })"
             ngx-tooltip
-            [tooltipDisabled]="tooltipDisabled"
-            [tooltipPlacement]="'top'"
-            [tooltipType]="'tooltip'"
-            [tooltipTitle]="tooltipTemplate ? undefined : escape(node.value)"
-            [tooltipTemplate]="tooltipTemplate"
-            [tooltipContext]="node"
+            ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+            ng-attr-[tooltipPlacement]="{{'top'}}"
+            ng-attr-[tooltipType]="{{'tooltip'}}"
+            ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : escape(node.value)}}"
+            ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+            ng-attr-[tooltipContext]="{{node}}"
           >
             <ng-template
               *ngIf="nodeTemplate"
-              [ngTemplateOutlet]="nodeTemplate"
-              [ngTemplateOutletContext]="{ $implicit: node }"
+              ng-attr-[ngTemplateOutlet]="{{nodeTemplate}}"
+              ng-attr-[ngTemplateOutletContext]="{{{ $implicit: node }}}"
             ></ng-template>
             <svg:circle *ngIf="!nodeTemplate" r="5" />
           </svg:g>

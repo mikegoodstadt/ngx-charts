@@ -122,7 +122,7 @@ var PieLabelComponent = /** @class */ (function () {
     PieLabelComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-pie-label]',
-            template: "\n    <title>{{label}}</title>\n    <svg:g\n      [attr.transform]=\"attrTransform\"\n      [style.transform]=\"styleTransform\"\n      [style.transition]=\"textTransition\">\n      <svg:text\n        class=\"pie-label\"\n        [class.animation]=\"animations\"\n        dy=\".35em\"\n        [style.textAnchor]=\"textAnchor()\"\n        [style.shapeRendering]=\"'crispEdges'\">\n        {{labelTrim ? trimLabel(label, labelTrimSize) : label}}\n      </svg:text>\n    </svg:g>\n    <svg:path\n      [attr.d]=\"line\"\n      [attr.stroke]=\"color\"\n      fill=\"none\"\n      class=\"pie-label-line line\"\n      [class.animation]=\"animations\">\n    </svg:path>\n  ",
+            template: "\n    <title>{{label}}</title>\n    <svg:g\n      ng-attr-[attr.transform]=\"{{attrTransform}}\"\n      ng-attr-[style.transform]=\"{{styleTransform}}\"\n      ng-attr-[style.transition]=\"{{textTransition}}\">\n      <svg:text\n        class=\"pie-label\"\n        ng-attr-[class.animation]=\"{{animations}}\"\n        dy=\".35em\"\n        ng-attr-[style.textAnchor]=\"{{textAnchor()}}\"\n        ng-attr-[style.shapeRendering]=\"{{'crispEdges'}}\">\n        {{labelTrim ? trimLabel(label, labelTrimSize) : label}}\n      </svg:text>\n    </svg:g>\n    <svg:path\n      ng-attr-[attr.d]=\"{{line}}\"\n      ng-attr-[attr.stroke]=\"{{color}}\"\n      fill=\"none\"\n      class=\"pie-label-line line\"\n      ng-attr-[class.animation]=\"{{animations}}\">\n    </svg:path>\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         }),
         __metadata("design:paramtypes", [])

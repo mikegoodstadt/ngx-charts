@@ -22,24 +22,24 @@ import { DataItem } from '../models/chart-data.model';
 @Component({
   selector: 'ngx-charts-pie-grid',
   template: `
-    <ngx-charts-chart [view]="[width, height]" [showLegend]="false" [animations]="animations">
-      <svg:g [attr.transform]="transform" class="pie-grid chart">
-        <svg:g *ngFor="let series of series" class="pie-grid-item" [attr.transform]="series.transform">
+    <ngx-charts-chart ng-attr-[view]="{{[width, height]}}" ng-attr-[showLegend]="{{false}}" ng-attr-[animations]="{{animations}}">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="pie-grid chart">
+        <svg:g *ngFor="let series of series" class="pie-grid-item" ng-attr-[attr.transform]="{{series.transform}}">
           <svg:g
             ngx-charts-pie-grid-series
-            [colors]="series.colors"
-            [data]="series.data"
-            [innerRadius]="series.innerRadius"
-            [outerRadius]="series.outerRadius"
-            [animations]="animations"
+            ng-attr-[colors]="{{series.colors}}"
+            ng-attr-[data]="{{series.data}}"
+            ng-attr-[innerRadius]="{{series.innerRadius}}"
+            ng-attr-[outerRadius]="{{series.outerRadius}}"
+            ng-attr-[animations]="{{animations}}"
             (select)="onClick($event)"
             ngx-tooltip
-            [tooltipDisabled]="tooltipDisabled"
-            [tooltipPlacement]="'top'"
-            [tooltipType]="'tooltip'"
-            [tooltipTitle]="tooltipTemplate ? undefined : tooltipText({ data: series })"
-            [tooltipTemplate]="tooltipTemplate"
-            [tooltipContext]="series.data[0].data"
+            ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+            ng-attr-[tooltipPlacement]="{{'top'}}"
+            ng-attr-[tooltipType]="{{'tooltip'}}"
+            ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText({ data: series })}}"
+            ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+            ng-attr-[tooltipContext]="{{series.data[0].data}}"
             (activate)="onActivate($event)"
             (deactivate)="onDeactivate($event)"
           />
@@ -50,8 +50,8 @@ import { DataItem } from '../models/chart-data.model';
             x="0"
             y="5"
             ngx-charts-count-up
-            [countTo]="series.percent"
-            [countSuffix]="'%'"
+            ng-attr-[countTo]="{{series.percent}}"
+            ng-attr-[countSuffix]="{{'%'}}"
             text-anchor="middle"
           ></svg:text>
           <svg:text *ngIf="!animations" class="label percent-label" dy="-0.5em" x="0" y="5" text-anchor="middle">
@@ -65,18 +65,18 @@ import { DataItem } from '../models/chart-data.model';
             class="label"
             dy="1.23em"
             x="0"
-            [attr.y]="series.outerRadius"
+            ng-attr-[attr.y]="{{series.outerRadius}}"
             text-anchor="middle"
             ngx-charts-count-up
-            [countTo]="series.total"
-            [countPrefix]="label + ': '"
+            ng-attr-[countTo]="{{series.total}}"
+            ng-attr-[countPrefix]="{{label + ': '}}"
           ></svg:text>
           <svg:text
             *ngIf="!animations"
             class="label"
             dy="1.23em"
             x="0"
-            [attr.y]="series.outerRadius"
+            ng-attr-[attr.y]="{{series.outerRadius}}"
             text-anchor="middle"
           >
             {{ label }}: {{ series.total.toLocaleString() }}

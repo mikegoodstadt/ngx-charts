@@ -17,15 +17,15 @@ import { id } from '../utils/id';
     <svg:defs *ngIf="gradient">
       <svg:g ngx-charts-svg-linear-gradient
         orientation="vertical"
-        [name]="gradientId"
-        [stops]="gradientStops"
+        ng-attr-[name]="{{gradientId}}"
+        ng-attr-[stops]="{{gradientStops}}"
       />
     </svg:defs>
     <svg:path
       class="area"
-      [attr.d]="areaPath"
-      [attr.fill]="gradient ? gradientFill : fill"
-      [style.opacity]="opacity"
+      ng-attr-[attr.d]="{{areaPath}}"
+      ng-attr-[attr.fill]="{{gradient ? gradientFill : fill}}"
+      ng-attr-[style.opacity]="{{opacity}}"
     />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

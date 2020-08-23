@@ -83,7 +83,7 @@ var GridPanelSeriesComponent = /** @class */ (function () {
     GridPanelSeriesComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-grid-panel-series]',
-            template: "\n    <svg:g ngx-charts-grid-panel *ngFor=\"let gridPanel of gridPanels\"\n      [height]=\"gridPanel.height\"\n      [width]=\"gridPanel.width\"\n      [x]=\"gridPanel.x\"\n      [y]=\"gridPanel.y\"\n      [class.grid-panel]=\"true\"\n      [class.odd]=\"gridPanel.class === 'odd'\"\n      [class.even]=\"gridPanel.class === 'even'\">\n    </svg:g>\n  ",
+            template: "\n    <svg:g ngx-charts-grid-panel *ngFor=\"let gridPanel of gridPanels\"\n      ng-attr-[height]=\"{{gridPanel.height}}\"\n      ng-attr-[width]=\"{{gridPanel.width}}\"\n      ng-attr-[x]=\"{{gridPanel.x}}\"\n      ng-attr-[y]=\"{{gridPanel.y}}\"\n      ng-attr-[class.grid-panel]=\"{{true}}\"\n      ng-attr-[class.odd]=\"{{gridPanel.class === 'odd'}}\"\n      ng-attr-[class.even]=\"{{gridPanel.class === 'even'}}\">\n    </svg:g>\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         })
     ], GridPanelSeriesComponent);

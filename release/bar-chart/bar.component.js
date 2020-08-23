@@ -267,7 +267,7 @@ var BarComponent = /** @class */ (function () {
     BarComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-bar]',
-            template: "\n    <svg:defs *ngIf=\"hasGradient\">\n      <svg:g ngx-charts-svg-linear-gradient [orientation]=\"orientation\" [name]=\"gradientId\" [stops]=\"gradientStops\" />\n    </svg:defs>\n    <svg:path\n      class=\"bar\"\n      stroke=\"none\"\n      role=\"img\"\n      tabIndex=\"-1\"\n      [class.active]=\"isActive\"\n      [class.hidden]=\"hideBar\"\n      [attr.d]=\"path\"\n      [attr.aria-label]=\"ariaLabel\"\n      [attr.fill]=\"hasGradient ? gradientFill : fill\"\n      (click)=\"select.emit(data)\"\n    />\n  ",
+            template: "\n    <svg:defs *ngIf=\"hasGradient\">\n      <svg:g ngx-charts-svg-linear-gradient ng-attr-[orientation]=\"{{orientation}}\" ng-attr-[name]=\"{{gradientId}}\" ng-attr-[stops]=\"{{gradientStops}}\" />\n    </svg:defs>\n    <svg:path\n      class=\"bar\"\n      stroke=\"none\"\n      role=\"img\"\n      tabIndex=\"-1\"\n      ng-attr-[class.active]=\"{{isActive}}\"\n      ng-attr-[class.hidden]=\"{{hideBar}}\"\n      ng-attr-[attr.d]=\"{{path}}\"\n      ng-attr-[attr.aria-label]=\"{{ariaLabel}}\"\n      ng-attr-[attr.fill]=\"{{hasGradient ? gradientFill : fill}}\"\n      (click)=\"select.emit(data)\"\n    />\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         }),
         __metadata("design:paramtypes", [ElementRef])

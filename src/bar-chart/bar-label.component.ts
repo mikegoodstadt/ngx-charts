@@ -16,10 +16,10 @@ import { formatLabel } from '../common/label.helper';
     <svg:text   
       class="textDataLabel" 
       alignment-baseline="middle"     
-      [attr.text-anchor]="textAnchor"
-      [attr.transform]="transform"
-      [attr.x]="x" 
-      [attr.y]="y">
+      ng-attr-[attr.text-anchor]="{{textAnchor}}"
+      ng-attr-[attr.transform]="{{transform}}"
+      ng-attr-[attr.x]="{{x}}" 
+      ng-attr-[attr.y]="{{y}}">
       {{formatedValue}}     
     </svg:text>          
 

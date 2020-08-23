@@ -16,15 +16,15 @@ import { id } from '../utils/id';
 @Component({
   selector: 'g[ngx-charts-heat-map-cell]',
   template: `
-    <svg:g [attr.transform]="transform" class="cell">
+    <svg:g ng-attr-[attr.transform]="{{transform}}" class="cell">
       <defs *ngIf="gradient">
-        <svg:g ngx-charts-svg-linear-gradient orientation="vertical" [name]="gradientId" [stops]="gradientStops" />
+        <svg:g ngx-charts-svg-linear-gradient orientation="vertical" ng-attr-[name]="{{gradientId}}" ng-attr-[stops]="{{gradientStops}}" />
       </defs>
       <svg:rect
-        [attr.fill]="gradient ? gradientUrl : fill"
+        ng-attr-[attr.fill]="{{gradient ? gradientUrl : fill}}"
         rx="3"
-        [attr.width]="width"
-        [attr.height]="height"
+        ng-attr-[attr.width]="{{width}}"
+        ng-attr-[attr.height]="{{height}}"
         class="cell"
         style="cursor: pointer"
         (click)="onClick()"

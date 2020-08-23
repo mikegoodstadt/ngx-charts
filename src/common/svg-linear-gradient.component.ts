@@ -10,15 +10,15 @@ import {
   selector: 'g[ngx-charts-svg-linear-gradient]',
   template: `
     <svg:linearGradient
-      [id]="name"
-      [attr.x1]="x1"
-      [attr.y1]="y1"
-      [attr.x2]="x2"
-      [attr.y2]="y2">
+      ng-attr-[id]="{{name}}"
+      ng-attr-[attr.x1]="{{x1}}"
+      ng-attr-[attr.y1]="{{y1}}"
+      ng-attr-[attr.x2]="{{x2}}"
+      ng-attr-[attr.y2]="{{y2}}">
       <svg:stop *ngFor="let stop of stops"
-        [attr.offset]="stop.offset + '%'"
-        [style.stop-color]="stop.color"
-        [style.stop-opacity]="stop.opacity"
+        ng-attr-[attr.offset]="{{stop.offset + '%'}}"
+        ng-attr-[style.stop-color]="{{stop.color}}"
+        ng-attr-[style.stop-opacity]="{{stop.opacity}}"
       />
     </svg:linearGradient>
   `,

@@ -22,41 +22,41 @@ import { ColorHelper } from '../common/color.helper';
         <svg:g
           ngx-charts-svg-linear-gradient
           orientation="vertical"
-          [name]="gradientId"
-          [stops]="circle.gradientStops"
+          ng-attr-[name]="{{gradientId}}"
+          ng-attr-[stops]="{{circle.gradientStops}}"
         />
       </defs>
       <svg:rect
         *ngIf="barVisible && type === 'standard'"
-        [@animationState]="'active'"
-        [attr.x]="circle.cx - circle.radius"
-        [attr.y]="circle.cy"
-        [attr.width]="circle.radius * 2"
-        [attr.height]="circle.height"
-        [attr.fill]="gradientFill"
+        ng-attr-[@animationState]="{{'active'}}"
+        ng-attr-[attr.x]="{{circle.cx - circle.radius}}"
+        ng-attr-[attr.y]="{{circle.cy}}"
+        ng-attr-[attr.width]="{{circle.radius * 2}}"
+        ng-attr-[attr.height]="{{circle.height}}"
+        ng-attr-[attr.fill]="{{gradientFill}}"
         class="tooltip-bar"
       />
       <svg:g
         ngx-charts-circle
         class="circle"
-        [cx]="circle.cx"
-        [cy]="circle.cy"
-        [r]="circle.radius"
-        [fill]="circle.color"
-        [class.active]="isActive({ name: circle.seriesName })"
-        [pointerEvents]="circle.value === 0 ? 'none' : 'all'"
-        [data]="circle.value"
-        [classNames]="circle.classNames"
+        ng-attr-[cx]="{{circle.cx}}"
+        ng-attr-[cy]="{{circle.cy}}"
+        ng-attr-[r]="{{circle.radius}}"
+        ng-attr-[fill]="{{circle.color}}"
+        ng-attr-[class.active]="{{isActive({ name: circle.seriesName })}}"
+        ng-attr-[pointerEvents]="{{circle.value === 0 ? 'none' : 'all'}}"
+        ng-attr-[data]="{{circle.value}}"
+        ng-attr-[classNames]="{{circle.classNames}}"
         (select)="onClick(circle.data)"
         (activate)="activateCircle()"
         (deactivate)="deactivateCircle()"
         ngx-tooltip
-        [tooltipDisabled]="tooltipDisabled"
-        [tooltipPlacement]="'top'"
-        [tooltipType]="'tooltip'"
-        [tooltipTitle]="tooltipTemplate ? undefined : getTooltipText(circle)"
-        [tooltipTemplate]="tooltipTemplate"
-        [tooltipContext]="circle.data"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[tooltipPlacement]="{{'top'}}"
+        ng-attr-[tooltipType]="{{'tooltip'}}"
+        ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : getTooltipText(circle)}}"
+        ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+        ng-attr-[tooltipContext]="{{circle.data}}"
       />
     </svg:g>
   `,

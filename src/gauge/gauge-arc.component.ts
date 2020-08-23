@@ -14,35 +14,35 @@ import { ColorHelper } from '../common/color.helper';
   template: `
     <svg:g ngx-charts-pie-arc
       class="background-arc"
-      [startAngle]="0"
-      [endAngle]="backgroundArc.endAngle"
-      [innerRadius]="backgroundArc.innerRadius"
-      [outerRadius]="backgroundArc.outerRadius"
-      [cornerRadius]="cornerRadius"
-      [data]="backgroundArc.data"
-      [animate]="false"
-      [pointerEvents]="false">
+      ng-attr-[startAngle]="{{0}}"
+      ng-attr-[endAngle]="{{backgroundArc.endAngle}}"
+      ng-attr-[innerRadius]="{{backgroundArc.innerRadius}}"
+      ng-attr-[outerRadius]="{{backgroundArc.outerRadius}}"
+      ng-attr-[cornerRadius]="{{cornerRadius}}"
+      ng-attr-[data]="{{backgroundArc.data}}"
+      ng-attr-[animate]="{{false}}"
+      ng-attr-[pointerEvents]="{{false}}">
     </svg:g>
     <svg:g ngx-charts-pie-arc
-      [startAngle]="0"
-      [endAngle]="valueArc.endAngle"
-      [innerRadius]="valueArc.innerRadius"
-      [outerRadius]="valueArc.outerRadius"
-      [cornerRadius]="cornerRadius"
-      [fill]="colors.getColor(valueArc.data.name)"
-      [data]="valueArc.data"
-      [animate]="animations"
-      [isActive]="isActive"
+      ng-attr-[startAngle]="{{0}}"
+      ng-attr-[endAngle]="{{valueArc.endAngle}}"
+      ng-attr-[innerRadius]="{{valueArc.innerRadius}}"
+      ng-attr-[outerRadius]="{{valueArc.outerRadius}}"
+      ng-attr-[cornerRadius]="{{cornerRadius}}"
+      ng-attr-[fill]="{{colors.getColor(valueArc.data.name)}}"
+      ng-attr-[data]="{{valueArc.data}}"
+      ng-attr-[animate]="{{animations}}"
+      ng-attr-[isActive]="{{isActive}}"
       (select)="select.emit($event)"
       (activate)="activate.emit($event)"
       (deactivate)="deactivate.emit($event)"
       ngx-tooltip
-      [tooltipDisabled]="tooltipDisabled"
-      [tooltipPlacement]="'top'"
-      [tooltipType]="'tooltip'"
-      [tooltipTitle]="tooltipTemplate ? undefined : tooltipText(valueArc)"
-      [tooltipTemplate]="tooltipTemplate"
-      [tooltipContext]="valueArc.data">
+      ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+      ng-attr-[tooltipPlacement]="{{'top'}}"
+      ng-attr-[tooltipType]="{{'tooltip'}}"
+      ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText(valueArc)}}"
+      ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+      ng-attr-[tooltipContext]="{{valueArc.data}}">
     </svg:g>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -14,22 +14,22 @@ import { getUniqueXDomainValues } from '../../src/common/domain.helper';
   selector: 'ngx-charts-sparkline',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="false"
-      [animations]="animations">
-      <svg:g [attr.transform]="transform" class="line-chart chart">
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{false}}"
+      ng-attr-[animations]="{{animations}}">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="line-chart chart">
         <svg:g>
           <svg:g *ngFor="let series of results; trackBy:trackBy">
             <svg:g ngx-charts-line-series
-              [xScale]="xScale"
-              [yScale]="yScale"
-              [colors]="colors"
-              [data]="series"
-              [activeEntries]="activeEntries"
-              [scaleType]="scaleType"
-              [curve]="curve"
-              [rangeFillOpacity]="rangeFillOpacity"
-              [animations]="animations"
+              ng-attr-[xScale]="{{xScale}}"
+              ng-attr-[yScale]="{{yScale}}"
+              ng-attr-[colors]="{{colors}}"
+              ng-attr-[data]="{{series}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[scaleType]="{{scaleType}}"
+              ng-attr-[curve]="{{curve}}"
+              ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+              ng-attr-[animations]="{{animations}}"
             />
           </svg:g>
         </svg:g>

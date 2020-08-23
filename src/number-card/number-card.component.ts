@@ -7,21 +7,21 @@ import { gridLayout, gridSize } from '../common/grid-layout.helper';
 @Component({
   selector: 'ngx-charts-number-card',
   template: `
-    <ngx-charts-chart [view]="[width, height]" [showLegend]="false" [animations]="animations">
-      <svg:g [attr.transform]="transform" class="number-card chart" [class.clickable]="clickable">
+    <ngx-charts-chart ng-attr-[view]="{{[width, height]}}" ng-attr-[showLegend]="{{false}}" ng-attr-[animations]="{{animations}}">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="number-card chart" ng-attr-[class.clickable]="{{clickable}}">
         <svg:g
           ngx-charts-card-series
-          [colors]="colors"
-          [cardColor]="cardColor"
-          [bandColor]="bandColor"
-          [textColor]="textColor"
-          [emptyColor]="emptyColor"
-          [data]="data"
-          [dims]="dims"
-          [innerPadding]="innerPadding"
-          [valueFormatting]="valueFormatting"
-          [labelFormatting]="labelFormatting"
-          [animations]="animations"
+          ng-attr-[colors]="{{colors}}"
+          ng-attr-[cardColor]="{{cardColor}}"
+          ng-attr-[bandColor]="{{bandColor}}"
+          ng-attr-[textColor]="{{textColor}}"
+          ng-attr-[emptyColor]="{{emptyColor}}"
+          ng-attr-[data]="{{data}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[innerPadding]="{{innerPadding}}"
+          ng-attr-[valueFormatting]="{{valueFormatting}}"
+          ng-attr-[labelFormatting]="{{labelFormatting}}"
+          ng-attr-[animations]="{{animations}}"
           (select)="onClick($event)"
         />
       </svg:g>

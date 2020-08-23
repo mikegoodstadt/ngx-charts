@@ -16,34 +16,34 @@ import { TooltipService } from '../tooltip';
   template: `
     <div
       class="ngx-charts-outer"
-      [style.width.px]="view[0]"
-      [@animationState]="'active'"
-      [@.disabled]="!animations">
+      ng-attr-[style.width.px]="{{view[0]}}"
+      ng-attr-[@animationState]="{{'active'}}"
+      ng-attr-[@.disabled]="{{!animations}}">
       <svg
         class="ngx-charts"
-        [attr.width]="chartWidth"
-        [attr.height]="view[1]">
+        ng-attr-[attr.width]="{{chartWidth}}"
+        ng-attr-[attr.height]="{{view[1]}}">
         <ng-content></ng-content>
       </svg>
       <ngx-charts-scale-legend
         *ngIf="showLegend && legendType === 'scaleLegend'"
         class="chart-legend"
-        [horizontal]="legendOptions && legendOptions.position === 'below'"
-        [valueRange]="legendOptions.domain"
-        [colors]="legendOptions.colors"
-        [height]="view[1]"
-        [width]="legendWidth">
+        ng-attr-[horizontal]="{{legendOptions && legendOptions.position === 'below'}}"
+        ng-attr-[valueRange]="{{legendOptions.domain}}"
+        ng-attr-[colors]="{{legendOptions.colors}}"
+        ng-attr-[height]="{{view[1]}}"
+        ng-attr-[width]="{{legendWidth}}">
       </ngx-charts-scale-legend>
       <ngx-charts-legend
         *ngIf="showLegend && legendType === 'legend'"
         class="chart-legend"
-        [horizontal]="legendOptions && legendOptions.position === 'below'"
-        [data]="legendOptions.domain"
-        [title]="legendOptions.title"
-        [colors]="legendOptions.colors"
-        [height]="view[1]"
-        [width]="legendWidth"
-        [activeEntries]="activeEntries"
+        ng-attr-[horizontal]="{{legendOptions && legendOptions.position === 'below'}}"
+        ng-attr-[data]="{{legendOptions.domain}}"
+        ng-attr-[title]="{{legendOptions.title}}"
+        ng-attr-[colors]="{{legendOptions.colors}}"
+        ng-attr-[height]="{{view[1]}}"
+        ng-attr-[width]="{{legendWidth}}"
+        ng-attr-[activeEntries]="{{activeEntries}}"
         (labelClick)="legendLabelClick.emit($event)"
         (labelActivate)="legendLabelActivate.emit($event)"
         (labelDeactivate)="legendLabelDeactivate.emit($event)">

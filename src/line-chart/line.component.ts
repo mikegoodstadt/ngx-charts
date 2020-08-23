@@ -20,11 +20,11 @@ import { select } from 'd3-selection';
   selector: 'g[ngx-charts-line]',
   template: `
     <svg:path
-      [@animationState]="'active'"
+      ng-attr-[@animationState]="{{'active'}}"
       class="line"
-      [attr.d]="initialPath"
-      [attr.fill]="fill"
-      [attr.stroke]="stroke"
+      ng-attr-[attr.d]="{{initialPath}}"
+      ng-attr-[attr.fill]="{{fill}}"
+      ng-attr-[attr.stroke]="{{stroke}}"
       stroke-width="1.5px"
     />
   `,

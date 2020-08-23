@@ -17,19 +17,19 @@ import { ColorHelper } from '../common/color.helper';
 @Component({
   selector: 'ngx-charts-tree-map',
   template: `
-    <ngx-charts-chart [view]="[width, height]" [showLegend]="false" [animations]="animations">
-      <svg:g [attr.transform]="transform" class="tree-map chart">
+    <ngx-charts-chart ng-attr-[view]="{{[width, height]}}" ng-attr-[showLegend]="{{false}}" ng-attr-[animations]="{{animations}}">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="tree-map chart">
         <svg:g
           ngx-charts-tree-map-cell-series
-          [colors]="colors"
-          [data]="data"
-          [dims]="dims"
-          [tooltipDisabled]="tooltipDisabled"
-          [tooltipTemplate]="tooltipTemplate"
-          [valueFormatting]="valueFormatting"
-          [labelFormatting]="labelFormatting"
-          [gradient]="gradient"
-          [animations]="animations"
+          ng-attr-[colors]="{{colors}}"
+          ng-attr-[data]="{{data}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+          ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+          ng-attr-[valueFormatting]="{{valueFormatting}}"
+          ng-attr-[labelFormatting]="{{labelFormatting}}"
+          ng-attr-[gradient]="{{gradient}}"
+          ng-attr-[animations]="{{animations}}"
           (select)="onClick($event)"
         />
       </svg:g>

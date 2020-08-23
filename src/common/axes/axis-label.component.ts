@@ -11,11 +11,11 @@ import {
   selector: 'g[ngx-charts-axis-label]',
   template: `
     <svg:text
-      [attr.stroke-width]="strokeWidth"
-      [attr.x]="x"
-      [attr.y]="y"
-      [attr.text-anchor]="textAnchor"
-      [attr.transform]="transform">
+      ng-attr-[attr.stroke-width]="{{strokeWidth}}"
+      ng-attr-[attr.x]="{{x}}"
+      ng-attr-[attr.y]="{{y}}"
+      ng-attr-[attr.text-anchor]="{{textAnchor}}"
+      ng-attr-[attr.transform]="{{transform}}">
       {{label}}
     </svg:text>
   `,

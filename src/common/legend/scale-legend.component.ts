@@ -8,15 +8,15 @@ import { DomSanitizer } from '@angular/platform-browser';
   template: `
     <div
       class="scale-legend"
-      [class.horizontal-legend]="horizontal"
-      [style.height.px]="horizontal ? undefined : height"
-      [style.width.px]="width">
+      ng-attr-[class.horizontal-legend]="{{horizontal}}"
+      ng-attr-[style.height.px]="{{horizontal ? undefined : height}}"
+      ng-attr-[style.width.px]="{{width}}">
       <div class="scale-legend-label">
         <span>{{ valueRange[1].toLocaleString() }}</span>
       </div>
       <div
         class="scale-legend-wrap"
-        [style.background]="gradient">
+        ng-attr-[style.background]="{{gradient}}">
       </div>
       <div class="scale-legend-label">
         <span>{{ valueRange[0].toLocaleString() }}</span>

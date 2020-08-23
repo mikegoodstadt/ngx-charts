@@ -4,13 +4,13 @@ import { Component, SimpleChanges, Input, OnChanges, ChangeDetectionStrategy } f
   selector: 'g[ngx-charts-grid-panel-series]',
   template: `
     <svg:g ngx-charts-grid-panel *ngFor="let gridPanel of gridPanels"
-      [height]="gridPanel.height"
-      [width]="gridPanel.width"
-      [x]="gridPanel.x"
-      [y]="gridPanel.y"
-      [class.grid-panel]="true"
-      [class.odd]="gridPanel.class === 'odd'"
-      [class.even]="gridPanel.class === 'even'">
+      ng-attr-[height]="{{gridPanel.height}}"
+      ng-attr-[width]="{{gridPanel.width}}"
+      ng-attr-[x]="{{gridPanel.x}}"
+      ng-attr-[y]="{{gridPanel.y}}"
+      ng-attr-[class.grid-panel]="{{true}}"
+      ng-attr-[class.odd]="{{gridPanel.class === 'odd'}}"
+      ng-attr-[class.even]="{{gridPanel.class === 'even'}}">
     </svg:g>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

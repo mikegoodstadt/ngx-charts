@@ -8,10 +8,10 @@ import {
   selector: 'g[ngx-charts-grid-panel]',
   template: `
     <svg:rect
-      [attr.height]="height"
-      [attr.width]="width"
-      [attr.x]="x"
-      [attr.y]="y"
+      ng-attr-[attr.height]="{{height}}"
+      ng-attr-[attr.width]="{{width}}"
+      ng-attr-[attr.x]="{{x}}"
+      ng-attr-[attr.y]="{{y}}"
       stroke="none"
       class="gridpanel"
     />

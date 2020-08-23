@@ -8,10 +8,10 @@ import { createMouseEvent } from '../events';
     <svg:g>
       <svg:rect
         class="tooltip-area"
-        [attr.x]="0"
+        ng-attr-[attr.x]="{{0}}"
         y="0"
-        [attr.width]="dims.width"
-        [attr.height]="dims.height"
+        ng-attr-[attr.width]="{{dims.width}}"
+        ng-attr-[attr.height]="{{dims.height}}"
         style="opacity: 0; cursor: 'auto';"
         (mousemove)="mouseMove($event)"
         (mouseleave)="hideTooltip()"
@@ -19,29 +19,29 @@ import { createMouseEvent } from '../events';
       <xhtml:ng-template #defaultTooltipTemplate let-model="model">
         <xhtml:div class="area-tooltip-container">
           <xhtml:div *ngFor="let tooltipItem of model" class="tooltip-item">
-            <span class="tooltip-item-color" [style.background-color]="tooltipItem.color"> </span>
+            <span class="tooltip-item-color" ng-attr-[style.background-color]="{{tooltipItem.color}}"> </span>
             {{ getToolTipText(tooltipItem) }}
           </xhtml:div>
         </xhtml:div>
       </xhtml:ng-template>
       <svg:rect
         #tooltipAnchor
-        [@animationState]="anchorOpacity !== 0 ? 'active' : 'inactive'"
+        ng-attr-[@animationState]="{{anchorOpacity !== 0 ? 'active' : 'inactive'}}"
         class="tooltip-anchor"
-        [attr.x]="anchorPos"
+        ng-attr-[attr.x]="{{anchorPos}}"
         y="0"
-        [attr.width]="1"
-        [attr.height]="dims.height"
-        [style.opacity]="anchorOpacity"
-        [style.pointer-events]="'none'"
+        ng-attr-[attr.width]="{{1}}"
+        ng-attr-[attr.height]="{{dims.height}}"
+        ng-attr-[style.opacity]="{{anchorOpacity}}"
+        ng-attr-[style.pointer-events]="{{'none'}}"
         ngx-tooltip
-        [tooltipDisabled]="tooltipDisabled"
-        [tooltipPlacement]="'right'"
-        [tooltipType]="'tooltip'"
-        [tooltipSpacing]="15"
-        [tooltipTemplate]="tooltipTemplate ? tooltipTemplate : defaultTooltipTemplate"
-        [tooltipContext]="anchorValues"
-        [tooltipImmediateExit]="true"
+        ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+        ng-attr-[tooltipPlacement]="{{'right'}}"
+        ng-attr-[tooltipType]="{{'tooltip'}}"
+        ng-attr-[tooltipSpacing]="{{15}}"
+        ng-attr-[tooltipTemplate]="{{tooltipTemplate ? tooltipTemplate : defaultTooltipTemplate}}"
+        ng-attr-[tooltipContext]="{{anchorValues}}"
+        ng-attr-[tooltipImmediateExit]="{{true}}"
       />
     </svg:g>
   `,

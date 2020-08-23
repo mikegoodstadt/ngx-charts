@@ -6,15 +6,15 @@ import {
   selector: 'g[ngx-charts-svg-radial-gradient]',
   template: `
     <svg:radialGradient
-      [id]="name"
-      [attr.cx]="cx"
-      [attr.cy]="cy"
-      [attr.r]="r"
+      ng-attr-[id]="{{name}}"
+      ng-attr-[attr.cx]="{{cx}}"
+      ng-attr-[attr.cy]="{{cy}}"
+      ng-attr-[attr.r]="{{r}}"
       gradientUnits="userSpaceOnUse">
       <svg:stop *ngFor="let stop of stops"
-        [attr.offset]="stop.offset + '%'"
-        [style.stop-color]="stop.color"
-        [style.stop-opacity]="stop.opacity"
+        ng-attr-[attr.offset]="{{stop.offset + '%'}}"
+        ng-attr-[style.stop-color]="{{stop.color}}"
+        ng-attr-[style.stop-opacity]="{{stop.opacity}}"
       />
     </svg:radialGradient>
   `,

@@ -98,7 +98,7 @@ var CircleComponent = /** @class */ (function () {
     CircleComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-circle]',
-            template: "\n    <svg:circle\n      [attr.cx]=\"cx\"\n      [attr.cy]=\"cy\"\n      [attr.r]=\"r\"\n      [attr.fill]=\"fill\"\n      [attr.stroke]=\"stroke\"\n      [attr.opacity]=\"circleOpacity\"\n      [attr.class]=\"classNames\"\n      [attr.pointer-events]=\"pointerEvents\"\n    />\n  ",
+            template: "\n    <svg:circle\n      ng-attr-[attr.cx]=\"{{cx}}\"\n      ng-attr-[attr.cy]=\"{{cy}}\"\n      ng-attr-[attr.r]=\"{{r}}\"\n      ng-attr-[attr.fill]=\"{{fill}}\"\n      ng-attr-[attr.stroke]=\"{{stroke}}\"\n      ng-attr-[attr.opacity]=\"{{circleOpacity}}\"\n      ng-attr-[attr.class]=\"{{classNames}}\"\n      ng-attr-[attr.pointer-events]=\"{{pointerEvents}}\"\n    />\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         })
     ], CircleComponent);

@@ -39,9 +39,9 @@ describe('<ngx-charts-heat-map>', () => {
         set: {
           template: `
               <ngx-charts-heat-map
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="multi">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{multi}}">
               </ngx-charts-heat-map>`
         }
       }).compileComponents();
@@ -84,10 +84,10 @@ describe('<ngx-charts-heat-map>', () => {
         set: {
           template: `
               <ngx-charts-heat-map
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="multi"
-                [gradient]="true">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{multi}}"
+                ng-attr-[gradient]="{{true}}">
               </ngx-charts-heat-map>`
         }
       });
@@ -112,10 +112,10 @@ describe('<ngx-charts-heat-map>', () => {
         set: {
           template: `
               <ngx-charts-heat-map
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="multi"
-                [innerPadding]="0">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{multi}}"
+                ng-attr-[innerPadding]="{{0}}">
               </ngx-charts-heat-map>`
         }
       });
@@ -136,10 +136,10 @@ describe('<ngx-charts-heat-map>', () => {
         set: {
           template: `
               <ngx-charts-heat-map
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="multi"
-                [innerPadding]="20">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{multi}}"
+                ng-attr-[innerPadding]="{{20}}">
               </ngx-charts-heat-map>
           `
         }
@@ -161,10 +161,10 @@ describe('<ngx-charts-heat-map>', () => {
         set: {
           template: `
               <ngx-charts-heat-map
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="multi"
-                [innerPadding]="[50,40]">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{multi}}"
+                ng-attr-[innerPadding]="{{[50,40]}}">
               </ngx-charts-heat-map>
           `
         }

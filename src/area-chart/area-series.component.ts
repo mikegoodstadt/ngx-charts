@@ -16,16 +16,16 @@ import { sortLinear, sortByTime, sortByDomain } from '../utils/sort';
   template: `
     <svg:g ngx-charts-area
       class="area-series"
-      [data]="data"
-      [path]="path"
-      [fill]="colors.getColor(data.name)"
-      [stops]="gradientStops"
-      [startingPath]="startingPath"
-      [opacity]="opacity"
-      [gradient]="gradient || hasGradient"
-      [animations]="animations"
-      [class.active]="isActive(data)"
-      [class.inactive]="isInactive(data)"
+      ng-attr-[data]="{{data}}"
+      ng-attr-[path]="{{path}}"
+      ng-attr-[fill]="{{colors.getColor(data.name)}}"
+      ng-attr-[stops]="{{gradientStops}}"
+      ng-attr-[startingPath]="{{startingPath}}"
+      ng-attr-[opacity]="{{opacity}}"
+      ng-attr-[gradient]="{{gradient || hasGradient}}"
+      ng-attr-[animations]="{{animations}}"
+      ng-attr-[class.active]="{{isActive(data)}}"
+      ng-attr-[class.inactive]="{{isInactive(data)}}"
     />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -39,7 +39,7 @@ var SvgLinearGradientComponent = /** @class */ (function () {
     SvgLinearGradientComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-svg-linear-gradient]',
-            template: "\n    <svg:linearGradient\n      [id]=\"name\"\n      [attr.x1]=\"x1\"\n      [attr.y1]=\"y1\"\n      [attr.x2]=\"x2\"\n      [attr.y2]=\"y2\">\n      <svg:stop *ngFor=\"let stop of stops\"\n        [attr.offset]=\"stop.offset + '%'\"\n        [style.stop-color]=\"stop.color\"\n        [style.stop-opacity]=\"stop.opacity\"\n      />\n    </svg:linearGradient>\n  ",
+            template: "\n    <svg:linearGradient\n      ng-attr-[id]=\"{{name}}\"\n      ng-attr-[attr.x1]=\"{{x1}}\"\n      ng-attr-[attr.y1]=\"{{y1}}\"\n      ng-attr-[attr.x2]=\"{{x2}}\"\n      ng-attr-[attr.y2]=\"{{y2}}\">\n      <svg:stop *ngFor=\"let stop of stops\"\n        ng-attr-[attr.offset]=\"{{stop.offset + '%'}}\"\n        ng-attr-[style.stop-color]=\"{{stop.color}}\"\n        ng-attr-[style.stop-opacity]=\"{{stop.opacity}}\"\n      />\n    </svg:linearGradient>\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         })
     ], SvgLinearGradientComponent);

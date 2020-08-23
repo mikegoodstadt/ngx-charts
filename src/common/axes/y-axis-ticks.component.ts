@@ -18,15 +18,15 @@ import { roundedRect } from '../../common/shape.helper';
   selector: 'g[ngx-charts-y-axis-ticks]',
   template: `
     <svg:g #ticksel>
-      <svg:g *ngFor="let tick of ticks" class="tick" [attr.transform]="transform(tick)">
+      <svg:g *ngFor="let tick of ticks" class="tick" ng-attr-[attr.transform]="{{transform(tick)}}">
         <title>{{ tickFormat(tick) }}</title>
         <svg:text
           stroke-width="0.01"
-          [attr.dy]="dy"
-          [attr.x]="x1"
-          [attr.y]="y1"
-          [attr.text-anchor]="textAnchor"
-          [style.font-size]="'12px'"
+          ng-attr-[attr.dy]="{{dy}}"
+          ng-attr-[attr.x]="{{x1}}"
+          ng-attr-[attr.y]="{{y1}}"
+          ng-attr-[attr.text-anchor]="{{textAnchor}}"
+          ng-attr-[style.font-size]="{{'12px'}}"
         >
           {{ tickTrim(tickFormat(tick)) }}
         </svg:text>
@@ -36,42 +36,42 @@ import { roundedRect } from '../../common/shape.helper';
     <svg:path
       *ngIf="referenceLineLength > 1 && refMax && refMin && showRefLines"
       class="reference-area"
-      [attr.d]="referenceAreaPath"
-      [attr.transform]="gridLineTransform()"
+      ng-attr-[attr.d]="{{referenceAreaPath}}"
+      ng-attr-[attr.transform]="{{gridLineTransform()}}"
     />
-    <svg:g *ngFor="let tick of ticks" [attr.transform]="transform(tick)">
-      <svg:g *ngIf="showGridLines" [attr.transform]="gridLineTransform()">
+    <svg:g *ngFor="let tick of ticks" ng-attr-[attr.transform]="{{transform(tick)}}">
+      <svg:g *ngIf="showGridLines" ng-attr-[attr.transform]="{{gridLineTransform()}}">
         <svg:line
           *ngIf="orient === 'left'"
           class="gridline-path gridline-path-horizontal"
           x1="0"
-          [attr.x2]="gridLineWidth"
+          ng-attr-[attr.x2]="{{gridLineWidth}}"
         />
         <svg:line
           *ngIf="orient === 'right'"
           class="gridline-path gridline-path-horizontal"
           x1="0"
-          [attr.x2]="-gridLineWidth"
+          ng-attr-[attr.x2]="{{-gridLineWidth}}"
         />
       </svg:g>
     </svg:g>
 
     <svg:g *ngFor="let refLine of referenceLines">
-      <svg:g *ngIf="showRefLines" [attr.transform]="transform(refLine.value)">
+      <svg:g *ngIf="showRefLines" ng-attr-[attr.transform]="{{transform(refLine.value)}}">
         <svg:line
           class="refline-path gridline-path-horizontal"
           x1="0"
-          [attr.x2]="gridLineWidth"
-          [attr.transform]="gridLineTransform()"
+          ng-attr-[attr.x2]="{{gridLineWidth}}"
+          ng-attr-[attr.transform]="{{gridLineTransform()}}"
         />
         <svg:g *ngIf="showRefLabels">
           <title>{{ tickTrim(tickFormat(refLine.value)) }}</title>
           <svg:text
             class="refline-label"
-            [attr.dy]="dy"
-            [attr.y]="-6"
-            [attr.x]="gridLineWidth"
-            [attr.text-anchor]="textAnchor"
+            ng-attr-[attr.dy]="{{dy}}"
+            ng-attr-[attr.y]="{{-6}}"
+            ng-attr-[attr.x]="{{gridLineWidth}}"
+            ng-attr-[attr.text-anchor]="{{textAnchor}}"
           >
             {{ refLine.name }}
           </svg:text>

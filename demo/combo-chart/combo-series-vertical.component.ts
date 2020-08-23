@@ -19,28 +19,28 @@ import { formatLabel } from '../../src/common/label.helper';
   selector: 'g[ngx-combo-charts-series-vertical]',
   template: `
     <svg:g ngx-charts-bar *ngFor="let bar of bars; trackBy: trackBy"
-      [@animationState]="'active'"
-      [width]="bar.width"
-      [height]="bar.height"
-      [x]="bar.x"
-      [y]="bar.y"
-      [fill]="bar.color"
-      [stops]="bar.gradientStops"
-      [data]="bar.data"
-      [orientation]="'vertical'"
-      [roundEdges]="bar.roundEdges"
-      [gradient]="gradient"
-      [isActive]="isActive(bar.data)"
-      [animations]="animations"
-      [noBarWhenZero]="noBarWhenZero"
+      ng-attr-[@animationState]="{{'active'}}"
+      ng-attr-[width]="{{bar.width}}"
+      ng-attr-[height]="{{bar.height}}"
+      ng-attr-[x]="{{bar.x}}"
+      ng-attr-[y]="{{bar.y}}"
+      ng-attr-[fill]="{{bar.color}}"
+      ng-attr-[stops]="{{bar.gradientStops}}"
+      ng-attr-[data]="{{bar.data}}"
+      ng-attr-[orientation]="{{'vertical'}}"
+      ng-attr-[roundEdges]="{{bar.roundEdges}}"
+      ng-attr-[gradient]="{{gradient}}"
+      ng-attr-[isActive]="{{isActive(bar.data)}}"
+      ng-attr-[animations]="{{animations}}"
+      ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
       (select)="onClick($event)"
       (activate)="activate.emit($event)"
       (deactivate)="deactivate.emit($event)"
       ngx-tooltip
-      [tooltipDisabled]="tooltipDisabled"
-      [tooltipPlacement]="'top'"
-      [tooltipType]="'tooltip'"
-      [tooltipTitle]="bar.tooltipText">
+      ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+      ng-attr-[tooltipPlacement]="{{'top'}}"
+      ng-attr-[tooltipType]="{{'tooltip'}}"
+      ng-attr-[tooltipTitle]="{{bar.tooltipText}}">
     </svg:g>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

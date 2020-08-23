@@ -15,30 +15,30 @@ import { formatLabel, escapeLabel } from '../common/label.helper';
   selector: 'g[ngx-charts-bubble-series]',
   template: `
     <svg:g *ngFor="let circle of circles; trackBy: trackBy">
-      <svg:g [attr.transform]="circle.transform">
+      <svg:g ng-attr-[attr.transform]="{{circle.transform}}">
         <svg:g
           ngx-charts-circle
-          [@animationState]="'active'"
+          ng-attr-[@animationState]="{{'active'}}"
           class="circle"
-          [cx]="0"
-          [cy]="0"
-          [r]="circle.radius"
-          [fill]="circle.color"
-          [style.opacity]="circle.opacity"
-          [class.active]="circle.isActive"
-          [pointerEvents]="'all'"
-          [data]="circle.value"
-          [classNames]="circle.classNames"
+          ng-attr-[cx]="{{0}}"
+          ng-attr-[cy]="{{0}}"
+          ng-attr-[r]="{{circle.radius}}"
+          ng-attr-[fill]="{{circle.color}}"
+          ng-attr-[style.opacity]="{{circle.opacity}}"
+          ng-attr-[class.active]="{{circle.isActive}}"
+          ng-attr-[pointerEvents]="{{'all'}}"
+          ng-attr-[data]="{{circle.value}}"
+          ng-attr-[classNames]="{{circle.classNames}}"
           (select)="onClick(circle.data)"
           (activate)="activateCircle(circle)"
           (deactivate)="deactivateCircle(circle)"
           ngx-tooltip
-          [tooltipDisabled]="tooltipDisabled"
-          [tooltipPlacement]="'top'"
-          [tooltipType]="'tooltip'"
-          [tooltipTitle]="tooltipTemplate ? undefined : getTooltipText(circle)"
-          [tooltipTemplate]="tooltipTemplate"
-          [tooltipContext]="circle.data"
+          ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+          ng-attr-[tooltipPlacement]="{{'top'}}"
+          ng-attr-[tooltipType]="{{'tooltip'}}"
+          ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : getTooltipText(circle)}}"
+          ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+          ng-attr-[tooltipContext]="{{circle.data}}"
         />
       </svg:g>
     </svg:g>

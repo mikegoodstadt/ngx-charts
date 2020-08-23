@@ -125,7 +125,7 @@ var AreaComponent = /** @class */ (function () {
     AreaComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-area]',
-            template: "\n    <svg:defs *ngIf=\"gradient\">\n      <svg:g ngx-charts-svg-linear-gradient\n        orientation=\"vertical\"\n        [name]=\"gradientId\"\n        [stops]=\"gradientStops\"\n      />\n    </svg:defs>\n    <svg:path\n      class=\"area\"\n      [attr.d]=\"areaPath\"\n      [attr.fill]=\"gradient ? gradientFill : fill\"\n      [style.opacity]=\"opacity\"\n    />\n  ",
+            template: "\n    <svg:defs *ngIf=\"gradient\">\n      <svg:g ngx-charts-svg-linear-gradient\n        orientation=\"vertical\"\n        ng-attr-[name]=\"{{gradientId}}\"\n        ng-attr-[stops]=\"{{gradientStops}}\"\n      />\n    </svg:defs>\n    <svg:path\n      class=\"area\"\n      ng-attr-[attr.d]=\"{{areaPath}}\"\n      ng-attr-[attr.fill]=\"{{gradient ? gradientFill : fill}}\"\n      ng-attr-[style.opacity]=\"{{opacity}}\"\n    />\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         }),
         __metadata("design:paramtypes", [ElementRef])

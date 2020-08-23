@@ -33,7 +33,7 @@ describe('<ngx-charts-chart>', () => {
         set: {
           template: `
                     <ngx-charts-chart
-                        [view]="[400,800]"
+                        ng-attr-[view]="{{[400,800]}}"
                         >
                         <p>ngx-charts is cool!</p>
                     </ngx-charts-chart>

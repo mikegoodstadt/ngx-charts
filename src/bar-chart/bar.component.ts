@@ -17,18 +17,18 @@ import { id } from '../utils/id';
   selector: 'g[ngx-charts-bar]',
   template: `
     <svg:defs *ngIf="hasGradient">
-      <svg:g ngx-charts-svg-linear-gradient [orientation]="orientation" [name]="gradientId" [stops]="gradientStops" />
+      <svg:g ngx-charts-svg-linear-gradient ng-attr-[orientation]="{{orientation}}" ng-attr-[name]="{{gradientId}}" ng-attr-[stops]="{{gradientStops}}" />
     </svg:defs>
     <svg:path
       class="bar"
       stroke="none"
       role="img"
       tabIndex="-1"
-      [class.active]="isActive"
-      [class.hidden]="hideBar"
-      [attr.d]="path"
-      [attr.aria-label]="ariaLabel"
-      [attr.fill]="hasGradient ? gradientFill : fill"
+      ng-attr-[class.active]="{{isActive}}"
+      ng-attr-[class.hidden]="{{hideBar}}"
+      ng-attr-[attr.d]="{{path}}"
+      ng-attr-[attr.aria-label]="{{ariaLabel}}"
+      ng-attr-[attr.fill]="{{hasGradient ? gradientFill : fill}}"
       (click)="select.emit(data)"
     />
   `,

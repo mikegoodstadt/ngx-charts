@@ -10,23 +10,23 @@ import { line } from 'd3-shape';
 @Component({
   selector: 'g[ngx-charts-gauge-axis]',
   template: `
-    <svg:g [attr.transform]="rotate">
+    <svg:g ng-attr-[attr.transform]="{{rotate}}">
         <svg:g *ngFor="let tick of ticks.big"
             class="gauge-tick gauge-tick-large">
-            <svg:path [attr.d]="tick.line" />
+            <svg:path ng-attr-[attr.d]="{{tick.line}}" />
         </svg:g>
         <svg:g *ngFor="let tick of ticks.big"
             class="gauge-tick gauge-tick-large">
             <svg:text
-                [style.textAnchor]="tick.textAnchor"
-                [attr.transform]="tick.textTransform"
+                ng-attr-[style.textAnchor]="{{tick.textAnchor}}"
+                ng-attr-[attr.transform]="{{tick.textTransform}}"
                 alignment-baseline="central">
                 {{tick.text}}
             </svg:text>
         </svg:g>
         <svg:g *ngFor="let tick of ticks.small"
             class="gauge-tick gauge-tick-small">
-            <svg:path [attr.d]="tick.line" />
+            <svg:path ng-attr-[attr.d]="{{tick.line}}" />
         </svg:g>
     </svg:g>
   `,

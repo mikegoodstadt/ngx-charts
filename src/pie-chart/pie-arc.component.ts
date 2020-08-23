@@ -22,22 +22,22 @@ import { MouseEvent } from '../events';
     <svg:g class="arc-group">
       <svg:defs *ngIf="gradient">
         <svg:g ngx-charts-svg-radial-gradient
-          [color]="fill"
+          ng-attr-[color]="{{fill}}"
           orientation="vertical"
-          [name]="radialGradientId"
-          [startOpacity]="startOpacity"
+          ng-attr-[name]="{{radialGradientId}}"
+          ng-attr-[startOpacity]="{{startOpacity}}"
         />
       </svg:defs>
       <svg:path
-        [attr.d]="path"
+        ng-attr-[attr.d]="{{path}}"
         class="arc"
-        [class.active]="isActive"
-        [attr.fill]="getGradient()"
+        ng-attr-[class.active]="{{isActive}}"
+        ng-attr-[attr.fill]="{{getGradient()}}"
         (click)="onClick()"
         (dblclick)="onDblClick($event)"
         (mouseenter)="activate.emit(data)"
         (mouseleave)="deactivate.emit(data)"
-        [style.pointer-events]="getPointerEvents()"
+        ng-attr-[style.pointer-events]="{{getPointerEvents()}}"
       />
     </svg:g>
   `,

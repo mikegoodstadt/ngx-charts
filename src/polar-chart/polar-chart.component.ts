@@ -24,82 +24,82 @@ const twoPI = 2 * Math.PI;
   selector: 'ngx-charts-polar-chart',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="legend"
-      [legendOptions]="legendOptions"
-      [activeEntries]="activeEntries"
-      [animations]="animations"
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{legend}}"
+      ng-attr-[legendOptions]="{{legendOptions}}"
+      ng-attr-[activeEntries]="{{activeEntries}}"
+      ng-attr-[animations]="{{animations}}"
       (legendLabelClick)="onClick($event)"
       (legendLabelActivate)="onActivate($event)"
       (legendLabelDeactivate)="onDeactivate($event)"
     >
-      <svg:g class="polar-chart chart" [attr.transform]="transform">
-        <svg:g [attr.transform]="transformPlot">
-          <svg:circle class="polar-chart-background" cx="0" cy="0" [attr.r]="this.outerRadius" />
+      <svg:g class="polar-chart chart" ng-attr-[attr.transform]="{{transform}}">
+        <svg:g ng-attr-[attr.transform]="{{transformPlot}}">
+          <svg:circle class="polar-chart-background" cx="0" cy="0" ng-attr-[attr.r]="{{this.outerRadius}}" />
           <svg:g *ngIf="showGridLines">
             <svg:circle
               *ngFor="let r of radiusTicks"
               class="gridline-path radial-gridline-path"
               cx="0"
               cy="0"
-              [attr.r]="r"
+              ng-attr-[attr.r]="{{r}}"
             />
           </svg:g>
           <svg:g *ngIf="xAxis">
             <svg:g
               ngx-charts-pie-label
               *ngFor="let tick of thetaTicks"
-              [data]="tick"
-              [radius]="outerRadius"
-              [label]="tick.label"
-              [max]="outerRadius"
-              [value]="showGridLines ? 1 : outerRadius"
-              [explodeSlices]="true"
-              [animations]="animations"
-              [labelTrim]="labelTrim"
-              [labelTrimSize]="labelTrimSize"
+              ng-attr-[data]="{{tick}}"
+              ng-attr-[radius]="{{outerRadius}}"
+              ng-attr-[label]="{{tick.label}}"
+              ng-attr-[max]="{{outerRadius}}"
+              ng-attr-[value]="{{showGridLines ? 1 : outerRadius}}"
+              ng-attr-[explodeSlices]="{{true}}"
+              ng-attr-[animations]="{{animations}}"
+              ng-attr-[labelTrim]="{{labelTrim}}"
+              ng-attr-[labelTrimSize]="{{labelTrimSize}}"
             ></svg:g>
           </svg:g>
         </svg:g>
         <svg:g
           ngx-charts-y-axis
-          [attr.transform]="transformYAxis"
+          ng-attr-[attr.transform]="{{transformYAxis}}"
           *ngIf="yAxis"
-          [yScale]="yAxisScale"
-          [dims]="yAxisDims"
-          [showGridLines]="showGridLines"
-          [showLabel]="showYAxisLabel"
-          [labelText]="yAxisLabel"
-          [trimTicks]="trimYAxisTicks"
-          [maxTickLength]="maxYAxisTickLength"
-          [tickFormatting]="yAxisTickFormatting"
+          ng-attr-[yScale]="{{yAxisScale}}"
+          ng-attr-[dims]="{{yAxisDims}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[showLabel]="{{showYAxisLabel}}"
+          ng-attr-[labelText]="{{yAxisLabel}}"
+          ng-attr-[trimTicks]="{{trimYAxisTicks}}"
+          ng-attr-[maxTickLength]="{{maxYAxisTickLength}}"
+          ng-attr-[tickFormatting]="{{yAxisTickFormatting}}"
           (dimensionsChanged)="updateYAxisWidth($event)"
         ></svg:g>
         <svg:g
           ngx-charts-axis-label
           *ngIf="xAxis && showXAxisLabel"
-          [label]="xAxisLabel"
-          [offset]="labelOffset"
-          [orient]="'bottom'"
-          [height]="dims.height"
-          [width]="dims.width"
+          ng-attr-[label]="{{xAxisLabel}}"
+          ng-attr-[offset]="{{labelOffset}}"
+          ng-attr-[orient]="{{'bottom'}}"
+          ng-attr-[height]="{{dims.height}}"
+          ng-attr-[width]="{{dims.width}}"
         ></svg:g>
-        <svg:g [attr.transform]="transformPlot">
-          <svg:g *ngFor="let series of results; trackBy: trackBy" [@animationState]="'active'">
+        <svg:g ng-attr-[attr.transform]="{{transformPlot}}">
+          <svg:g *ngFor="let series of results; trackBy: trackBy" ng-attr-[@animationState]="{{'active'}}">
             <svg:g
               ngx-charts-polar-series
-              [gradient]="gradient"
-              [xScale]="xScale"
-              [yScale]="yScale"
-              [colors]="colors"
-              [data]="series"
-              [activeEntries]="activeEntries"
-              [scaleType]="scaleType"
-              [curve]="curve"
-              [rangeFillOpacity]="rangeFillOpacity"
-              [animations]="animations"
-              [tooltipDisabled]="tooltipDisabled"
-              [tooltipTemplate]="tooltipTemplate"
+              ng-attr-[gradient]="{{gradient}}"
+              ng-attr-[xScale]="{{xScale}}"
+              ng-attr-[yScale]="{{yScale}}"
+              ng-attr-[colors]="{{colors}}"
+              ng-attr-[data]="{{series}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[scaleType]="{{scaleType}}"
+              ng-attr-[curve]="{{curve}}"
+              ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+              ng-attr-[animations]="{{animations}}"
+              ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+              ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
               (select)="onClick($event)"
               (activate)="onActivate($event)"
               (deactivate)="onDeactivate($event)"

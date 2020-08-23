@@ -21,28 +21,28 @@ import { ColorHelper } from '../common/color.helper';
   selector: 'ngx-charts-gauge',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="legend"
-      [legendOptions]="legendOptions"
-      [activeEntries]="activeEntries"
-      [animations]="animations"
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{legend}}"
+      ng-attr-[legendOptions]="{{legendOptions}}"
+      ng-attr-[activeEntries]="{{activeEntries}}"
+      ng-attr-[animations]="{{animations}}"
       (legendLabelClick)="onClick($event)"
       (legendLabelActivate)="onActivate($event)"
       (legendLabelDeactivate)="onDeactivate($event)"
     >
-      <svg:g [attr.transform]="transform" class="gauge chart">
-        <svg:g *ngFor="let arc of arcs; trackBy: trackBy" [attr.transform]="rotation">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="gauge chart">
+        <svg:g *ngFor="let arc of arcs; trackBy: trackBy" ng-attr-[attr.transform]="{{rotation}}">
           <svg:g
             ngx-charts-gauge-arc
-            [backgroundArc]="arc.backgroundArc"
-            [valueArc]="arc.valueArc"
-            [cornerRadius]="cornerRadius"
-            [colors]="colors"
-            [isActive]="isActive(arc.valueArc.data)"
-            [tooltipDisabled]="tooltipDisabled"
-            [tooltipTemplate]="tooltipTemplate"
-            [valueFormatting]="valueFormatting"
-            [animations]="animations"
+            ng-attr-[backgroundArc]="{{arc.backgroundArc}}"
+            ng-attr-[valueArc]="{{arc.valueArc}}"
+            ng-attr-[cornerRadius]="{{cornerRadius}}"
+            ng-attr-[colors]="{{colors}}"
+            ng-attr-[isActive]="{{isActive(arc.valueArc.data)}}"
+            ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+            ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+            ng-attr-[valueFormatting]="{{valueFormatting}}"
+            ng-attr-[animations]="{{animations}}"
             (select)="onClick($event)"
             (activate)="onActivate($event)"
             (deactivate)="onDeactivate($event)"
@@ -52,22 +52,22 @@ import { ColorHelper } from '../common/color.helper';
         <svg:g
           ngx-charts-gauge-axis
           *ngIf="showAxis"
-          [bigSegments]="bigSegments"
-          [smallSegments]="smallSegments"
-          [min]="min"
-          [max]="max"
-          [radius]="outerRadius"
-          [angleSpan]="angleSpan"
-          [valueScale]="valueScale"
-          [startAngle]="startAngle"
-          [tickFormatting]="axisTickFormatting"
+          ng-attr-[bigSegments]="{{bigSegments}}"
+          ng-attr-[smallSegments]="{{smallSegments}}"
+          ng-attr-[min]="{{min}}"
+          ng-attr-[max]="{{max}}"
+          ng-attr-[radius]="{{outerRadius}}"
+          ng-attr-[angleSpan]="{{angleSpan}}"
+          ng-attr-[valueScale]="{{valueScale}}"
+          ng-attr-[startAngle]="{{startAngle}}"
+          ng-attr-[tickFormatting]="{{axisTickFormatting}}"
         ></svg:g>
 
         <svg:text
           #textEl
           *ngIf="showText"
-          [style.textAnchor]="'middle'"
-          [attr.transform]="textTransform"
+          ng-attr-[style.textAnchor]="{{'middle'}}"
+          ng-attr-[attr.transform]="{{textTransform}}"
           alignment-baseline="central"
         >
           <tspan x="0" dy="0">{{ displayValue }}</tspan>

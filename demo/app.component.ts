@@ -697,7 +697,7 @@ export class AppComponent implements OnInit {
   **
   Combo Chart
   **
-  [yLeftAxisScaleFactor]="yLeftAxisScale" and [yRightAxisScaleFactor]="yRightAxisScale"
+  ng-attr-[yLeftAxisScaleFactor]="{{yLeftAxisScale}}" and ng-attr-[yRightAxisScaleFactor]="{{yRightAxisScale}}"
   exposes the left and right min and max axis values for custom scaling, it is probably best to
   scale one axis in relation to the other axis but for flexibility to scale either the left or
   right axis bowth were exposed.

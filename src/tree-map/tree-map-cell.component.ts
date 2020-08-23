@@ -11,36 +11,36 @@ import { id } from '../utils/id';
   template: `
     <svg:g>
       <defs *ngIf="gradient">
-        <svg:g ngx-charts-svg-linear-gradient orientation="vertical" [name]="gradientId" [stops]="gradientStops" />
+        <svg:g ngx-charts-svg-linear-gradient orientation="vertical" ng-attr-[name]="{{gradientId}}" ng-attr-[stops]="{{gradientStops}}" />
       </defs>
       <svg:rect
-        [attr.fill]="gradient ? gradientUrl : fill"
-        [attr.width]="width"
-        [attr.height]="height"
-        [attr.x]="x"
-        [attr.y]="y"
-        [style.cursor]="'pointer'"
+        ng-attr-[attr.fill]="{{gradient ? gradientUrl : fill}}"
+        ng-attr-[attr.width]="{{width}}"
+        ng-attr-[attr.height]="{{height}}"
+        ng-attr-[attr.x]="{{x}}"
+        ng-attr-[attr.y]="{{y}}"
+        ng-attr-[style.cursor]="{{'pointer'}}"
         class="cell"
         (click)="onClick()"
       />
       <svg:foreignObject
         *ngIf="width >= 70 && height >= 35"
-        [attr.x]="x"
-        [attr.y]="y"
-        [attr.width]="width"
-        [attr.height]="height"
+        ng-attr-[attr.x]="{{x}}"
+        ng-attr-[attr.y]="{{y}}"
+        ng-attr-[attr.width]="{{width}}"
+        ng-attr-[attr.height]="{{height}}"
         class="treemap-label"
-        [style.pointer-events]="'none'"
+        ng-attr-[style.pointer-events]="{{'none'}}"
       >
-        <xhtml:p [style.color]="getTextColor()" [style.height]="height + 'px'" [style.width]="width + 'px'">
-          <xhtml:span class="treemap-label" [innerHTML]="formattedLabel"> </xhtml:span>
+        <xhtml:p ng-attr-[style.color]="{{getTextColor()}}" ng-attr-[style.height]="{{height + 'px'}}" ng-attr-[style.width]="{{width + 'px'}}">
+          <xhtml:span class="treemap-label" ng-attr-[innerHTML]="{{formattedLabel}}"> </xhtml:span>
           <xhtml:br />
           <xhtml:span
             *ngIf="animations"
             class="treemap-val"
             ngx-charts-count-up
-            [countTo]="value"
-            [valueFormatting]="valueFormatting"
+            ng-attr-[countTo]="{{value}}"
+            ng-attr-[valueFormatting]="{{valueFormatting}}"
           >
           </xhtml:span>
           <xhtml:span *ngIf="!animations" class="treemap-val">

@@ -13,35 +13,35 @@ import { YAxisTicksComponent } from './y-axis-ticks.component';
 @Component({
   selector: 'g[ngx-charts-y-axis]',
   template: `
-    <svg:g [attr.class]="yAxisClassName" [attr.transform]="transform">
+    <svg:g ng-attr-[attr.class]="{{yAxisClassName}}" ng-attr-[attr.transform]="{{transform}}">
       <svg:g
         ngx-charts-y-axis-ticks
         *ngIf="yScale"
-        [trimTicks]="trimTicks"
-        [maxTickLength]="maxTickLength"
-        [tickFormatting]="tickFormatting"
-        [tickArguments]="tickArguments"
-        [tickValues]="ticks"
-        [tickStroke]="tickStroke"
-        [scale]="yScale"
-        [orient]="yOrient"
-        [showGridLines]="showGridLines"
-        [gridLineWidth]="dims.width"
-        [referenceLines]="referenceLines"
-        [showRefLines]="showRefLines"
-        [showRefLabels]="showRefLabels"
-        [height]="dims.height"
+        ng-attr-[trimTicks]="{{trimTicks}}"
+        ng-attr-[maxTickLength]="{{maxTickLength}}"
+        ng-attr-[tickFormatting]="{{tickFormatting}}"
+        ng-attr-[tickArguments]="{{tickArguments}}"
+        ng-attr-[tickValues]="{{ticks}}"
+        ng-attr-[tickStroke]="{{tickStroke}}"
+        ng-attr-[scale]="{{yScale}}"
+        ng-attr-[orient]="{{yOrient}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[gridLineWidth]="{{dims.width}}"
+        ng-attr-[referenceLines]="{{referenceLines}}"
+        ng-attr-[showRefLines]="{{showRefLines}}"
+        ng-attr-[showRefLabels]="{{showRefLabels}}"
+        ng-attr-[height]="{{dims.height}}"
         (dimensionsChanged)="emitTicksWidth($event)"
       />
 
       <svg:g
         ngx-charts-axis-label
         *ngIf="showLabel"
-        [label]="labelText"
-        [offset]="labelOffset"
-        [orient]="yOrient"
-        [height]="dims.height"
-        [width]="dims.width"
+        ng-attr-[label]="{{labelText}}"
+        ng-attr-[offset]="{{labelOffset}}"
+        ng-attr-[orient]="{{yOrient}}"
+        ng-attr-[height]="{{dims.height}}"
+        ng-attr-[width]="{{dims.width}}"
       ></svg:g>
     </svg:g>
   `,

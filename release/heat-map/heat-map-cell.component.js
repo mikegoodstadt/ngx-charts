@@ -127,7 +127,7 @@ var HeatMapCellComponent = /** @class */ (function () {
     HeatMapCellComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-heat-map-cell]',
-            template: "\n    <svg:g [attr.transform]=\"transform\" class=\"cell\">\n      <defs *ngIf=\"gradient\">\n        <svg:g ngx-charts-svg-linear-gradient orientation=\"vertical\" [name]=\"gradientId\" [stops]=\"gradientStops\" />\n      </defs>\n      <svg:rect\n        [attr.fill]=\"gradient ? gradientUrl : fill\"\n        rx=\"3\"\n        [attr.width]=\"width\"\n        [attr.height]=\"height\"\n        class=\"cell\"\n        style=\"cursor: pointer\"\n        (click)=\"onClick()\"\n      />\n    </svg:g>\n  ",
+            template: "\n    <svg:g ng-attr-[attr.transform]=\"{{transform}}\" class=\"cell\">\n      <defs *ngIf=\"gradient\">\n        <svg:g ngx-charts-svg-linear-gradient orientation=\"vertical\" ng-attr-[name]=\"{{gradientId}}\" ng-attr-[stops]=\"{{gradientStops}}\" />\n      </defs>\n      <svg:rect\n        ng-attr-[attr.fill]=\"{{gradient ? gradientUrl : fill}}\"\n        rx=\"3\"\n        ng-attr-[attr.width]=\"{{width}}\"\n        ng-attr-[attr.height]=\"{{height}}\"\n        class=\"cell\"\n        style=\"cursor: pointer\"\n        (click)=\"onClick()\"\n      />\n    </svg:g>\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         }),
         __metadata("design:paramtypes", [ElementRef])

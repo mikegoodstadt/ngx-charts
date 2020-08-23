@@ -14,8 +14,8 @@ import { id } from '../../utils';
   template: `
     <svg:g
       class="timeline"
-      [attr.transform]="transform">
-      <svg:filter [attr.id]="filterId">
+      ng-attr-[attr.transform]="{{transform}}">
+      <svg:filter ng-attr-[attr.id]="{{filterId}}">
         <svg:feColorMatrix in="SourceGraphic"
             type="matrix"
             values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0" />
@@ -24,9 +24,9 @@ import { id } from '../../utils';
         <ng-content></ng-content>
       </svg:g>
       <svg:rect x="0"
-        [attr.width]="view[0]"
+        ng-attr-[attr.width]="{{view[0]}}"
         y="0"
-        [attr.height]="height"
+        ng-attr-[attr.height]="{{height}}"
         class="brush-background"
       />
       <svg:g class="brush"></svg:g>

@@ -11,13 +11,13 @@ import {
   selector: 'ngx-charts-legend-entry',
   template: `
     <span 
-      [title]="formattedLabel"
+      ng-attr-[title]="{{formattedLabel}}"
       tabindex="-1"
-      [class.active]="isActive"
+      ng-attr-[class.active]="{{isActive}}"
       (click)="select.emit(formattedLabel)">
       <span
         class="legend-label-color"
-        [style.background-color]="color"
+        ng-attr-[style.background-color]="{{color}}"
         (click)="toggle.emit(formattedLabel)">
       </span>
       <span class="legend-label-text">

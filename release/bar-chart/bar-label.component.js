@@ -98,7 +98,7 @@ var BarLabelComponent = /** @class */ (function () {
     BarLabelComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-bar-label]',
-            template: "  \n    <svg:text   \n      class=\"textDataLabel\" \n      alignment-baseline=\"middle\"     \n      [attr.text-anchor]=\"textAnchor\"\n      [attr.transform]=\"transform\"\n      [attr.x]=\"x\" \n      [attr.y]=\"y\">\n      {{formatedValue}}     \n    </svg:text>          \n\n  ",
+            template: "  \n    <svg:text   \n      class=\"textDataLabel\" \n      alignment-baseline=\"middle\"     \n      ng-attr-[attr.text-anchor]=\"{{textAnchor}}\"\n      ng-attr-[attr.transform]=\"{{transform}}\"\n      ng-attr-[attr.x]=\"{{x}}\" \n      ng-attr-[attr.y]=\"{{y}}\">\n      {{formatedValue}}     \n    </svg:text>          \n\n  ",
             styleUrls: ['./bar-label.component.css'],
             changeDetection: ChangeDetectionStrategy.OnPush
         }),

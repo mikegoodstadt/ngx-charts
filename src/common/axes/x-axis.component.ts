@@ -14,32 +14,32 @@ import { XAxisTicksComponent } from './x-axis-ticks.component';
 @Component({
   selector: 'g[ngx-charts-x-axis]',
   template: `
-    <svg:g [attr.class]="xAxisClassName" [attr.transform]="transform">
+    <svg:g ng-attr-[attr.class]="{{xAxisClassName}}" ng-attr-[attr.transform]="{{transform}}">
       <svg:g
         ngx-charts-x-axis-ticks
         *ngIf="xScale"
-        [trimTicks]="trimTicks"
-        [rotateTicks]="rotateTicks"
-        [maxTickLength]="maxTickLength"
-        [tickFormatting]="tickFormatting"
-        [tickArguments]="tickArguments"
-        [tickStroke]="tickStroke"
-        [scale]="xScale"
-        [orient]="xOrient"
-        [showGridLines]="showGridLines"
-        [gridLineHeight]="dims.height"
-        [width]="dims.width"
-        [tickValues]="ticks"
+        ng-attr-[trimTicks]="{{trimTicks}}"
+        ng-attr-[rotateTicks]="{{rotateTicks}}"
+        ng-attr-[maxTickLength]="{{maxTickLength}}"
+        ng-attr-[tickFormatting]="{{tickFormatting}}"
+        ng-attr-[tickArguments]="{{tickArguments}}"
+        ng-attr-[tickStroke]="{{tickStroke}}"
+        ng-attr-[scale]="{{xScale}}"
+        ng-attr-[orient]="{{xOrient}}"
+        ng-attr-[showGridLines]="{{showGridLines}}"
+        ng-attr-[gridLineHeight]="{{dims.height}}"
+        ng-attr-[width]="{{dims.width}}"
+        ng-attr-[tickValues]="{{ticks}}"
         (dimensionsChanged)="emitTicksHeight($event)"
       />
       <svg:g
         ngx-charts-axis-label
         *ngIf="showLabel"
-        [label]="labelText"
-        [offset]="labelOffset"
-        [orient]="'bottom'"
-        [height]="dims.height"
-        [width]="dims.width"
+        ng-attr-[label]="{{labelText}}"
+        ng-attr-[offset]="{{labelOffset}}"
+        ng-attr-[orient]="{{'bottom'}}"
+        ng-attr-[height]="{{dims.height}}"
+        ng-attr-[width]="{{dims.width}}"
       ></svg:g>
     </svg:g>
   `,

@@ -41,9 +41,9 @@ describe('<ngx-charts-bar-horizontal>', () => {
         set: {
           template: `
                <ngx-charts-bar-horizontal
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="single">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{single}}">
               </ngx-charts-bar-horizontal>`
         }
       }).compileComponents();
@@ -85,10 +85,10 @@ describe('<ngx-charts-bar-horizontal>', () => {
         set: {
           template: `
                <ngx-charts-bar-horizontal
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="single"
-                [barPadding]="0">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{single}}"
+                ng-attr-[barPadding]="{{0}}">
               </ngx-charts-bar-horizontal>`
         }
       });
@@ -108,10 +108,10 @@ describe('<ngx-charts-bar-horizontal>', () => {
         set: {
           template: `
                <ngx-charts-bar-horizontal
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="single"
-                [barPadding]="20">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{single}}"
+                ng-attr-[barPadding]="{{20}}">
               </ngx-charts-bar-horizontal>`
         }
       });

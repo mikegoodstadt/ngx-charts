@@ -39,9 +39,9 @@ describe('<ngx-charts-number-card>', () => {
         set: {
           template: `
               <ngx-charts-number-card
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="multi">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{multi}}">
               </ngx-charts-number-card>`
         }
       }).compileComponents();

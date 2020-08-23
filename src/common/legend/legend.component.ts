@@ -7,22 +7,22 @@ import { formatLabel } from '../label.helper';
 @Component({
   selector: 'ngx-charts-legend',
   template: `
-    <div [style.width.px]="width">
+    <div ng-attr-[style.width.px]="{{width}}">
       <header class="legend-title" *ngIf="title?.length > 0">
         <span class="legend-title-text">{{title}}</span>
       </header>
       <div class="legend-wrap">
         <ul class="legend-labels"
-            [class.horizontal-legend]="horizontal"
-          [style.max-height.px]="height - 45">
+            ng-attr-[class.horizontal-legend]="{{horizontal}}"
+          ng-attr-[style.max-height.px]="{{height - 45}}">
           <li
             *ngFor="let entry of legendEntries; trackBy: trackBy"
             class="legend-label">
             <ngx-charts-legend-entry
-              [label]="entry.label"
-              [formattedLabel]="entry.formattedLabel"
-              [color]="entry.color"
-              [isActive]="isActive(entry)"
+              ng-attr-[label]="{{entry.label}}"
+              ng-attr-[formattedLabel]="{{entry.formattedLabel}}"
+              ng-attr-[color]="{{entry.color}}"
+              ng-attr-[isActive]="{{isActive(entry)}}"
               (select)="labelClick.emit($event)"
               (activate)="activate($event)"
               (deactivate)="deactivate($event)">

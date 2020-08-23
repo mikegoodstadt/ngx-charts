@@ -30,110 +30,110 @@ import { scaleBand, scaleLinear, scalePoint, scaleTime } from 'd3-scale';
   selector: 'combo-chart-component',
   template: `
     <ngx-charts-chart
-      [view]="[width + legendSpacing, height]"
-      [showLegend]="legend"
-      [legendOptions]="legendOptions"
-      [activeEntries]="activeEntries"
-      [animations]="animations"
+      ng-attr-[view]="{{[width + legendSpacing, height]}}"
+      ng-attr-[showLegend]="{{legend}}"
+      ng-attr-[legendOptions]="{{legendOptions}}"
+      ng-attr-[activeEntries]="{{activeEntries}}"
+      ng-attr-[animations]="{{animations}}"
       (legendLabelClick)="onClick($event)"
       (legendLabelActivate)="onActivate($event)"
       (legendLabelDeactivate)="onDeactivate($event)"
     >
-      <svg:g [attr.transform]="transform" class="bar-chart chart">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="bar-chart chart">
         <svg:g
           ngx-charts-x-axis
           *ngIf="xAxis"
-          [xScale]="xScale"
-          [dims]="dims"
-          [showLabel]="showXAxisLabel"
-          [labelText]="xAxisLabel"
-          [tickFormatting]="xAxisTickFormatting"
+          ng-attr-[xScale]="{{xScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[showLabel]="{{showXAxisLabel}}"
+          ng-attr-[labelText]="{{xAxisLabel}}"
+          ng-attr-[tickFormatting]="{{xAxisTickFormatting}}"
           (dimensionsChanged)="updateXAxisHeight($event)"
         ></svg:g>
         <svg:g
           ngx-charts-y-axis
           *ngIf="yAxis"
-          [yScale]="yScale"
-          [dims]="dims"
-          [yOrient]="yOrientLeft"
-          [showGridLines]="showGridLines"
-          [showLabel]="showYAxisLabel"
-          [labelText]="yAxisLabel"
-          [tickFormatting]="yAxisTickFormatting"
+          ng-attr-[yScale]="{{yScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[yOrient]="{{yOrientLeft}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[showLabel]="{{showYAxisLabel}}"
+          ng-attr-[labelText]="{{yAxisLabel}}"
+          ng-attr-[tickFormatting]="{{yAxisTickFormatting}}"
           (dimensionsChanged)="updateYAxisWidth($event)"
         ></svg:g>
         <svg:g
           ngx-charts-y-axis
           *ngIf="yAxis"
-          [yScale]="yScaleLine"
-          [dims]="dims"
-          [yOrient]="yOrientRight"
-          [showGridLines]="showGridLines"
-          [showLabel]="showRightYAxisLabel"
-          [labelText]="yAxisLabelRight"
-          [tickFormatting]="yRightAxisTickFormatting"
+          ng-attr-[yScale]="{{yScaleLine}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[yOrient]="{{yOrientRight}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[showLabel]="{{showRightYAxisLabel}}"
+          ng-attr-[labelText]="{{yAxisLabelRight}}"
+          ng-attr-[tickFormatting]="{{yRightAxisTickFormatting}}"
           (dimensionsChanged)="updateYAxisWidth($event)"
         ></svg:g>
         <svg:g
           ngx-combo-charts-series-vertical
-          [xScale]="xScale"
-          [yScale]="yScale"
-          [colors]="colors"
-          [series]="results"
-          [seriesLine]="lineChart"
-          [dims]="dims"
-          [gradient]="gradient"
+          ng-attr-[xScale]="{{xScale}}"
+          ng-attr-[yScale]="{{yScale}}"
+          ng-attr-[colors]="{{colors}}"
+          ng-attr-[series]="{{results}}"
+          ng-attr-[seriesLine]="{{lineChart}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[gradient]="{{gradient}}"
           tooltipDisabled="true"
-          [activeEntries]="activeEntries"
-          [animations]="animations"
-          [noBarWhenZero]="noBarWhenZero"
+          ng-attr-[activeEntries]="{{activeEntries}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
           (activate)="onActivate($event)"
           (deactivate)="onDeactivate($event)"
           (bandwidth)="updateLineWidth($event)"
           (select)="onClick($event)"
         ></svg:g>
       </svg:g>
-      <svg:g [attr.transform]="transform" class="line-chart chart">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="line-chart chart">
         <svg:g>
           <svg:g *ngFor="let series of lineChart; trackBy: trackBy">
             <svg:g
               ngx-charts-line-series
-              [xScale]="xScaleLine"
-              [yScale]="yScaleLine"
-              [colors]="colorsLine"
-              [data]="series"
-              [activeEntries]="activeEntries"
-              [scaleType]="scaleType"
-              [curve]="curve"
-              [rangeFillOpacity]="rangeFillOpacity"
-              [animations]="animations"
+              ng-attr-[xScale]="{{xScaleLine}}"
+              ng-attr-[yScale]="{{yScaleLine}}"
+              ng-attr-[colors]="{{colorsLine}}"
+              ng-attr-[data]="{{series}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[scaleType]="{{scaleType}}"
+              ng-attr-[curve]="{{curve}}"
+              ng-attr-[rangeFillOpacity]="{{rangeFillOpacity}}"
+              ng-attr-[animations]="{{animations}}"
             />
           </svg:g>
 
           <svg:g
             ngx-charts-tooltip-area
             *ngIf="!tooltipDisabled"
-            [dims]="dims"
-            [xSet]="xSet"
-            [xScale]="xScaleLine"
-            [yScale]="yScaleLine"
-            [results]="combinedSeries"
-            [colors]="colorsLine"
-            [tooltipDisabled]="tooltipDisabled"
+            ng-attr-[dims]="{{dims}}"
+            ng-attr-[xSet]="{{xSet}}"
+            ng-attr-[xScale]="{{xScaleLine}}"
+            ng-attr-[yScale]="{{yScaleLine}}"
+            ng-attr-[results]="{{combinedSeries}}"
+            ng-attr-[colors]="{{colorsLine}}"
+            ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
             (hover)="updateHoveredVertical($event)"
           />
 
           <svg:g *ngFor="let series of lineChart">
             <svg:g
               ngx-charts-circle-series
-              [xScale]="xScaleLine"
-              [yScale]="yScaleLine"
-              [colors]="colorsLine"
-              [data]="series"
-              [scaleType]="scaleType"
-              [visibleValue]="hoveredVertical"
-              [activeEntries]="activeEntries"
-              [tooltipDisabled]="tooltipDisabled"
+              ng-attr-[xScale]="{{xScaleLine}}"
+              ng-attr-[yScale]="{{yScaleLine}}"
+              ng-attr-[colors]="{{colorsLine}}"
+              ng-attr-[data]="{{series}}"
+              ng-attr-[scaleType]="{{scaleType}}"
+              ng-attr-[visibleValue]="{{hoveredVertical}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
               (select)="onClick($event, series)"
               (activate)="onActivate($event)"
               (deactivate)="onDeactivate($event)"

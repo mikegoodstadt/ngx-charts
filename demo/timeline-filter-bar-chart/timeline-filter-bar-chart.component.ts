@@ -10,56 +10,56 @@ import { id } from '../../src/utils';
   selector: 'ngx-charts-timeline-filter-bar-chart',
   template: `
     <ngx-charts-chart
-      [view]="[width, height]"
-      [showLegend]="false"
-      [animations]="animations"
+      ng-attr-[view]="{{[width, height]}}"
+      ng-attr-[showLegend]="{{false}}"
+      ng-attr-[animations]="{{animations}}"
       class="timeline-filter-bar-chart"
     >
-      <svg:g [attr.transform]="transform" class="chart">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="chart">
         <svg:g
           ngx-charts-x-axis
           *ngIf="xAxis"
-          [xScale]="timeScale"
-          [dims]="dims"
-          [showLabel]="showXAxisLabel"
-          [labelText]="xAxisLabel"
-          [tickFormatting]="xAxisTickFormatting"
+          ng-attr-[xScale]="{{timeScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[showLabel]="{{showXAxisLabel}}"
+          ng-attr-[labelText]="{{xAxisLabel}}"
+          ng-attr-[tickFormatting]="{{xAxisTickFormatting}}"
           (dimensionsChanged)="updateXAxisHeight($event)"
         ></svg:g>
         <svg:g
           ngx-charts-y-axis
           *ngIf="yAxis"
-          [yScale]="yScale"
-          [dims]="dims"
-          [showGridLines]="showGridLines"
-          [showLabel]="showYAxisLabel"
-          [labelText]="yAxisLabel"
-          [tickFormatting]="yAxisTickFormatting"
+          ng-attr-[yScale]="{{yScale}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[showGridLines]="{{showGridLines}}"
+          ng-attr-[showLabel]="{{showYAxisLabel}}"
+          ng-attr-[labelText]="{{yAxisLabel}}"
+          ng-attr-[tickFormatting]="{{yAxisTickFormatting}}"
           (dimensionsChanged)="updateYAxisWidth($event)"
         ></svg:g>
         <svg:g
           ngx-charts-series-vertical
-          [xScale]="xScale"
-          [yScale]="yScale"
-          [colors]="colors"
-          [series]="results"
-          [dims]="dims"
-          [gradient]="gradient"
-          [animations]="animations"
-          [noBarWhenZero]="noBarWhenZero"
+          ng-attr-[xScale]="{{xScale}}"
+          ng-attr-[yScale]="{{yScale}}"
+          ng-attr-[colors]="{{colors}}"
+          ng-attr-[series]="{{results}}"
+          ng-attr-[dims]="{{dims}}"
+          ng-attr-[gradient]="{{gradient}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
           tooltipDisabled="true"
         ></svg:g>
       </svg:g>
 
-      <svg:g [attr.transform]="transform" class="timeline">
-        <svg:filter [attr.id]="filterId">
+      <svg:g ng-attr-[attr.transform]="{{transform}}" class="timeline">
+        <svg:filter ng-attr-[attr.id]="{{filterId}}">
           <svg:feColorMatrix
             in="SourceGraphic"
             type="matrix"
             values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"
           />
         </svg:filter>
-        <svg:rect x="0" [attr.width]="dims.width" y="0" [attr.height]="dims.height" class="brush-background" />
+        <svg:rect x="0" ng-attr-[attr.width]="{{dims.width}}" y="0" ng-attr-[attr.height]="{{dims.height}}" class="brush-background" />
         <svg:g class="brush"></svg:g>
       </svg:g>
     </ngx-charts-chart>

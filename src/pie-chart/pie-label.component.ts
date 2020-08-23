@@ -8,24 +8,24 @@ import { trimLabel } from '../common/trim-label.helper';
   template: `
     <title>{{label}}</title>
     <svg:g
-      [attr.transform]="attrTransform"
-      [style.transform]="styleTransform"
-      [style.transition]="textTransition">
+      ng-attr-[attr.transform]="{{attrTransform}}"
+      ng-attr-[style.transform]="{{styleTransform}}"
+      ng-attr-[style.transition]="{{textTransition}}">
       <svg:text
         class="pie-label"
-        [class.animation]="animations"
+        ng-attr-[class.animation]="{{animations}}"
         dy=".35em"
-        [style.textAnchor]="textAnchor()"
-        [style.shapeRendering]="'crispEdges'">
+        ng-attr-[style.textAnchor]="{{textAnchor()}}"
+        ng-attr-[style.shapeRendering]="{{'crispEdges'}}">
         {{labelTrim ? trimLabel(label, labelTrimSize) : label}}
       </svg:text>
     </svg:g>
     <svg:path
-      [attr.d]="line"
-      [attr.stroke]="color"
+      ng-attr-[attr.d]="{{line}}"
+      ng-attr-[attr.stroke]="{{color}}"
       fill="none"
       class="pie-label-line line"
-      [class.animation]="animations">
+      ng-attr-[class.animation]="{{animations}}">
     </svg:path>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -13,14 +13,14 @@ import {
   selector: 'g[ngx-charts-circle]',
   template: `
     <svg:circle
-      [attr.cx]="cx"
-      [attr.cy]="cy"
-      [attr.r]="r"
-      [attr.fill]="fill"
-      [attr.stroke]="stroke"
-      [attr.opacity]="circleOpacity"
-      [attr.class]="classNames"
-      [attr.pointer-events]="pointerEvents"
+      ng-attr-[attr.cx]="{{cx}}"
+      ng-attr-[attr.cy]="{{cy}}"
+      ng-attr-[attr.r]="{{r}}"
+      ng-attr-[attr.fill]="{{fill}}"
+      ng-attr-[attr.stroke]="{{stroke}}"
+      ng-attr-[attr.opacity]="{{circleOpacity}}"
+      ng-attr-[attr.class]="{{classNames}}"
+      ng-attr-[attr.pointer-events]="{{pointerEvents}}"
     />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

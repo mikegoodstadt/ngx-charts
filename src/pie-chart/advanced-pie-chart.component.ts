@@ -17,39 +17,39 @@ import { DataItem } from '../models/chart-data.model';
 @Component({
   selector: 'ngx-charts-advanced-pie-chart',
   template: `
-    <div [style.width.px]="width" [style.height.px]="height">
-      <div class="advanced-pie chart" [style.width.px]="dims.width" [style.height.px]="dims.height">
-        <ngx-charts-chart [view]="[width, height]" [showLegend]="false" [animations]="animations">
-          <svg:g [attr.transform]="transform" class="pie chart">
+    <div ng-attr-[style.width.px]="{{width}}" ng-attr-[style.height.px]="{{height}}">
+      <div class="advanced-pie chart" ng-attr-[style.width.px]="{{dims.width}}" ng-attr-[style.height.px]="{{dims.height}}">
+        <ngx-charts-chart ng-attr-[view]="{{[width, height]}}" ng-attr-[showLegend]="{{false}}" ng-attr-[animations]="{{animations}}">
+          <svg:g ng-attr-[attr.transform]="{{transform}}" class="pie chart">
             <svg:g
               ngx-charts-pie-series
-              [colors]="colors"
-              [series]="results"
-              [innerRadius]="innerRadius"
-              [activeEntries]="activeEntries"
-              [outerRadius]="outerRadius"
-              [gradient]="gradient"
-              [tooltipDisabled]="tooltipDisabled"
-              [tooltipTemplate]="tooltipTemplate"
-              [tooltipText]="tooltipText"
+              ng-attr-[colors]="{{colors}}"
+              ng-attr-[series]="{{results}}"
+              ng-attr-[innerRadius]="{{innerRadius}}"
+              ng-attr-[activeEntries]="{{activeEntries}}"
+              ng-attr-[outerRadius]="{{outerRadius}}"
+              ng-attr-[gradient]="{{gradient}}"
+              ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+              ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+              ng-attr-[tooltipText]="{{tooltipText}}"
               (select)="onClick($event)"
               (activate)="onActivate($event)"
               (deactivate)="onDeactivate($event)"
-              [animations]="animations"
+              ng-attr-[animations]="{{animations}}"
             ></svg:g>
           </svg:g>
         </ngx-charts-chart>
       </div>
-      <div class="advanced-pie-legend-wrapper" [style.width.px]="width - dims.width" [style.height.px]="height">
+      <div class="advanced-pie-legend-wrapper" ng-attr-[style.width.px]="{{width - dims.width}}" ng-attr-[style.height.px]="{{height}}">
         <ngx-charts-advanced-legend
-          [data]="results"
-          [colors]="colors"
-          [width]="width - dims.width - margin[1]"
-          [label]="label"
-          [animations]="animations"
-          [valueFormatting]="valueFormatting"
-          [labelFormatting]="nameFormatting"
-          [percentageFormatting]="percentageFormatting"
+          ng-attr-[data]="{{results}}"
+          ng-attr-[colors]="{{colors}}"
+          ng-attr-[width]="{{width - dims.width - margin[1]}}"
+          ng-attr-[label]="{{label}}"
+          ng-attr-[animations]="{{animations}}"
+          ng-attr-[valueFormatting]="{{valueFormatting}}"
+          ng-attr-[labelFormatting]="{{nameFormatting}}"
+          ng-attr-[percentageFormatting]="{{percentageFormatting}}"
           (select)="onClick($event)"
           (activate)="onActivate($event, true)"
           (deactivate)="onDeactivate($event, true)"

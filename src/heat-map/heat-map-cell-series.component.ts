@@ -17,24 +17,24 @@ import { formatLabel, escapeLabel } from '../common/label.helper';
     <svg:g
       ngx-charts-heat-map-cell
       *ngFor="let c of cells; trackBy: trackBy"
-      [x]="c.x"
-      [y]="c.y"
-      [width]="c.width"
-      [height]="c.height"
-      [fill]="c.fill"
-      [data]="c.data"
+      ng-attr-[x]="{{c.x}}"
+      ng-attr-[y]="{{c.y}}"
+      ng-attr-[width]="{{c.width}}"
+      ng-attr-[height]="{{c.height}}"
+      ng-attr-[fill]="{{c.fill}}"
+      ng-attr-[data]="{{c.data}}"
       (select)="onClick(c.cell)"
       (activate)="activate.emit(c.cell)"
       (deactivate)="deactivate.emit(c.cell)"
-      [gradient]="gradient"
-      [animations]="animations"
+      ng-attr-[gradient]="{{gradient}}"
+      ng-attr-[animations]="{{animations}}"
       ngx-tooltip
-      [tooltipDisabled]="tooltipDisabled"
-      [tooltipPlacement]="'top'"
-      [tooltipType]="'tooltip'"
-      [tooltipTitle]="tooltipTemplate ? undefined : tooltipText(c)"
-      [tooltipTemplate]="tooltipTemplate"
-      [tooltipContext]="{ series: c.series, name: c.label, value: c.data }"
+      ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
+      ng-attr-[tooltipPlacement]="{{'top'}}"
+      ng-attr-[tooltipType]="{{'tooltip'}}"
+      ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText(c)}}"
+      ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
+      ng-attr-[tooltipContext]="{{{ series: c.series, name: c.label, value: c.data }}}"
     ></svg:g>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

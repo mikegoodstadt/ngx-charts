@@ -34,7 +34,7 @@ var GridPanelComponent = /** @class */ (function () {
     GridPanelComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-grid-panel]',
-            template: "\n    <svg:rect\n      [attr.height]=\"height\"\n      [attr.width]=\"width\"\n      [attr.x]=\"x\"\n      [attr.y]=\"y\"\n      stroke=\"none\"\n      class=\"gridpanel\"\n    />\n  ",
+            template: "\n    <svg:rect\n      ng-attr-[attr.height]=\"{{height}}\"\n      ng-attr-[attr.width]=\"{{width}}\"\n      ng-attr-[attr.x]=\"{{x}}\"\n      ng-attr-[attr.y]=\"{{y}}\"\n      stroke=\"none\"\n      class=\"gridpanel\"\n    />\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         })
     ], GridPanelComponent);

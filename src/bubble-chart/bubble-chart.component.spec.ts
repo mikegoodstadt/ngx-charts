@@ -38,9 +38,9 @@ describe('<ngx-charts-bubble-chart>', () => {
         set: {
           template: `
               <ngx-charts-bubble-chart
-                [view]="[400,800]"
-                [scheme]="colorScheme"
-                [results]="results">
+                ng-attr-[view]="{{[400,800]}}"
+                ng-attr-[scheme]="{{colorScheme}}"
+                ng-attr-[results]="{{results}}">
               </ngx-charts-bubble-chart>`
         }
       }).compileComponents();

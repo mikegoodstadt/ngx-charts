@@ -72,7 +72,7 @@ var SvgRadialGradientComponent = /** @class */ (function () {
     SvgRadialGradientComponent = __decorate([
         Component({
             selector: 'g[ngx-charts-svg-radial-gradient]',
-            template: "\n    <svg:radialGradient\n      [id]=\"name\"\n      [attr.cx]=\"cx\"\n      [attr.cy]=\"cy\"\n      [attr.r]=\"r\"\n      gradientUnits=\"userSpaceOnUse\">\n      <svg:stop *ngFor=\"let stop of stops\"\n        [attr.offset]=\"stop.offset + '%'\"\n        [style.stop-color]=\"stop.color\"\n        [style.stop-opacity]=\"stop.opacity\"\n      />\n    </svg:radialGradient>\n  ",
+            template: "\n    <svg:radialGradient\n      ng-attr-[id]=\"{{name}}\"\n      ng-attr-[attr.cx]=\"{{cx}}\"\n      ng-attr-[attr.cy]=\"{{cy}}\"\n      ng-attr-[attr.r]=\"{{r}}\"\n      gradientUnits=\"userSpaceOnUse\">\n      <svg:stop *ngFor=\"let stop of stops\"\n        ng-attr-[attr.offset]=\"{{stop.offset + '%'}}\"\n        ng-attr-[style.stop-color]=\"{{stop.color}}\"\n        ng-attr-[style.stop-opacity]=\"{{stop.opacity}}\"\n      />\n    </svg:radialGradient>\n  ",
             changeDetection: ChangeDetectionStrategy.OnPush
         })
     ], SvgRadialGradientComponent);
