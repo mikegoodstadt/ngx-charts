@@ -20,8 +20,10 @@ var ChartComponent = /** @class */ (function () {
         this.legendLabelActivate = new EventEmitter();
         this.legendLabelDeactivate = new EventEmitter();
         this.tooltipService.injectionService.setRootViewContainer(this.vcr);
+        console.log('charts-chart contructor');
     }
     ChartComponent.prototype.ngOnChanges = function (changes) {
+        console.log('ChartComponent: ', this.data);
         this.update();
     };
     ChartComponent.prototype.update = function () {

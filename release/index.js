@@ -8309,8 +8309,10 @@ var BaseChartComponent = /** @class */ (function () {
         this.schemeType = 'ordinal';
         this.animations = true;
         this.select = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        console.log('base-chart constructor');
     }
     BaseChartComponent.prototype.ngAfterViewInit = function () {
+        console.log('ngAfterViewInit');
         this.bindWindowResizeEvent();
         // listen for visibility of the element for hidden by default scenario
         this.visibilityObserver = new __WEBPACK_IMPORTED_MODULE_3__utils__["a" /* VisibilityObserver */](this.chartElement, this.zone);
@@ -8324,10 +8326,11 @@ var BaseChartComponent = /** @class */ (function () {
         }
     };
     BaseChartComponent.prototype.ngOnChanges = function (changes) {
+        console.log('base-chart ngOnChanges: ', this.results);
         this.update();
     };
     BaseChartComponent.prototype.update = function () {
-        console.log('base-chart: ', JSON.stringify(this.results));
+        console.log('base-chart: ', this.results);
         if (this.results) {
             this.results = this.cloneData(this.results);
         }
@@ -8609,8 +8612,10 @@ var ChartComponent = /** @class */ (function () {
         this.legendLabelActivate = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.legendLabelDeactivate = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.tooltipService.injectionService.setRootViewContainer(this.vcr);
+        console.log('charts-chart contructor');
     }
     ChartComponent.prototype.ngOnChanges = function (changes) {
+        console.log('ChartComponent: ', this.data);
         this.update();
     };
     ChartComponent.prototype.update = function () {

@@ -86,9 +86,11 @@ export class ChartComponent implements OnChanges {
     private vcr: ViewContainerRef,
     private tooltipService: TooltipService) {
     this.tooltipService.injectionService.setRootViewContainer(this.vcr);
+    console.log('charts-chart contructor');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log('ChartComponent: ', this.data);
     this.update();
   }
 

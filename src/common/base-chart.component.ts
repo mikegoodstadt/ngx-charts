@@ -38,9 +38,12 @@ export class BaseChartComponent implements OnChanges, AfterViewInit, OnDestroy {
   resizeSubscription: any;
   visibilityObserver: VisibilityObserver;
 
-  constructor(protected chartElement: ElementRef, protected zone: NgZone, protected cd: ChangeDetectorRef) {}
+  constructor(protected chartElement: ElementRef, protected zone: NgZone, protected cd: ChangeDetectorRef) {
+    console.log('base-chart constructor');
+  }
 
   ngAfterViewInit(): void {
+    console.log('ngAfterViewInit');
     this.bindWindowResizeEvent();
 
     // listen for visibility of the element for hidden by default scenario
@@ -57,11 +60,12 @@ export class BaseChartComponent implements OnChanges, AfterViewInit, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log('base-chart ngOnChanges: ', this.results);
     this.update();
   }
 
   update(): void {
-    console.log('base-chart: ', JSON.stringify(this.results));
+    console.log('base-chart: ', this.results);
     if (this.results) {
       this.results = this.cloneData(this.results);
     } else {
