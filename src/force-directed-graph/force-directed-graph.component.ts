@@ -56,15 +56,15 @@ import { MouseEvent } from '../events';
           <svg:g
             *ngFor="let node of nodes; trackBy: trackNodeBy"
             ng-attr-[attr.transform]="{{'translate(' + node.x + ',' + node.y + ')'}}"
-            ng-attr-[attr.fill]="{{colors.getColor(groupResultsBy(node))}}"
-            ng-attr-[attr.stroke]="{{colors.getColor(groupResultsBy(node))}}"
+            ng-attr-[attr.fill]="colors.getColor(groupResultsBy(node))"
+            ng-attr-[attr.stroke]="colors.getColor(groupResultsBy(node))"
             (mousedown)="onDragStart(node, $event)"
             (click)="onClick({ name: node.value })"
             ngx-tooltip
             ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
             ng-attr-[tooltipPlacement]="{{'top'}}"
             ng-attr-[tooltipType]="{{'tooltip'}}"
-            ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : escape(node.value)}}"
+            ng-attr-[tooltipTitle]="tooltipTemplate ? undefined : escape(node.value)"
             ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
             ng-attr-[tooltipContext]="{{node}}"
           >

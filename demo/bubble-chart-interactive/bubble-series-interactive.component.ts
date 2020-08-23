@@ -40,7 +40,7 @@ import { formatLabel } from '../../src/common/label.helper';
           ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
           ng-attr-[tooltipPlacement]="{{'top'}}"
           ng-attr-[tooltipType]="{{'tooltip'}}"
-          ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : getTooltipText(circle)}}"
+          [tooltipTitle]="tooltipTemplate ? undefined : getTooltipText(circle)"
           ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
           ng-attr-[tooltipContext]="{{circle.data}}"
         />

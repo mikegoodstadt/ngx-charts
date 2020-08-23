@@ -22,7 +22,7 @@ import { pie } from 'd3-shape';
         ng-attr-[endAngle]="{{arc.endAngle}}"
         ng-attr-[innerRadius]="{{innerRadius}}"
         ng-attr-[outerRadius]="{{outerRadius}}"
-        ng-attr-[fill]="{{color(arc)}}"
+        ng-attr-[fill]="color(arc)"
         ng-attr-[value]="{{arc.data.value}}"
         ng-attr-[data]="{{arc.data}}"
         ng-attr-[gradient]="{{false}}"

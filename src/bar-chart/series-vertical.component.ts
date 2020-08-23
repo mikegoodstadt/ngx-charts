@@ -27,7 +27,7 @@ export enum D0Types {
       ng-attr-[roundEdges]="{{bar.roundEdges}}"
       ng-attr-[gradient]="{{gradient}}"
       ng-attr-[ariaLabel]="{{bar.ariaLabel}}"
-      ng-attr-[isActive]="{{isActive(bar.data)}}"
+      ng-attr-[isActive]="isActive(bar.data)"
       (select)="onClick($event)"
       (activate)="activate.emit($event)"
       (deactivate)="deactivate.emit($event)"

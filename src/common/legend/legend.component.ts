@@ -22,7 +22,7 @@ import { formatLabel } from '../label.helper';
               ng-attr-[label]="{{entry.label}}"
               ng-attr-[formattedLabel]="{{entry.formattedLabel}}"
               ng-attr-[color]="{{entry.color}}"
-              ng-attr-[isActive]="{{isActive(entry)}}"
+              ng-attr-[isActive]="isActive(entry)"
               (select)="labelClick.emit($event)"
               (activate)="activate($event)"
               (deactivate)="deactivate($event)">

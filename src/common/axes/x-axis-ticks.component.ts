@@ -17,7 +17,7 @@ import { reduceTicks } from './ticks.helper';
   selector: 'g[ngx-charts-x-axis-ticks]',
   template: `
     <svg:g #ticksel>
-      <svg:g *ngFor="let tick of ticks" class="tick" ng-attr-[attr.transform]="{{tickTransform(tick)}}">
+      <svg:g *ngFor="let tick of ticks" class="tick" ng-attr-[attr.transform]="tickTransform(tick)">
         <title>{{ tickFormat(tick) }}</title>
         <svg:text
           stroke-width="0.01"
@@ -30,8 +30,8 @@ import { reduceTicks } from './ticks.helper';
       </svg:g>
     </svg:g>
 
-    <svg:g *ngFor="let tick of ticks" ng-attr-[attr.transform]="{{tickTransform(tick)}}">
-      <svg:g *ngIf="showGridLines" ng-attr-[attr.transform]="{{gridLineTransform()}}">
+    <svg:g *ngFor="let tick of ticks" ng-attr-[attr.transform]="tickTransform(tick)">
+      <svg:g *ngIf="showGridLines" ng-attr-[attr.transform]="gridLineTransform()">
         <svg:line class="gridline-path gridline-path-vertical" ng-attr-[attr.y1]="{{-gridLineHeight}}" y2="0" />
       </svg:g>
     </svg:g>

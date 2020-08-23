@@ -70,7 +70,7 @@ import { BaseChartComponent } from '../common/base-chart.component';
           ngx-charts-series-vertical
           *ngFor="let group of results; let index = index; trackBy: trackBy"
           ng-attr-[@animationState]="{{'active'}}"
-          ng-attr-[attr.transform]="{{groupTransform(group)}}"
+          ng-attr-[attr.transform]="groupTransform(group)"
           ng-attr-[activeEntries]="{{activeEntries}}"
           ng-attr-[xScale]="{{innerScale}}"
           ng-attr-[yScale]="{{valueScale}}"

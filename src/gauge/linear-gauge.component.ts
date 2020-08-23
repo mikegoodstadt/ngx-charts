@@ -25,19 +25,19 @@ import { ColorHelper } from '../common/color.helper';
           ng-attr-[height]="{{3}}"
           ng-attr-[x]="{{margin[3]}}"
           ng-attr-[y]="{{dims.height / 2 + margin[0] - 2}}"
-          ng-attr-[data]="{}"
+          [data]="{}"
           ng-attr-[orientation]="{{'horizontal'}}"
           ng-attr-[roundEdges]="{{true}}"
           ng-attr-[animations]="{{animations}}"
         ></svg:g>
         <svg:g
           ngx-charts-bar
-          ng-attr-[width]="{{valueScale(value)}}"
+          ng-attr-[width]="valueScale(value)"
           ng-attr-[height]="{{3}}"
           ng-attr-[x]="{{margin[3]}}"
           ng-attr-[y]="{{dims.height / 2 + margin[0] - 2}}"
-          ng-attr-[fill]="{{colors.getColor(units)}}"
-          ng-attr-[data]="{}"
+          ng-attr-[fill]="colors.getColor(units)"
+          [data]="{}"
           ng-attr-[orientation]="{{'horizontal'}}"
           ng-attr-[roundEdges]="{{true}}"
           ng-attr-[animations]="{{animations}}"
@@ -50,7 +50,7 @@ import { ColorHelper } from '../common/color.helper';
           y1="5"
           x2="0"
           y2="15"
-          ng-attr-[attr.stroke]="{{colors.getColor(units)}}"
+          ng-attr-[attr.stroke]="colors.getColor(units)"
         />
 
         <svg:line
@@ -60,7 +60,7 @@ import { ColorHelper } from '../common/color.helper';
           y1="-5"
           x2="0"
           y2="-15"
-          ng-attr-[attr.stroke]="{{colors.getColor(units)}}"
+          ng-attr-[attr.stroke]="colors.getColor(units)"
         />
 
         <svg:g ng-attr-[attr.transform]="{{transform}}">

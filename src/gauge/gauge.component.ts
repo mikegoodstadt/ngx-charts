@@ -38,7 +38,7 @@ import { ColorHelper } from '../common/color.helper';
             ng-attr-[valueArc]="{{arc.valueArc}}"
             ng-attr-[cornerRadius]="{{cornerRadius}}"
             ng-attr-[colors]="{{colors}}"
-            ng-attr-[isActive]="{{isActive(arc.valueArc.data)}}"
+            ng-attr-[isActive]="isActive(arc.valueArc.data)"
             ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
             ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
             ng-attr-[valueFormatting]="{{valueFormatting}}"

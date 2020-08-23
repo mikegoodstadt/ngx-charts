@@ -32,7 +32,7 @@ import { id } from '../utils/id';
         class="treemap-label"
         ng-attr-[style.pointer-events]="{{'none'}}"
       >
-        <xhtml:p ng-attr-[style.color]="{{getTextColor()}}" ng-attr-[style.height]="{{height + 'px'}}" ng-attr-[style.width]="{{width + 'px'}}">
+        <xhtml:p ng-attr-[style.color]="getTextColor()" ng-attr-[style.height]="{{height + 'px'}}" ng-attr-[style.width]="{{width + 'px'}}">
           <xhtml:span class="treemap-label" ng-attr-[innerHTML]="{{formattedLabel}}"> </xhtml:span>
           <xhtml:br />
           <xhtml:span

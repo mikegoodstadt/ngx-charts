@@ -31,7 +31,7 @@ import { DataItem } from '../models/chart-data.model';
       ng-attr-[roundEdges]="{{bar.roundEdges}}"
       (select)="click($event)"
       ng-attr-[gradient]="{{gradient}}"
-      ng-attr-[isActive]="{{isActive(bar.data)}}"
+      ng-attr-[isActive]="isActive(bar.data)"
       ng-attr-[ariaLabel]="{{bar.ariaLabel}}"
       ng-attr-[animations]="{{animations}}"
       (activate)="activate.emit($event)"

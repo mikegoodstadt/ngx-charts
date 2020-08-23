@@ -32,12 +32,12 @@ import { MouseEvent } from '../events';
         ng-attr-[attr.d]="{{path}}"
         class="arc"
         ng-attr-[class.active]="{{isActive}}"
-        ng-attr-[attr.fill]="{{getGradient()}}"
+        ng-attr-[attr.fill]="getGradient()"
         (click)="onClick()"
         (dblclick)="onDblClick($event)"
         (mouseenter)="activate.emit(data)"
         (mouseleave)="deactivate.emit(data)"
-        ng-attr-[style.pointer-events]="{{getPointerEvents()}}"
+        ng-attr-[style.pointer-events]="getPointerEvents()"
       />
     </svg:g>
   `,

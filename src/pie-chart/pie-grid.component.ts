@@ -37,7 +37,7 @@ import { DataItem } from '../models/chart-data.model';
             ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
             ng-attr-[tooltipPlacement]="{{'top'}}"
             ng-attr-[tooltipType]="{{'tooltip'}}"
-            ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText({ data: series })}}"
+            ng-attr-[tooltipTitle]="tooltipTemplate ? undefined : tooltipText({ data: series })"
             ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
             ng-attr-[tooltipContext]="{{series.data[0].data}}"
             (activate)="onActivate($event)"

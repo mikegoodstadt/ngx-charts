@@ -54,7 +54,7 @@ import { escapeLabel } from '../common/label.helper';
         ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
         ng-attr-[tooltipPlacement]="{{'top'}}"
         tooltipType="tooltip"
-        ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText(circle)}}"
+        ng-attr-[tooltipTitle]="tooltipTemplate ? undefined : tooltipText(circle)"
         ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
         ng-attr-[tooltipContext]="{{circle.data}}"
         (select)="select.emit(circle.data)"

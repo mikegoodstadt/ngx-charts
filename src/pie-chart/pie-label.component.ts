@@ -15,7 +15,7 @@ import { trimLabel } from '../common/trim-label.helper';
         class="pie-label"
         ng-attr-[class.animation]="{{animations}}"
         dy=".35em"
-        ng-attr-[style.textAnchor]="{{textAnchor()}}"
+        ng-attr-[style.textAnchor]="textAnchor()"
         ng-attr-[style.shapeRendering]="{{'crispEdges'}}">
         {{labelTrim ? trimLabel(label, labelTrimSize) : label}}
       </svg:text>

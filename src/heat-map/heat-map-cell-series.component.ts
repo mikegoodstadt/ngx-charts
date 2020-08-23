@@ -32,7 +32,7 @@ import { formatLabel, escapeLabel } from '../common/label.helper';
       ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
       ng-attr-[tooltipPlacement]="{{'top'}}"
       ng-attr-[tooltipType]="{{'tooltip'}}"
-      ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText(c)}}"
+      ng-attr-[tooltipTitle]="tooltipTemplate ? undefined : tooltipText(c)"
       ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
       [tooltipContext]="{ series: c.series, name: c.label, value: c.data }"
     ></svg:g>

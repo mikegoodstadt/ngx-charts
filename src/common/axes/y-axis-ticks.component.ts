@@ -18,7 +18,7 @@ import { roundedRect } from '../../common/shape.helper';
   selector: 'g[ngx-charts-y-axis-ticks]',
   template: `
     <svg:g #ticksel>
-      <svg:g *ngFor="let tick of ticks" class="tick" ng-attr-[attr.transform]="{{transform(tick)}}">
+      <svg:g *ngFor="let tick of ticks" class="tick" ng-attr-[attr.transform]="transform(tick)">
         <title>{{ tickFormat(tick) }}</title>
         <svg:text
           stroke-width="0.01"
@@ -37,10 +37,10 @@ import { roundedRect } from '../../common/shape.helper';
       *ngIf="referenceLineLength > 1 && refMax && refMin && showRefLines"
       class="reference-area"
       ng-attr-[attr.d]="{{referenceAreaPath}}"
-      ng-attr-[attr.transform]="{{gridLineTransform()}}"
+      ng-attr-[attr.transform]="gridLineTransform()"
     />
-    <svg:g *ngFor="let tick of ticks" ng-attr-[attr.transform]="{{transform(tick)}}">
-      <svg:g *ngIf="showGridLines" ng-attr-[attr.transform]="{{gridLineTransform()}}">
+    <svg:g *ngFor="let tick of ticks" ng-attr-[attr.transform]="transform(tick)">
+      <svg:g *ngIf="showGridLines" ng-attr-[attr.transform]="gridLineTransform()">
         <svg:line
           *ngIf="orient === 'left'"
           class="gridline-path gridline-path-horizontal"
@@ -57,12 +57,12 @@ import { roundedRect } from '../../common/shape.helper';
     </svg:g>
 
     <svg:g *ngFor="let refLine of referenceLines">
-      <svg:g *ngIf="showRefLines" ng-attr-[attr.transform]="{{transform(refLine.value)}}">
+      <svg:g *ngIf="showRefLines" ng-attr-[attr.transform]="transform(refLine.value)">
         <svg:line
           class="refline-path gridline-path-horizontal"
           x1="0"
           ng-attr-[attr.x2]="{{gridLineWidth}}"
-          ng-attr-[attr.transform]="{{gridLineTransform()}}"
+          ng-attr-[attr.transform]="gridLineTransform()"
         />
         <svg:g *ngIf="showRefLabels">
           <title>{{ tickTrim(tickFormat(refLine.value)) }}</title>

@@ -30,7 +30,7 @@ import { formatLabel } from '../../src/common/label.helper';
       ng-attr-[orientation]="{{'vertical'}}"
       ng-attr-[roundEdges]="{{bar.roundEdges}}"
       ng-attr-[gradient]="{{gradient}}"
-      ng-attr-[isActive]="{{isActive(bar.data)}}"
+      ng-attr-[isActive]="isActive(bar.data)"
       ng-attr-[animations]="{{animations}}"
       ng-attr-[noBarWhenZero]="{{noBarWhenZero}}"
       (select)="onClick($event)"

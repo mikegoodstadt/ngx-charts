@@ -61,7 +61,7 @@ import { BaseChartComponent } from '../common/base-chart.component';
         <svg:g
           *ngFor="let group of results; trackBy: trackBy"
           ng-attr-[@animationState]="{{'active'}}"
-          ng-attr-[attr.transform]="{{groupTransform(group)}}"
+          ng-attr-[attr.transform]="groupTransform(group)"
         >
           <svg:g
             ngx-charts-series-horizontal

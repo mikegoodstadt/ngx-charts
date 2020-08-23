@@ -43,7 +43,7 @@ import { ColorHelper } from '../common/color.helper';
         ng-attr-[cy]="{{circle.cy}}"
         ng-attr-[r]="{{circle.radius}}"
         ng-attr-[fill]="{{circle.color}}"
-        ng-attr-[class.active]="{{isActive({ name: circle.seriesName })}}"
+        ng-attr-[class.active]="isActive({ name: circle.seriesName })"
         ng-attr-[pointerEvents]="{{circle.value === 0 ? 'none' : 'all'}}"
         ng-attr-[data]="{{circle.value}}"
         ng-attr-[classNames]="{{circle.classNames}}"
@@ -54,7 +54,7 @@ import { ColorHelper } from '../common/color.helper';
         ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
         ng-attr-[tooltipPlacement]="{{'top'}}"
         ng-attr-[tooltipType]="{{'tooltip'}}"
-        ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : getTooltipText(circle)}}"
+        ng-attr-[tooltipTitle]="tooltipTemplate ? undefined : getTooltipText(circle)"
         ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
         ng-attr-[tooltipContext]="{{circle.data}}"
       />

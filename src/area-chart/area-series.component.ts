@@ -18,14 +18,14 @@ import { sortLinear, sortByTime, sortByDomain } from '../utils/sort';
       class="area-series"
       ng-attr-[data]="{{data}}"
       ng-attr-[path]="{{path}}"
-      ng-attr-[fill]="{{colors.getColor(data.name)}}"
+      ng-attr-[fill]="colors.getColor(data.name)"
       ng-attr-[stops]="{{gradientStops}}"
       ng-attr-[startingPath]="{{startingPath}}"
       ng-attr-[opacity]="{{opacity}}"
       ng-attr-[gradient]="{{gradient || hasGradient}}"
       ng-attr-[animations]="{{animations}}"
-      ng-attr-[class.active]="{{isActive(data)}}"
-      ng-attr-[class.inactive]="{{isInactive(data)}}"
+      ng-attr-[class.active]="isActive(data)"
+      ng-attr-[class.inactive]="isInactive(data)"
     />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

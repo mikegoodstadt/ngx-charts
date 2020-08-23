@@ -29,7 +29,7 @@ import { ColorHelper } from '../common/color.helper';
       ng-attr-[innerRadius]="{{valueArc.innerRadius}}"
       ng-attr-[outerRadius]="{{valueArc.outerRadius}}"
       ng-attr-[cornerRadius]="{{cornerRadius}}"
-      ng-attr-[fill]="{{colors.getColor(valueArc.data.name)}}"
+      ng-attr-[fill]="colors.getColor(valueArc.data.name)"
       ng-attr-[data]="{{valueArc.data}}"
       ng-attr-[animate]="{{animations}}"
       ng-attr-[isActive]="{{isActive}}"
@@ -40,7 +40,7 @@ import { ColorHelper } from '../common/color.helper';
       ng-attr-[tooltipDisabled]="{{tooltipDisabled}}"
       ng-attr-[tooltipPlacement]="{{'top'}}"
       ng-attr-[tooltipType]="{{'tooltip'}}"
-      ng-attr-[tooltipTitle]="{{tooltipTemplate ? undefined : tooltipText(valueArc)}}"
+      ng-attr-[tooltipTitle]="tooltipTemplate ? undefined : tooltipText(valueArc)"
       ng-attr-[tooltipTemplate]="{{tooltipTemplate}}"
       ng-attr-[tooltipContext]="{{valueArc.data}}">
     </svg:g>
