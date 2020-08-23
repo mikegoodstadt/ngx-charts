@@ -8327,6 +8327,7 @@ var BaseChartComponent = /** @class */ (function () {
         this.update();
     };
     BaseChartComponent.prototype.update = function () {
+        console.log('base-chart: ', this.results);
         if (this.results) {
             this.results = this.cloneData(this.results);
         }
@@ -14629,6 +14630,7 @@ var LineChartComponent = /** @class */ (function (_super) {
         return _this;
     }
     LineChartComponent.prototype.update = function () {
+        console.log('line-chart: ', this.results);
         _super.prototype.update.call(this);
         this.dims = Object(__WEBPACK_IMPORTED_MODULE_4__common_view_dimensions_helper__["a" /* calculateViewDimensions */])({
             width: this.width,
@@ -15340,6 +15342,7 @@ var LineComponent = /** @class */ (function () {
         }
     };
     LineComponent.prototype.updatePathEl = function () {
+        console.log('line-comp: ', this.data);
         var node = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(this.element.nativeElement).select('.line');
         if (this.animations) {
             node

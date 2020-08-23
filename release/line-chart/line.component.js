@@ -28,6 +28,7 @@ var LineComponent = /** @class */ (function () {
         }
     };
     LineComponent.prototype.updatePathEl = function () {
+        console.log('line-comp: ', this.data);
         var node = select(this.element.nativeElement).select('.line');
         if (this.animations) {
             node

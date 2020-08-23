@@ -61,6 +61,7 @@ export class BaseChartComponent implements OnChanges, AfterViewInit, OnDestroy {
   }
 
   update(): void {
+    console.log('base-chart: ', this.results);
     if (this.results) {
       this.results = this.cloneData(this.results);
     } else {
