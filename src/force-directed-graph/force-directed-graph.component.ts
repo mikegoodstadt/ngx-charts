@@ -39,7 +39,7 @@ import { MouseEvent } from '../events';
             <ng-template
               *ngIf="linkTemplate"
               ng-attr-[ngTemplateOutlet]="{{linkTemplate}}"
-              ng-attr-[ngTemplateOutletContext]="{ $implicit: link }"
+              [ngTemplateOutletContext]="{ $implicit: link }"
             ></ng-template>
             <svg:line
               *ngIf="!linkTemplate"
@@ -71,7 +71,7 @@ import { MouseEvent } from '../events';
             <ng-template
               *ngIf="nodeTemplate"
               ng-attr-[ngTemplateOutlet]="{{nodeTemplate}}"
-              ng-attr-[ngTemplateOutletContext]="{ $implicit: node }"
+              [ngTemplateOutletContext]="{ $implicit: node }"
             ></ng-template>
             <svg:circle *ngIf="!nodeTemplate" r="5" />
           </svg:g>
