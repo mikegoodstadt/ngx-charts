@@ -124,7 +124,7 @@ var TooltipContentComponent = /** @class */ (function () {
     TooltipContentComponent = __decorate([
         Component({
             selector: 'ngx-tooltip-content',
-            template: "\n    <div>\n      <span #caretElm ng-attr-[hidden]=\"{{!showCaret}}\" class=\"tooltip-caret position-{{ this.placement }}\"> </span>\n      <div class=\"tooltip-content\">\n        <span *ngIf=\"!title\">\n          <ng-template ng-attr-[ngTemplateOutlet]=\"{{template}}\" ng-attr-[ngTemplateOutletContext]=\"{{{ model: context }}}\"> </ng-template>\n        </span>\n        <span *ngIf=\"title\" ng-attr-[innerHTML]=\"{{title}}\"> </span>\n      </div>\n    </div>\n  ",
+            template: "\n    <div>\n      <span #caretElm ng-attr-[hidden]=\"{{!showCaret}}\" class=\"tooltip-caret position-{{ this.placement }}\"> </span>\n      <div class=\"tooltip-content\">\n        <span *ngIf=\"!title\">\n          <ng-template ng-attr-[ngTemplateOutlet]=\"{{template}}\" ng-attr-[ngTemplateOutletContext]=\"{ model: context }\"> </ng-template>\n        </span>\n        <span *ngIf=\"title\" ng-attr-[innerHTML]=\"{{title}}\"> </span>\n      </div>\n    </div>\n  ",
             encapsulation: ViewEncapsulation.None,
             styleUrls: ['./tooltip.component.css']
         }),
