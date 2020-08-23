@@ -38,7 +38,7 @@ var BaseChartComponent = /** @class */ (function () {
         this.update();
     };
     BaseChartComponent.prototype.update = function () {
-        console.log('base-chart: ', this.results);
+        console.log('base-chart: ', JSON.stringify(this.results));
         if (this.results) {
             this.results = this.cloneData(this.results);
         }

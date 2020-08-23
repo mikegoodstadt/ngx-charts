@@ -69,7 +69,7 @@ export class LineComponent implements OnChanges {
   }
 
   updatePathEl(): void {
-    console.log('line-comp: ', this.data);
+    console.log('line-comp: ', JSON.stringify(this.data));
     const node = select(this.element.nativeElement).select('.line');
 
     if (this.animations) {

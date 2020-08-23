@@ -1896,7 +1896,7 @@ var BaseChartComponent = /** @class */ (function () {
         this.update();
     };
     BaseChartComponent.prototype.update = function () {
-        console.log('base-chart: ', this.results);
+        console.log('base-chart: ', JSON.stringify(this.results));
         if (this.results) {
             this.results = this.cloneData(this.results);
         }
@@ -11037,7 +11037,7 @@ var LineComponent = /** @class */ (function () {
         }
     };
     LineComponent.prototype.updatePathEl = function () {
-        console.log('line-comp: ', this.data);
+        console.log('line-comp: ', JSON.stringify(this.data));
         var node = select(this.element.nativeElement).select('.line');
         if (this.animations) {
             node
@@ -11125,7 +11125,7 @@ var LineChartComponent = /** @class */ (function (_super) {
         return _this;
     }
     LineChartComponent.prototype.update = function () {
-        console.log('line-chart: ', this.results);
+        console.log('line-chart: ', JSON.stringify(this.results));
         _super.prototype.update.call(this);
         this.dims = calculateViewDimensions({
             width: this.width,
@@ -11546,6 +11546,7 @@ var LineSeriesComponent = /** @class */ (function () {
         this.update();
     };
     LineSeriesComponent.prototype.update = function () {
+        console.log('line-series: ', JSON.stringify(this.data));
         this.updateGradients();
         var data = this.sortData(this.data.series);
         var lineGen = this.getLineGenerator();

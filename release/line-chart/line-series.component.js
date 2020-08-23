@@ -19,6 +19,7 @@ var LineSeriesComponent = /** @class */ (function () {
         this.update();
     };
     LineSeriesComponent.prototype.update = function () {
+        console.log('line-series: ', JSON.stringify(this.data));
         this.updateGradients();
         var data = this.sortData(this.data.series);
         var lineGen = this.getLineGenerator();

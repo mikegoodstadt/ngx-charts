@@ -86,7 +86,7 @@ export class LineSeriesComponent implements OnChanges {
   }
 
   update(): void {
-    console.log('line-series: ', this.data);
+    console.log('line-series: ', JSON.stringify(this.data));
     this.updateGradients();
 
     const data = this.sortData(this.data.series);
